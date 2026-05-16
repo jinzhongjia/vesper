@@ -1,0 +1,22 @@
+{
+  "name": "vesper",
+  "version": "0.0.0",
+  "description": "Rotates desktop wallpapers on a schedule, follows the GNOME light/dark color scheme, and sources images from a local folder or remote API (Bing, Unsplash, or custom endpoint).",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinzhongjia/vesper.git"
+  },
+  "author": "jinzhongjia",
+  "license": "LGPL-3.0-or-later",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@girs/gjs": "^4.0.0-beta.20",
+    "@girs/gnome-shell": "^50.0.0"
+  }
+}

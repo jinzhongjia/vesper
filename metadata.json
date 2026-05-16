@@ -1,0 +1,9 @@
+{
+  "uuid": "vesper@nvimer.org",
+  "name": "Vesper",
+  "description": "Rotates desktop wallpapers on a schedule, follows the GNOME light/dark color scheme, and sources images from a local folder or remote API (Bing, Unsplash, or custom endpoint).",
+  "shell-version": ["50"],
+  "url": "https://github.com/jinzhongjia/vesper",
+  "settings-schema": "org.gnome.shell.extensions.vesper",
+  "gettext-domain": "vesper"
+}
