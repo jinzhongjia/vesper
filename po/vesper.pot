@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vesper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.ts:35 prefs.ts:114
+msgid "General"
+msgstr ""
+
+#: prefs.ts:39
+msgid "Source"
+msgstr ""
+
+#: prefs.ts:42
+msgid "Local folder"
+msgstr ""
+
+#: prefs.ts:42 prefs.ts:107
+msgid "Wallhaven"
+msgstr ""
+
+#: prefs.ts:42
+msgid "Bing (via Peapix)"
+msgstr ""
+
+#: prefs.ts:42
+msgid "Lorem Picsum"
+msgstr ""
+
+#: prefs.ts:43
+msgid "Wallpaper source"
+msgstr ""
+
+#: prefs.ts:47
+msgid "Rotation"
+msgstr ""
+
+#: prefs.ts:49
+msgid "Interval (minutes)"
+msgstr ""
+
+#: prefs.ts:50
+msgid "How often to change the wallpaper"
+msgstr ""
+
+#: prefs.ts:60
+msgid "Random"
+msgstr ""
+
+#: prefs.ts:60
+msgid "Sequential"
+msgstr ""
+
+#: prefs.ts:61
+msgid "Switch mode"
+msgstr ""
+
+#: prefs.ts:61
+msgid "Only used for the local source"
+msgstr ""
+
+#: prefs.ts:66
+msgid "Color scheme"
+msgstr ""
+
+#: prefs.ts:67
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+
+#: prefs.ts:70
+msgid "Use different wallpapers for light and dark modes"
+msgstr ""
+
+#: prefs.ts:76
+msgid "Cache"
+msgstr ""
+
+#: prefs.ts:78
+msgid "Keep last N downloaded images"
+msgstr ""
+
+#: prefs.ts:92
+msgid "Local"
+msgstr ""
+
+#: prefs.ts:96
+msgid "Folders"
+msgstr ""
+
+#: prefs.ts:97
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+
+#: prefs.ts:99
+msgid "Light folder"
+msgstr ""
+
+#: prefs.ts:100
+msgid "Dark folder"
+msgstr ""
+
+#: prefs.ts:113
+msgid "Categories"
+msgstr ""
+
+#: prefs.ts:113
+msgid "At least one should be enabled."
+msgstr ""
+
+#: prefs.ts:114
+msgid "Anime"
+msgstr ""
+
+#: prefs.ts:114
+msgid "People"
+msgstr ""
+
+#: prefs.ts:119
+msgid "Purity"
+msgstr ""
+
+#: prefs.ts:119
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr ""
+
+#: prefs.ts:120
+msgid "SFW"
+msgstr ""
+
+#: prefs.ts:120
+msgid "Sketchy"
+msgstr ""
+
+#: prefs.ts:120
+msgid "NSFW"
+msgstr ""
+
+#: prefs.ts:128
+msgid "Peapix (Bing)"
+msgstr ""
+
+#: prefs.ts:132
+msgid "Region"
+msgstr ""
+
+#: prefs.ts:133
+msgid "Bing serves a different daily image in each region."
+msgstr ""
+
+#: prefs.ts:138
+msgid "United States"
+msgstr ""
+
+#: prefs.ts:138
+msgid "China"
+msgstr ""
+
+#: prefs.ts:138
+msgid "Germany"
+msgstr ""
+
+#: prefs.ts:138
+msgid "Japan"
+msgstr ""
+
+#: prefs.ts:139
+msgid "United Kingdom"
+msgstr ""
+
+#: prefs.ts:139
+msgid "France"
+msgstr ""
+
+#: prefs.ts:139
+msgid "Brazil"
+msgstr ""
+
+#: prefs.ts:139
+msgid "India"
+msgstr ""
+
+#: prefs.ts:140
+msgid "Australia"
+msgstr ""
+
+#: prefs.ts:140
+msgid "Canada"
+msgstr ""
+
+#: prefs.ts:140
+msgid "Italy"
+msgstr ""
+
+#: prefs.ts:140
+msgid "Spain"
+msgstr ""
+
+#: prefs.ts:142
+msgid "Country"
+msgstr ""
+
+#: prefs.ts:150
+msgid "Picsum"
+msgstr ""
+
+#: prefs.ts:153
+msgid "Resolution"
+msgstr ""
+
+#: prefs.ts:156
+msgid "Width (px)"
+msgstr ""
+
+#: prefs.ts:165
+msgid "Height (px)"
+msgstr ""
+
+#: prefs.ts:244 prefs.ts:283
+msgid "(not set)"
+msgstr ""
+
+#: prefs.ts:248
+msgid "Choose…"
+msgstr ""
+
+#: prefs.ts:253
+#, javascript-format
+msgid "Select %s"
+msgstr ""
+
+#: prefs.ts:254
+msgid "Select"
+msgstr ""
+
+#: prefs.ts:276
+msgid "Clear"
+msgstr ""
+
+#: wallpaperManager.ts:173
+#, javascript-format
+msgid "Wallpaper update failed: %s"
+msgstr ""
+
+#: wallpaperManager.ts:201
+msgid "Change now"
+msgstr ""
+
+#: wallpaperManager.ts:205 wallpaperManager.ts:224
+msgid "Pause"
+msgstr ""
+
+#: wallpaperManager.ts:211
+msgid "Open current wallpaper"
+msgstr ""
+
+#: wallpaperManager.ts:215
+msgid "Preferences"
+msgstr ""
+
+#: wallpaperManager.ts:224
+msgid "Resume"
+msgstr ""
+
+#: wallpaperManager.ts:238
+msgid "No wallpaper has been applied yet"
+msgstr ""

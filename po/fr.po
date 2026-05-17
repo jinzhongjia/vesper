@@ -1,0 +1,218 @@
+# French translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "General"
+msgstr "Général"
+
+msgid "Source"
+msgstr "Source"
+
+msgid "Local folder"
+msgstr "Dossier local"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (via Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "Source du fond d’écran"
+
+msgid "Rotation"
+msgstr "Rotation"
+
+msgid "Interval (minutes)"
+msgstr "Intervalle (minutes)"
+
+msgid "How often to change the wallpaper"
+msgstr "Fréquence de changement du fond d’écran"
+
+msgid "Random"
+msgstr "Aléatoire"
+
+msgid "Sequential"
+msgstr "Séquentiel"
+
+msgid "Switch mode"
+msgstr "Mode de changement"
+
+msgid "Only used for the local source"
+msgstr "Utilisé uniquement pour la source locale"
+
+msgid "Color scheme"
+msgstr "Thème de couleurs"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"Efficace uniquement lorsque la source est « Dossier local » et qu’un dossier "
+"sombre est défini ; les sources distantes ne peuvent pas garantir une "
+"variante sombre."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "Utiliser différents fonds d’écran pour les modes clair et sombre"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Keep last N downloaded images"
+msgstr "Conserver les N dernières images téléchargées"
+
+msgid "Local"
+msgstr "Local"
+
+msgid "Folders"
+msgstr "Dossiers"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"Le dossier clair est également utilisé lorsque « suivre le thème de "
+"couleurs » est désactivé."
+
+msgid "Light folder"
+msgstr "Dossier clair"
+
+msgid "Dark folder"
+msgstr "Dossier sombre"
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "At least one should be enabled."
+msgstr "Au moins une doit être activée."
+
+msgid "Anime"
+msgstr "Anime"
+
+msgid "People"
+msgstr "Personnes"
+
+msgid "Purity"
+msgstr "Pureté"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr ""
+"Par défaut, SFW uniquement. Activez les autres à votre discrétion."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "Suggestif"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "Région"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing propose une image quotidienne différente dans chaque région."
+
+msgid "United States"
+msgstr "États-Unis"
+
+msgid "China"
+msgstr "Chine"
+
+msgid "Germany"
+msgstr "Allemagne"
+
+msgid "Japan"
+msgstr "Japon"
+
+msgid "United Kingdom"
+msgstr "Royaume-Uni"
+
+msgid "France"
+msgstr "France"
+
+msgid "Brazil"
+msgstr "Brésil"
+
+msgid "India"
+msgstr "Inde"
+
+msgid "Australia"
+msgstr "Australie"
+
+msgid "Canada"
+msgstr "Canada"
+
+msgid "Italy"
+msgstr "Italie"
+
+msgid "Spain"
+msgstr "Espagne"
+
+msgid "Country"
+msgstr "Pays"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "Résolution"
+
+msgid "Width (px)"
+msgstr "Largeur (px)"
+
+msgid "Height (px)"
+msgstr "Hauteur (px)"
+
+msgid "(not set)"
+msgstr "(non défini)"
+
+msgid "Choose…"
+msgstr "Choisir…"
+
+msgid "Select %s"
+msgstr "Sélectionner %s"
+
+msgid "Select"
+msgstr "Sélectionner"
+
+msgid "Clear"
+msgstr "Effacer"
+
+msgid "Wallpaper update failed: %s"
+msgstr "Échec de la mise à jour du fond d’écran : %s"
+
+msgid "Change now"
+msgstr "Changer maintenant"
+
+msgid "Pause"
+msgstr "Pause"
+
+msgid "Open current wallpaper"
+msgstr "Ouvrir le fond d’écran actuel"
+
+msgid "Preferences"
+msgstr "Préférences"
+
+msgid "Resume"
+msgstr "Reprendre"
+
+msgid "No wallpaper has been applied yet"
+msgstr "Aucun fond d’écran n’a encore été appliqué"

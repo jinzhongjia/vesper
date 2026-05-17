@@ -1,0 +1,216 @@
+# Russian translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10"
+"<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "General"
+msgstr "Общие"
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "Local folder"
+msgstr "Локальная папка"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (через Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "Источник обоев"
+
+msgid "Rotation"
+msgstr "Ротация"
+
+msgid "Interval (minutes)"
+msgstr "Интервал (минуты)"
+
+msgid "How often to change the wallpaper"
+msgstr "Как часто менять обои"
+
+msgid "Random"
+msgstr "Случайно"
+
+msgid "Sequential"
+msgstr "По порядку"
+
+msgid "Switch mode"
+msgstr "Режим смены"
+
+msgid "Only used for the local source"
+msgstr "Используется только для локального источника"
+
+msgid "Color scheme"
+msgstr "Цветовая схема"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"Работает только когда источник — «Локальная папка» и задана тёмная папка; "
+"удалённые источники не могут гарантировать тёмный вариант."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "Использовать разные обои для светлой и тёмной тем"
+
+msgid "Cache"
+msgstr "Кэш"
+
+msgid "Keep last N downloaded images"
+msgstr "Сохранять последние N загруженных изображений"
+
+msgid "Local"
+msgstr "Локальный"
+
+msgid "Folders"
+msgstr "Папки"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"Светлая папка также используется, когда «следовать цветовой схеме» отключено."
+
+msgid "Light folder"
+msgstr "Светлая папка"
+
+msgid "Dark folder"
+msgstr "Тёмная папка"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "At least one should be enabled."
+msgstr "Должна быть включена хотя бы одна."
+
+msgid "Anime"
+msgstr "Аниме"
+
+msgid "People"
+msgstr "Люди"
+
+msgid "Purity"
+msgstr "Содержание"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "По умолчанию только SFW. Включайте остальные на свой страх и риск."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "Двусмысленное"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "Регион"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing предлагает разные ежедневные изображения для каждого региона."
+
+msgid "United States"
+msgstr "США"
+
+msgid "China"
+msgstr "Китай"
+
+msgid "Germany"
+msgstr "Германия"
+
+msgid "Japan"
+msgstr "Япония"
+
+msgid "United Kingdom"
+msgstr "Великобритания"
+
+msgid "France"
+msgstr "Франция"
+
+msgid "Brazil"
+msgstr "Бразилия"
+
+msgid "India"
+msgstr "Индия"
+
+msgid "Australia"
+msgstr "Австралия"
+
+msgid "Canada"
+msgstr "Канада"
+
+msgid "Italy"
+msgstr "Италия"
+
+msgid "Spain"
+msgstr "Испания"
+
+msgid "Country"
+msgstr "Страна"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "Разрешение"
+
+msgid "Width (px)"
+msgstr "Ширина (px)"
+
+msgid "Height (px)"
+msgstr "Высота (px)"
+
+msgid "(not set)"
+msgstr "(не задано)"
+
+msgid "Choose…"
+msgstr "Выбрать…"
+
+msgid "Select %s"
+msgstr "Выбрать %s"
+
+msgid "Select"
+msgstr "Выбрать"
+
+msgid "Clear"
+msgstr "Очистить"
+
+msgid "Wallpaper update failed: %s"
+msgstr "Не удалось обновить обои: %s"
+
+msgid "Change now"
+msgstr "Сменить сейчас"
+
+msgid "Pause"
+msgstr "Пауза"
+
+msgid "Open current wallpaper"
+msgstr "Открыть текущие обои"
+
+msgid "Preferences"
+msgstr "Параметры"
+
+msgid "Resume"
+msgstr "Продолжить"
+
+msgid "No wallpaper has been applied yet"
+msgstr "Обои ещё не применены"

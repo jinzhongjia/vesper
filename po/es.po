@@ -1,0 +1,216 @@
+# Spanish translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "General"
+msgstr "General"
+
+msgid "Source"
+msgstr "Fuente"
+
+msgid "Local folder"
+msgstr "Carpeta local"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (vía Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "Fuente del fondo de pantalla"
+
+msgid "Rotation"
+msgstr "Rotación"
+
+msgid "Interval (minutes)"
+msgstr "Intervalo (minutos)"
+
+msgid "How often to change the wallpaper"
+msgstr "Con qué frecuencia cambiar el fondo de pantalla"
+
+msgid "Random"
+msgstr "Aleatorio"
+
+msgid "Sequential"
+msgstr "Secuencial"
+
+msgid "Switch mode"
+msgstr "Modo de cambio"
+
+msgid "Only used for the local source"
+msgstr "Solo se usa para la fuente local"
+
+msgid "Color scheme"
+msgstr "Esquema de color"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"Solo es efectivo cuando la fuente es «Carpeta local» y se ha establecido una "
+"carpeta oscura; las fuentes remotas no pueden garantizar una variante oscura."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "Usar diferentes fondos de pantalla para los modos claro y oscuro"
+
+msgid "Cache"
+msgstr "Caché"
+
+msgid "Keep last N downloaded images"
+msgstr "Mantener las últimas N imágenes descargadas"
+
+msgid "Local"
+msgstr "Local"
+
+msgid "Folders"
+msgstr "Carpetas"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"La carpeta clara también se usa cuando «seguir esquema de color» está "
+"desactivado."
+
+msgid "Light folder"
+msgstr "Carpeta clara"
+
+msgid "Dark folder"
+msgstr "Carpeta oscura"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "At least one should be enabled."
+msgstr "Al menos una debe estar activada."
+
+msgid "Anime"
+msgstr "Anime"
+
+msgid "People"
+msgstr "Personas"
+
+msgid "Purity"
+msgstr "Pureza"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "Por defecto solo SFW. Active otras a su propia discreción."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "Sugerente"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "Región"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing ofrece una imagen diaria diferente en cada región."
+
+msgid "United States"
+msgstr "Estados Unidos"
+
+msgid "China"
+msgstr "China"
+
+msgid "Germany"
+msgstr "Alemania"
+
+msgid "Japan"
+msgstr "Japón"
+
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+msgid "France"
+msgstr "Francia"
+
+msgid "Brazil"
+msgstr "Brasil"
+
+msgid "India"
+msgstr "India"
+
+msgid "Australia"
+msgstr "Australia"
+
+msgid "Canada"
+msgstr "Canadá"
+
+msgid "Italy"
+msgstr "Italia"
+
+msgid "Spain"
+msgstr "España"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "Resolución"
+
+msgid "Width (px)"
+msgstr "Ancho (px)"
+
+msgid "Height (px)"
+msgstr "Alto (px)"
+
+msgid "(not set)"
+msgstr "(no establecido)"
+
+msgid "Choose…"
+msgstr "Elegir…"
+
+msgid "Select %s"
+msgstr "Seleccionar %s"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "Clear"
+msgstr "Limpiar"
+
+msgid "Wallpaper update failed: %s"
+msgstr "Error al actualizar el fondo de pantalla: %s"
+
+msgid "Change now"
+msgstr "Cambiar ahora"
+
+msgid "Pause"
+msgstr "Pausar"
+
+msgid "Open current wallpaper"
+msgstr "Abrir fondo de pantalla actual"
+
+msgid "Preferences"
+msgstr "Preferencias"
+
+msgid "Resume"
+msgstr "Reanudar"
+
+msgid "No wallpaper has been applied yet"
+msgstr "Aún no se ha aplicado ningún fondo de pantalla"

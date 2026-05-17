@@ -1,3 +1,12 @@
 node_modules/
 dist/
 *.zip
+
+# Compiled GSettings schemas (built by glib-compile-schemas)
+schemas/gschemas.compiled
+
+# Compiled gettext message catalogs (built by msgfmt)
+locale/
+
+# TypeScript incremental build info
+*.tsbuildinfo

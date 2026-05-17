@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="vesper">
+  <enum id="org.gnome.shell.extensions.vesper.SourceType">
+    <value nick="local" value="0"/>
+    <value nick="wallhaven" value="1"/>
+    <value nick="peapix" value="2"/>
+    <value nick="picsum" value="3"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.vesper.SwitchMode">
+    <value nick="random" value="0"/>
+    <value nick="sequential" value="1"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.vesper"
+          path="/org/gnome/shell/extensions/vesper/">
+    <key name="source-type" enum="org.gnome.shell.extensions.vesper.SourceType">
+      <default>"wallhaven"</default>
+      <summary>Wallpaper source</summary>
+    </key>
+
+    <key name="local-folder" type="s">
+      <default>""</default>
+      <summary>Local wallpaper folder (light variant)</summary>
+    </key>
+
+    <key name="local-folder-dark" type="s">
+      <default>""</default>
+      <summary>Local wallpaper folder for the dark variant</summary>
+      <description>Only used when source-type=local and follow-color-scheme=true. Empty means the manager writes a single image to both picture-uri keys.</description>
+    </key>
+
+    <key name="interval-minutes" type="i">
+      <range min="1" max="1440"/>
+      <default>30</default>
+      <summary>Rotation interval (minutes)</summary>
+    </key>
+
+    <key name="switch-mode" enum="org.gnome.shell.extensions.vesper.SwitchMode">
+      <default>"random"</default>
+      <summary>How to pick the next image (local source only)</summary>
+    </key>
+
+    <key name="follow-color-scheme" type="b">
+      <default>false</default>
+      <summary>Use a different wallpaper for the dark color scheme</summary>
+      <description>Only effective when source-type=local AND local-folder-dark is set. Remote sources cannot guarantee a dark-toned image, so this toggle is ignored for them.</description>
+    </key>
+
+    <key name="wallhaven-categories" type="s">
+      <default>"111"</default>
+      <summary>Wallhaven categories: 3 bits for general/anime/people</summary>
+    </key>
+
+    <key name="wallhaven-purity" type="s">
+      <default>"100"</default>
+      <summary>Wallhaven purity: 3 bits for SFW/sketchy/NSFW</summary>
+    </key>
+
+    <key name="peapix-country" type="s">
+      <default>"us"</default>
+      <summary>Peapix region code (us, cn, de, jp, ...)</summary>
+    </key>
+
+    <key name="picsum-width" type="i">
+      <range min="320" max="7680"/>
+      <default>1920</default>
+      <summary>Picsum image width</summary>
+    </key>
+
+    <key name="picsum-height" type="i">
+      <range min="240" max="4320"/>
+      <default>1080</default>
+      <summary>Picsum image height</summary>
+    </key>
+
+    <key name="cache-keep-count" type="i">
+      <range min="1" max="1000"/>
+      <default>30</default>
+      <summary>How many downloaded wallpapers to keep on disk</summary>
+    </key>
+
+    <key name="last-applied-uri-light" type="s">
+      <default>""</default>
+      <summary>URI of the last applied wallpaper for the light variant (internal)</summary>
+    </key>
+
+    <key name="last-applied-uri-dark" type="s">
+      <default>""</default>
+      <summary>URI of the last applied wallpaper for the dark variant (internal)</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -3,18 +3,55 @@ DOMAIN=nvimer.org
 UUID=$(NAME)@$(DOMAIN)
 EXT_DIR=$(HOME)/.local/share/gnome-shell/extensions/$(UUID)
 
-.PHONY: all build pack install link unlink enable dev logs clean
+SCHEMA_DIR=schemas
+COMPILED_SCHEMA=$(SCHEMA_DIR)/gschemas.compiled
+TS_SOURCES=$(wildcard *.ts) $(wildcard lib/*.ts) $(wildcard providers/*.ts)
 
-all: dist/extension.js
+PO_DIR=po
+POT_FILE=$(PO_DIR)/$(NAME).pot
+PO_FILES=$(wildcard $(PO_DIR)/*.po)
+LOCALE_DIR=locale
+MO_FILES=$(patsubst $(PO_DIR)/%.po,$(LOCALE_DIR)/%/LC_MESSAGES/$(NAME).mo,$(PO_FILES))
+
+.PHONY: all build pack install link unlink enable dev logs pot update-po mo clean
+
+all: build
 
 node_modules/.pnpm-lock.yaml: package.json
 	pnpm install
 
-dist/extension.js: node_modules/.pnpm-lock.yaml *.ts
+dist/extension.js: node_modules/.pnpm-lock.yaml $(TS_SOURCES)
 	pnpm run build
 
-build: dist/extension.js
+$(COMPILED_SCHEMA): $(wildcard $(SCHEMA_DIR)/*.xml)
+	glib-compile-schemas $(SCHEMA_DIR)
+
+# i18n: extract translatable strings from sources
+$(POT_FILE): $(TS_SOURCES)
+	@mkdir -p $(PO_DIR)
+	xgettext --from-code=UTF-8 --language=JavaScript \
+	  --keyword=_ --keyword=N_ \
+	  --keyword=ngettext:1,2 --keyword=pgettext:1c,2 \
+	  --package-name=$(NAME) \
+	  --output=$@ $(TS_SOURCES)
+
+# Refresh .po files against latest .pot
+update-po: $(POT_FILE)
+	@for f in $(PO_FILES); do msgmerge --update --backup=none $$f $(POT_FILE); done
+
+# Compile .po -> .mo
+$(LOCALE_DIR)/%/LC_MESSAGES/$(NAME).mo: $(PO_DIR)/%.po
+	@mkdir -p $(dir $@)
+	msgfmt -o $@ $<
+
+pot: $(POT_FILE)
+mo: $(MO_FILES)
+
+build: dist/extension.js $(COMPILED_SCHEMA) $(MO_FILES)
 	@cp metadata.json dist/
+	@mkdir -p dist/schemas
+	@cp $(SCHEMA_DIR)/*.xml $(COMPILED_SCHEMA) dist/schemas/
+	@if [ -d $(LOCALE_DIR) ]; then cp -r $(LOCALE_DIR) dist/; fi
 
 $(NAME).zip: build
 	@(cd dist && zip ../$(NAME).zip -9r .)
@@ -48,4 +85,4 @@ logs:
 	journalctl -f -o cat /usr/bin/gnome-shell
 
 clean:
-	@rm -rf dist node_modules pnpm-lock.yaml $(NAME).zip
+	@rm -rf dist node_modules pnpm-lock.yaml $(NAME).zip $(COMPILED_SCHEMA) $(LOCALE_DIR)

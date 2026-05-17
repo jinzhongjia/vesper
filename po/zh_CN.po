@@ -1,0 +1,214 @@
+# Chinese (Simplified) translation for vesper.
+# Copyright (C) 2026
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:00+0800\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "General"
+msgstr "常规"
+
+msgid "Source"
+msgstr "来源"
+
+msgid "Local folder"
+msgstr "本地目录"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing(通过 Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "壁纸来源"
+
+msgid "Rotation"
+msgstr "轮换"
+
+msgid "Interval (minutes)"
+msgstr "间隔(分钟)"
+
+msgid "How often to change the wallpaper"
+msgstr "更换壁纸的频率"
+
+msgid "Random"
+msgstr "随机"
+
+msgid "Sequential"
+msgstr "顺序"
+
+msgid "Switch mode"
+msgstr "切换模式"
+
+msgid "Only used for the local source"
+msgstr "仅对本地来源生效"
+
+msgid "Color scheme"
+msgstr "颜色方案"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"仅在来源为「本地目录」且设置了暗色目录时生效;远程来源无法保证暗色变体。"
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "为亮色和暗色模式使用不同壁纸"
+
+msgid "Cache"
+msgstr "缓存"
+
+msgid "Keep last N downloaded images"
+msgstr "保留最近下载的 N 张图片"
+
+msgid "Local"
+msgstr "本地"
+
+msgid "Folders"
+msgstr "目录"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr "当未启用「跟随颜色方案」时,也使用亮色目录。"
+
+msgid "Light folder"
+msgstr "亮色目录"
+
+msgid "Dark folder"
+msgstr "暗色目录"
+
+msgid "Categories"
+msgstr "类别"
+
+msgid "At least one should be enabled."
+msgstr "至少需要启用一项。"
+
+msgid "Anime"
+msgstr "动漫"
+
+msgid "People"
+msgstr "人物"
+
+msgid "Purity"
+msgstr "纯度"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "默认仅启用 SFW,请自行决定是否启用其他级别。"
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "略带暗示"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "区域"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing 在不同区域提供不同的每日图片。"
+
+msgid "United States"
+msgstr "美国"
+
+msgid "China"
+msgstr "中国"
+
+msgid "Germany"
+msgstr "德国"
+
+msgid "Japan"
+msgstr "日本"
+
+msgid "United Kingdom"
+msgstr "英国"
+
+msgid "France"
+msgstr "法国"
+
+msgid "Brazil"
+msgstr "巴西"
+
+msgid "India"
+msgstr "印度"
+
+msgid "Australia"
+msgstr "澳大利亚"
+
+msgid "Canada"
+msgstr "加拿大"
+
+msgid "Italy"
+msgstr "意大利"
+
+msgid "Spain"
+msgstr "西班牙"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "分辨率"
+
+msgid "Width (px)"
+msgstr "宽度(像素)"
+
+msgid "Height (px)"
+msgstr "高度(像素)"
+
+msgid "(not set)"
+msgstr "(未设置)"
+
+msgid "Choose…"
+msgstr "选择…"
+
+msgid "Select %s"
+msgstr "选择 %s"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Wallpaper update failed: %s"
+msgstr "壁纸更新失败:%s"
+
+msgid "Change now"
+msgstr "立即更换"
+
+msgid "Pause"
+msgstr "暂停"
+
+msgid "Open current wallpaper"
+msgstr "打开当前壁纸"
+
+msgid "Preferences"
+msgstr "首选项"
+
+msgid "Resume"
+msgstr "恢复"
+
+msgid "No wallpaper has been applied yet"
+msgstr "尚未应用过任何壁纸"

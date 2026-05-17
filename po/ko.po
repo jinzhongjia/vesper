@@ -1,0 +1,215 @@
+# Korean translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "General"
+msgstr "일반"
+
+msgid "Source"
+msgstr "소스"
+
+msgid "Local folder"
+msgstr "로컬 폴더"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (Peapix 경유)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "배경 화면 소스"
+
+msgid "Rotation"
+msgstr "교체"
+
+msgid "Interval (minutes)"
+msgstr "간격 (분)"
+
+msgid "How often to change the wallpaper"
+msgstr "배경 화면을 변경하는 빈도"
+
+msgid "Random"
+msgstr "무작위"
+
+msgid "Sequential"
+msgstr "순차"
+
+msgid "Switch mode"
+msgstr "전환 모드"
+
+msgid "Only used for the local source"
+msgstr "로컬 소스에만 사용됨"
+
+msgid "Color scheme"
+msgstr "색 구성표"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"소스가 \"로컬 폴더\"이고 어두운 폴더가 설정된 경우에만 적용됩니다. 원격 소스"
+"는 어두운 변형을 보장할 수 없습니다."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "밝은 모드와 어두운 모드에 서로 다른 배경 화면 사용"
+
+msgid "Cache"
+msgstr "캐시"
+
+msgid "Keep last N downloaded images"
+msgstr "최근 다운로드한 N개의 이미지 보관"
+
+msgid "Local"
+msgstr "로컬"
+
+msgid "Folders"
+msgstr "폴더"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"\"색 구성표 따르기\"가 꺼져 있을 때도 밝은 폴더가 사용됩니다."
+
+msgid "Light folder"
+msgstr "밝은 폴더"
+
+msgid "Dark folder"
+msgstr "어두운 폴더"
+
+msgid "Categories"
+msgstr "분류"
+
+msgid "At least one should be enabled."
+msgstr "최소 하나 이상 활성화해야 합니다."
+
+msgid "Anime"
+msgstr "애니메이션"
+
+msgid "People"
+msgstr "인물"
+
+msgid "Purity"
+msgstr "수위"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "기본적으로 SFW만 활성화됩니다. 다른 항목은 본인 판단에 따라 활성화하십시오."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "다소 자극적"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "지역"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing은 지역마다 다른 일일 이미지를 제공합니다."
+
+msgid "United States"
+msgstr "미국"
+
+msgid "China"
+msgstr "중국"
+
+msgid "Germany"
+msgstr "독일"
+
+msgid "Japan"
+msgstr "일본"
+
+msgid "United Kingdom"
+msgstr "영국"
+
+msgid "France"
+msgstr "프랑스"
+
+msgid "Brazil"
+msgstr "브라질"
+
+msgid "India"
+msgstr "인도"
+
+msgid "Australia"
+msgstr "호주"
+
+msgid "Canada"
+msgstr "캐나다"
+
+msgid "Italy"
+msgstr "이탈리아"
+
+msgid "Spain"
+msgstr "스페인"
+
+msgid "Country"
+msgstr "국가"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "해상도"
+
+msgid "Width (px)"
+msgstr "너비 (px)"
+
+msgid "Height (px)"
+msgstr "높이 (px)"
+
+msgid "(not set)"
+msgstr "(설정되지 않음)"
+
+msgid "Choose…"
+msgstr "선택…"
+
+msgid "Select %s"
+msgstr "%s 선택"
+
+msgid "Select"
+msgstr "선택"
+
+msgid "Clear"
+msgstr "지우기"
+
+msgid "Wallpaper update failed: %s"
+msgstr "배경 화면 업데이트 실패: %s"
+
+msgid "Change now"
+msgstr "지금 변경"
+
+msgid "Pause"
+msgstr "일시 정지"
+
+msgid "Open current wallpaper"
+msgstr "현재 배경 화면 열기"
+
+msgid "Preferences"
+msgstr "환경 설정"
+
+msgid "Resume"
+msgstr "재개"
+
+msgid "No wallpaper has been applied yet"
+msgstr "아직 배경 화면이 적용되지 않았습니다"

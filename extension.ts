@@ -1,26 +1,20 @@
-import St from "gi://St";
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
-import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
-import * as Main from "resource:///org/gnome/shell/ui/main.js";
-import * as PanelMenu from "resource:///org/gnome/shell/ui/panelMenu.js";
+import { resetLogSink, setLogSink } from './lib/log.js';
+import { WallpaperManager } from './wallpaperManager.js';
 
 export default class VesperExtension extends Extension {
-  private _indicator: PanelMenu.Button | null = null;
+  private manager: WallpaperManager | null = null;
 
-  enable() {
-    this._indicator = new PanelMenu.Button(0.0, this.metadata.name, false);
-
-    const icon = new St.Icon({
-      icon_name: "face-laugh-symbolic",
-      style_class: "system-status-icon",
-    });
-    this._indicator.add_child(icon);
-
-    Main.panel.addToStatusArea(this.uuid, this._indicator);
+  enable(): void {
+    setLogSink(this.getLogger());
+    this.manager = new WallpaperManager(this);
+    this.manager.start();
   }
 
-  disable() {
-    this._indicator?.destroy();
-    this._indicator = null;
+  disable(): void {
+    this.manager?.dispose();
+    this.manager = null;
+    resetLogSink();
   }
 }

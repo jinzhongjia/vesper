@@ -1,0 +1,216 @@
+# Italian translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "General"
+msgstr "Generale"
+
+msgid "Source"
+msgstr "Sorgente"
+
+msgid "Local folder"
+msgstr "Cartella locale"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (tramite Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "Sorgente dello sfondo"
+
+msgid "Rotation"
+msgstr "Rotazione"
+
+msgid "Interval (minutes)"
+msgstr "Intervallo (minuti)"
+
+msgid "How often to change the wallpaper"
+msgstr "Frequenza di cambio dello sfondo"
+
+msgid "Random"
+msgstr "Casuale"
+
+msgid "Sequential"
+msgstr "Sequenziale"
+
+msgid "Switch mode"
+msgstr "Modalità di cambio"
+
+msgid "Only used for the local source"
+msgstr "Utilizzato solo per la sorgente locale"
+
+msgid "Color scheme"
+msgstr "Schema colori"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"Effettivo solo quando la sorgente è «Cartella locale» ed è impostata una "
+"cartella scura; le sorgenti remote non possono garantire una variante scura."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "Usa sfondi diversi per le modalità chiara e scura"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Keep last N downloaded images"
+msgstr "Conserva le ultime N immagini scaricate"
+
+msgid "Local"
+msgstr "Locale"
+
+msgid "Folders"
+msgstr "Cartelle"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"La cartella chiara viene utilizzata anche quando «segui schema colori» è "
+"disattivato."
+
+msgid "Light folder"
+msgstr "Cartella chiara"
+
+msgid "Dark folder"
+msgstr "Cartella scura"
+
+msgid "Categories"
+msgstr "Categorie"
+
+msgid "At least one should be enabled."
+msgstr "Almeno una deve essere attivata."
+
+msgid "Anime"
+msgstr "Anime"
+
+msgid "People"
+msgstr "Persone"
+
+msgid "Purity"
+msgstr "Purezza"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "Solo SFW per impostazione predefinita. Attiva le altre a tua discrezione."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "Allusivo"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "Regione"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing offre un’immagine giornaliera diversa in ogni regione."
+
+msgid "United States"
+msgstr "Stati Uniti"
+
+msgid "China"
+msgstr "Cina"
+
+msgid "Germany"
+msgstr "Germania"
+
+msgid "Japan"
+msgstr "Giappone"
+
+msgid "United Kingdom"
+msgstr "Regno Unito"
+
+msgid "France"
+msgstr "Francia"
+
+msgid "Brazil"
+msgstr "Brasile"
+
+msgid "India"
+msgstr "India"
+
+msgid "Australia"
+msgstr "Australia"
+
+msgid "Canada"
+msgstr "Canada"
+
+msgid "Italy"
+msgstr "Italia"
+
+msgid "Spain"
+msgstr "Spagna"
+
+msgid "Country"
+msgstr "Paese"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "Risoluzione"
+
+msgid "Width (px)"
+msgstr "Larghezza (px)"
+
+msgid "Height (px)"
+msgstr "Altezza (px)"
+
+msgid "(not set)"
+msgstr "(non impostato)"
+
+msgid "Choose…"
+msgstr "Scegli…"
+
+msgid "Select %s"
+msgstr "Seleziona %s"
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "Clear"
+msgstr "Cancella"
+
+msgid "Wallpaper update failed: %s"
+msgstr "Aggiornamento dello sfondo non riuscito: %s"
+
+msgid "Change now"
+msgstr "Cambia ora"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Open current wallpaper"
+msgstr "Apri sfondo attuale"
+
+msgid "Preferences"
+msgstr "Preferenze"
+
+msgid "Resume"
+msgstr "Riprendi"
+
+msgid "No wallpaper has been applied yet"
+msgstr "Nessuno sfondo è ancora stato applicato"

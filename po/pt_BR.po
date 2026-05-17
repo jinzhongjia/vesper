@@ -1,0 +1,216 @@
+# Portuguese (Brazil) translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "General"
+msgstr "Geral"
+
+msgid "Source"
+msgstr "Origem"
+
+msgid "Local folder"
+msgstr "Pasta local"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (via Peapix)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "Origem do papel de parede"
+
+msgid "Rotation"
+msgstr "Rotação"
+
+msgid "Interval (minutes)"
+msgstr "Intervalo (minutos)"
+
+msgid "How often to change the wallpaper"
+msgstr "Com que frequência alterar o papel de parede"
+
+msgid "Random"
+msgstr "Aleatório"
+
+msgid "Sequential"
+msgstr "Sequencial"
+
+msgid "Switch mode"
+msgstr "Modo de troca"
+
+msgid "Only used for the local source"
+msgstr "Usado apenas para a origem local"
+
+msgid "Color scheme"
+msgstr "Esquema de cores"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"Só funciona quando a origem é \"Pasta local\" e uma pasta escura está "
+"definida; origens remotas não podem garantir uma variante escura."
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "Usar papéis de parede diferentes para os modos claro e escuro"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Keep last N downloaded images"
+msgstr "Manter as últimas N imagens baixadas"
+
+msgid "Local"
+msgstr "Local"
+
+msgid "Folders"
+msgstr "Pastas"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"A pasta clara também é usada quando \"seguir esquema de cores\" está "
+"desativado."
+
+msgid "Light folder"
+msgstr "Pasta clara"
+
+msgid "Dark folder"
+msgstr "Pasta escura"
+
+msgid "Categories"
+msgstr "Categorias"
+
+msgid "At least one should be enabled."
+msgstr "Pelo menos uma deve estar ativada."
+
+msgid "Anime"
+msgstr "Anime"
+
+msgid "People"
+msgstr "Pessoas"
+
+msgid "Purity"
+msgstr "Pureza"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "Apenas SFW por padrão. Ative as outras por sua própria conta e risco."
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "Sugestivo"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "Região"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "O Bing oferece uma imagem diária diferente em cada região."
+
+msgid "United States"
+msgstr "Estados Unidos"
+
+msgid "China"
+msgstr "China"
+
+msgid "Germany"
+msgstr "Alemanha"
+
+msgid "Japan"
+msgstr "Japão"
+
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+msgid "France"
+msgstr "França"
+
+msgid "Brazil"
+msgstr "Brasil"
+
+msgid "India"
+msgstr "Índia"
+
+msgid "Australia"
+msgstr "Austrália"
+
+msgid "Canada"
+msgstr "Canadá"
+
+msgid "Italy"
+msgstr "Itália"
+
+msgid "Spain"
+msgstr "Espanha"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "Resolução"
+
+msgid "Width (px)"
+msgstr "Largura (px)"
+
+msgid "Height (px)"
+msgstr "Altura (px)"
+
+msgid "(not set)"
+msgstr "(não definido)"
+
+msgid "Choose…"
+msgstr "Escolher…"
+
+msgid "Select %s"
+msgstr "Selecionar %s"
+
+msgid "Select"
+msgstr "Selecionar"
+
+msgid "Clear"
+msgstr "Limpar"
+
+msgid "Wallpaper update failed: %s"
+msgstr "Falha ao atualizar o papel de parede: %s"
+
+msgid "Change now"
+msgstr "Alterar agora"
+
+msgid "Pause"
+msgstr "Pausar"
+
+msgid "Open current wallpaper"
+msgstr "Abrir papel de parede atual"
+
+msgid "Preferences"
+msgstr "Preferências"
+
+msgid "Resume"
+msgstr "Retomar"
+
+msgid "No wallpaper has been applied yet"
+msgstr "Nenhum papel de parede foi aplicado ainda"

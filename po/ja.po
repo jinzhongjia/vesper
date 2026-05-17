@@ -1,0 +1,215 @@
+# Japanese translation for vesper.
+# This file is distributed under the same license as the vesper package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vesper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"PO-Revision-Date: 2026-05-17 15:30+0800\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "Local folder"
+msgstr "ローカルフォルダー"
+
+msgid "Wallhaven"
+msgstr "Wallhaven"
+
+msgid "Bing (via Peapix)"
+msgstr "Bing (Peapix 経由)"
+
+msgid "Lorem Picsum"
+msgstr "Lorem Picsum"
+
+msgid "Wallpaper source"
+msgstr "壁紙のソース"
+
+msgid "Rotation"
+msgstr "ローテーション"
+
+msgid "Interval (minutes)"
+msgstr "間隔 (分)"
+
+msgid "How often to change the wallpaper"
+msgstr "壁紙を変更する頻度"
+
+msgid "Random"
+msgstr "ランダム"
+
+msgid "Sequential"
+msgstr "順次"
+
+msgid "Switch mode"
+msgstr "切り替えモード"
+
+msgid "Only used for the local source"
+msgstr "ローカルソースでのみ使用されます"
+
+msgid "Color scheme"
+msgstr "カラースキーム"
+
+msgid ""
+"Only effective when source is \"Local folder\" and a dark folder is set; "
+"remote sources cannot guarantee a dark variant."
+msgstr ""
+"ソースが「ローカルフォルダー」で、ダークフォルダーが設定されている場合にのみ"
+"有効です。リモートソースではダークバリアントを保証できません。"
+
+msgid "Use different wallpapers for light and dark modes"
+msgstr "ライトモードとダークモードで異なる壁紙を使用する"
+
+msgid "Cache"
+msgstr "キャッシュ"
+
+msgid "Keep last N downloaded images"
+msgstr "ダウンロードした最新の N 枚を保持"
+
+msgid "Local"
+msgstr "ローカル"
+
+msgid "Folders"
+msgstr "フォルダー"
+
+msgid "The light folder is also used when \"follow color scheme\" is off."
+msgstr ""
+"「カラースキームに従う」が無効の場合もライトフォルダーが使用されます。"
+
+msgid "Light folder"
+msgstr "ライトフォルダー"
+
+msgid "Dark folder"
+msgstr "ダークフォルダー"
+
+msgid "Categories"
+msgstr "カテゴリ"
+
+msgid "At least one should be enabled."
+msgstr "少なくとも 1 つを有効にしてください。"
+
+msgid "Anime"
+msgstr "アニメ"
+
+msgid "People"
+msgstr "人物"
+
+msgid "Purity"
+msgstr "純度"
+
+msgid "Defaults to SFW only. Enable others at your own discretion."
+msgstr "既定では SFW のみ有効です。他の項目は自己責任で有効にしてください。"
+
+msgid "SFW"
+msgstr "SFW"
+
+msgid "Sketchy"
+msgstr "際どい"
+
+msgid "NSFW"
+msgstr "NSFW"
+
+msgid "Peapix (Bing)"
+msgstr "Peapix (Bing)"
+
+msgid "Region"
+msgstr "地域"
+
+msgid "Bing serves a different daily image in each region."
+msgstr "Bing は地域ごとに異なる日替わり画像を提供します。"
+
+msgid "United States"
+msgstr "アメリカ合衆国"
+
+msgid "China"
+msgstr "中国"
+
+msgid "Germany"
+msgstr "ドイツ"
+
+msgid "Japan"
+msgstr "日本"
+
+msgid "United Kingdom"
+msgstr "イギリス"
+
+msgid "France"
+msgstr "フランス"
+
+msgid "Brazil"
+msgstr "ブラジル"
+
+msgid "India"
+msgstr "インド"
+
+msgid "Australia"
+msgstr "オーストラリア"
+
+msgid "Canada"
+msgstr "カナダ"
+
+msgid "Italy"
+msgstr "イタリア"
+
+msgid "Spain"
+msgstr "スペイン"
+
+msgid "Country"
+msgstr "国"
+
+msgid "Picsum"
+msgstr "Picsum"
+
+msgid "Resolution"
+msgstr "解像度"
+
+msgid "Width (px)"
+msgstr "幅 (px)"
+
+msgid "Height (px)"
+msgstr "高さ (px)"
+
+msgid "(not set)"
+msgstr "(未設定)"
+
+msgid "Choose…"
+msgstr "選択…"
+
+msgid "Select %s"
+msgstr "%s を選択"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "Clear"
+msgstr "クリア"
+
+msgid "Wallpaper update failed: %s"
+msgstr "壁紙の更新に失敗しました: %s"
+
+msgid "Change now"
+msgstr "今すぐ変更"
+
+msgid "Pause"
+msgstr "一時停止"
+
+msgid "Open current wallpaper"
+msgstr "現在の壁紙を開く"
+
+msgid "Preferences"
+msgstr "設定"
+
+msgid "Resume"
+msgstr "再開"
+
+msgid "No wallpaper has been applied yet"
+msgstr "まだ壁紙が適用されていません"

@@ -8,12 +8,21 @@ importers:
 
   .:
     devDependencies:
+      '@girs/adw-1':
+        specifier: 1.10.0-4.0.0-rc.15
+        version: 1.10.0-4.0.0-rc.15
       '@girs/gjs':
         specifier: ^4.0.0-beta.20
         version: 4.0.0-rc.15
       '@girs/gnome-shell':
         specifier: ^50.0.0
         version: 50.0.0
+      '@girs/gtk-4.0':
+        specifier: 4.23.0-4.0.0-rc.15
+        version: 4.23.0-4.0.0-rc.15
+      '@girs/soup-3.0':
+        specifier: 3.6.6-4.0.0-rc.15
+        version: 3.6.6-4.0.0-rc.15
       typescript:
         specifier: ^5.4.0
         version: 5.9.3
@@ -136,6 +145,9 @@ packages:
 
   '@girs/shew-0@0.0.0-4.0.0-rc.15':
     resolution: {integrity: sha512-rndWLcQXkyHE6ILydSEW+jTfYV3PZnjR6M8xLwTvEWKI/xMc21pUDzH/92JhxBWbN0xV+W4V7Z+GgXaNbUa3Iw==}
+
+  '@girs/soup-3.0@3.6.6-4.0.0-rc.15':
+    resolution: {integrity: sha512-z4gsn9YuFx/I74xwnfZHW74zjZBlhsiwqCVBJzNRab/oxLtnoT+7j65X2GeqHlD9XGIBB6/jN+PB0UVrfd4v4g==}
 
   '@girs/st-18@18.0.0-4.0.0-rc.15':
     resolution: {integrity: sha512-yObJnvNX2CntZG33bdXMh74sLbUySb2Ot65YYUgaohQ1cbmIOUIYUwvjutNLKlUYcqonXdwxL9aImBv1YsJLNA==}
@@ -567,6 +579,14 @@ snapshots:
       '@girs/harfbuzz-0.0': 13.2.1-4.0.0-rc.15
       '@girs/pango-1.0': 1.57.1-4.0.0-rc.15
       '@girs/pangocairo-1.0': 1.0.0-4.0.0-rc.15
+
+  '@girs/soup-3.0@3.6.6-4.0.0-rc.15':
+    dependencies:
+      '@girs/gio-2.0': 2.88.0-4.0.0-rc.15
+      '@girs/gjs': 4.0.0-rc.15
+      '@girs/glib-2.0': 2.88.0-4.0.0-rc.15
+      '@girs/gmodule-2.0': 2.0.0-4.0.0-rc.15
+      '@girs/gobject-2.0': 2.88.0-4.0.0-rc.15
 
   '@girs/st-18@18.0.0-4.0.0-rc.15':
     dependencies:
