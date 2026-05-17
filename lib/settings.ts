@@ -64,6 +64,22 @@ export class TypedSettings {
     return this.raw.get_int('cache-max-mb') * 1024 * 1024;
   }
 
+  get originalUri(): string {
+    return this.raw.get_string('original-uri');
+  }
+
+  set originalUri(v: string) {
+    this.raw.set_string('original-uri', v);
+  }
+
+  get originalUriDark(): string {
+    return this.raw.get_string('original-uri-dark');
+  }
+
+  set originalUriDark(v: string) {
+    this.raw.set_string('original-uri-dark', v);
+  }
+
   getLastAppliedUri(variant: ColorVariant): string {
     return this.raw.get_string(this.lastAppliedKey(variant));
   }

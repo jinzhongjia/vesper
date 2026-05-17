@@ -102,5 +102,16 @@
       <default>""</default>
       <summary>URI of the last applied wallpaper for the dark variant (internal)</summary>
     </key>
+
+    <key name="original-uri" type="s">
+      <default>""</default>
+      <summary>picture-uri saved before rotation started (internal)</summary>
+      <description>Captured the first time the user enables rotation. Restored to picture-uri when rotation is disabled or the extension unloads. Empty means nothing to restore.</description>
+    </key>
+
+    <key name="original-uri-dark" type="s">
+      <default>""</default>
+      <summary>picture-uri-dark saved before rotation started (internal)</summary>
+    </key>
   </schema>
 </schemalist>

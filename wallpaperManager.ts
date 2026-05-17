@@ -75,6 +75,7 @@ export class WallpaperManager {
 
     this.refreshIndicator();
     if (this.settings.active) {
+      this.captureOriginalsIfNeeded();
       this.scheduleTimer();
       void this.tick();
     } else {
@@ -87,6 +88,11 @@ export class WallpaperManager {
     this.handlerIds.length = 0;
 
     this.cancelTimer();
+
+    // Hand the wallpaper back to whatever the user had before we started.
+    if (this.settings.active) {
+      this.restoreOriginals();
+    }
 
     this.cancellable?.cancel();
     this.cancellable = null;
@@ -109,6 +115,7 @@ export class WallpaperManager {
     const nowActive = this.settings.active;
     this.updateToggleLabel();
     if (nowActive) {
+      this.captureOriginalsIfNeeded();
       this.consecutiveFailures = 0;
       this.log.info('rotation enabled');
       this.scheduleTimer();
@@ -116,7 +123,42 @@ export class WallpaperManager {
     } else {
       this.log.info('rotation disabled');
       this.cancelTimer();
+      // Abort any in-flight tick, swap in a fresh cancellable so future ticks work.
+      this.cancellable?.cancel();
+      this.cancellable = new Gio.Cancellable();
+      this.restoreOriginals();
     }
+  }
+
+  // ────────────────────────────────────────────────────────────────────────
+  // Original wallpaper capture / restore
+  // ────────────────────────────────────────────────────────────────────────
+
+  private captureOriginalsIfNeeded(): void {
+    if (this.settings.originalUri || this.settings.originalUriDark) {
+      // Already captured (this session, or carried over from a previous session
+      // that didn't get to restore). Don't overwrite with a rotated value.
+      return;
+    }
+    const light = this.bgSettings.get_string('picture-uri');
+    const dark = this.bgSettings.get_string('picture-uri-dark');
+    this.settings.originalUri = light;
+    this.settings.originalUriDark = dark;
+    this.log.info(`captured originals: light=${light}, dark=${dark}`);
+  }
+
+  private restoreOriginals(): void {
+    const light = this.settings.originalUri;
+    const dark = this.settings.originalUriDark;
+    if (!light && !dark) {
+      this.log.info('no originals to restore');
+      return;
+    }
+    if (light) this.bgSettings.set_string('picture-uri', light);
+    if (dark) this.bgSettings.set_string('picture-uri-dark', dark);
+    this.settings.originalUri = '';
+    this.settings.originalUriDark = '';
+    this.log.info(`restored originals: light=${light}, dark=${dark}`);
   }
 
   private updateToggleLabel(): void {
@@ -203,22 +245,18 @@ export class WallpaperManager {
     }
     if (!this.provider || !this.cancellable) return;
     this.tickInFlight = true;
+    // Capture so a mid-tick onActiveChanged swap doesn't fool the cancellation check.
+    const cancellable = this.cancellable;
 
     let apiSucceeded = false;
     try {
       const dual = this.isDualMode();
-      const light = await this.provider.getNext({
-        variant: 'light',
-        cancellable: this.cancellable,
-      });
+      const light = await this.provider.getNext({ variant: 'light', cancellable });
       this.applyVariant('light', light.localPath);
 
       if (dual) {
         try {
-          const dark = await this.provider.getNext({
-            variant: 'dark',
-            cancellable: this.cancellable,
-          });
+          const dark = await this.provider.getNext({ variant: 'dark', cancellable });
           this.applyVariant('dark', dark.localPath);
         } catch (e) {
           this.log.warn(`dark variant failed; reusing light. err=${e}`);
@@ -235,8 +273,8 @@ export class WallpaperManager {
         this.log.info('tick recovered');
       }
     } catch (apiError) {
-      if (!this.cancellable || this.cancellable.is_cancelled()) {
-        // Cancelled (disposing or source switch in flight). Don't touch wallpaper.
+      if (cancellable.is_cancelled()) {
+        // Cancelled (disposing, source switch, or rotation turned off). Don't touch wallpaper.
       } else {
         this.log.error('provider failed', apiError);
         const fallback = this.pickCachedFallback();
