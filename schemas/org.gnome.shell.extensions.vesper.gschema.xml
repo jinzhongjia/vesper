@@ -14,6 +14,12 @@
 
   <schema id="org.gnome.shell.extensions.vesper"
           path="/org/gnome/shell/extensions/vesper/">
+    <key name="active" type="b">
+      <default>false</default>
+      <summary>Whether automatic rotation is active</summary>
+      <description>When false, the extension is loaded but does not change the wallpaper on a schedule. "Change now" from the panel menu still works as a one-shot action regardless of this setting.</description>
+    </key>
+
     <key name="source-type" enum="org.gnome.shell.extensions.vesper.SourceType">
       <default>"wallhaven"</default>
       <summary>Wallpaper source</summary>

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"POT-Creation-Date: 2026-05-17 15:45+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -14,51 +14,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: prefs.ts:35 prefs.ts:124
 msgid "General"
 msgstr "一般"
 
+#: prefs.ts:40
+msgid ""
+"When off, Vesper is loaded but does not change the wallpaper automatically."
+msgstr "オフのとき、Vesper は読み込まれますが、壁紙を自動的に変更しません。"
+
+#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+msgid "Enable rotation"
+msgstr "ローテーションを有効化"
+
+#: prefs.ts:49
 msgid "Source"
 msgstr "ソース"
 
+#: prefs.ts:52
 msgid "Local folder"
 msgstr "ローカルフォルダー"
 
+#: prefs.ts:52 prefs.ts:117
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
+#: prefs.ts:52
 msgid "Bing (via Peapix)"
 msgstr "Bing (Peapix 経由)"
 
+#: prefs.ts:52
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
+#: prefs.ts:53
 msgid "Wallpaper source"
 msgstr "壁紙のソース"
 
+#: prefs.ts:57
 msgid "Rotation"
 msgstr "ローテーション"
 
+#: prefs.ts:59
 msgid "Interval (minutes)"
 msgstr "間隔 (分)"
 
+#: prefs.ts:60
 msgid "How often to change the wallpaper"
 msgstr "壁紙を変更する頻度"
 
+#: prefs.ts:70
 msgid "Random"
 msgstr "ランダム"
 
+#: prefs.ts:70
 msgid "Sequential"
 msgstr "順次"
 
+#: prefs.ts:71
 msgid "Switch mode"
 msgstr "切り替えモード"
 
+#: prefs.ts:71
 msgid "Only used for the local source"
 msgstr "ローカルソースでのみ使用されます"
 
+#: prefs.ts:76
 msgid "Color scheme"
 msgstr "カラースキーム"
 
+#: prefs.ts:77
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
@@ -66,150 +91,202 @@ msgstr ""
 "ソースが「ローカルフォルダー」で、ダークフォルダーが設定されている場合にのみ"
 "有効です。リモートソースではダークバリアントを保証できません。"
 
+#: prefs.ts:80
 msgid "Use different wallpapers for light and dark modes"
 msgstr "ライトモードとダークモードで異なる壁紙を使用する"
 
+#: prefs.ts:86
 msgid "Cache"
 msgstr "キャッシュ"
 
+#: prefs.ts:88
 msgid "Keep last N downloaded images"
 msgstr "ダウンロードした最新の N 枚を保持"
 
+#: prefs.ts:102
 msgid "Local"
 msgstr "ローカル"
 
+#: prefs.ts:106
 msgid "Folders"
 msgstr "フォルダー"
 
+#: prefs.ts:107
 msgid "The light folder is also used when \"follow color scheme\" is off."
-msgstr ""
-"「カラースキームに従う」が無効の場合もライトフォルダーが使用されます。"
+msgstr "「カラースキームに従う」が無効の場合もライトフォルダーが使用されます。"
 
+#: prefs.ts:109
 msgid "Light folder"
 msgstr "ライトフォルダー"
 
+#: prefs.ts:110
 msgid "Dark folder"
 msgstr "ダークフォルダー"
 
+#: prefs.ts:123
 msgid "Categories"
 msgstr "カテゴリ"
 
+#: prefs.ts:123
 msgid "At least one should be enabled."
 msgstr "少なくとも 1 つを有効にしてください。"
 
+#: prefs.ts:124
 msgid "Anime"
 msgstr "アニメ"
 
+#: prefs.ts:124
 msgid "People"
 msgstr "人物"
 
+#: prefs.ts:129
 msgid "Purity"
 msgstr "純度"
 
+#: prefs.ts:129
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "既定では SFW のみ有効です。他の項目は自己責任で有効にしてください。"
 
+#: prefs.ts:130
 msgid "SFW"
 msgstr "SFW"
 
+#: prefs.ts:130
 msgid "Sketchy"
 msgstr "際どい"
 
+#: prefs.ts:130
 msgid "NSFW"
 msgstr "NSFW"
 
+#: prefs.ts:138
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
+#: prefs.ts:142
 msgid "Region"
 msgstr "地域"
 
+#: prefs.ts:143
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing は地域ごとに異なる日替わり画像を提供します。"
 
+#: prefs.ts:148
 msgid "United States"
 msgstr "アメリカ合衆国"
 
+#: prefs.ts:148
 msgid "China"
 msgstr "中国"
 
+#: prefs.ts:148
 msgid "Germany"
 msgstr "ドイツ"
 
+#: prefs.ts:148
 msgid "Japan"
 msgstr "日本"
 
+#: prefs.ts:149
 msgid "United Kingdom"
 msgstr "イギリス"
 
+#: prefs.ts:149
 msgid "France"
 msgstr "フランス"
 
+#: prefs.ts:149
 msgid "Brazil"
 msgstr "ブラジル"
 
+#: prefs.ts:149
 msgid "India"
 msgstr "インド"
 
+#: prefs.ts:150
 msgid "Australia"
 msgstr "オーストラリア"
 
+#: prefs.ts:150
 msgid "Canada"
 msgstr "カナダ"
 
+#: prefs.ts:150
 msgid "Italy"
 msgstr "イタリア"
 
+#: prefs.ts:150
 msgid "Spain"
 msgstr "スペイン"
 
+#: prefs.ts:152
 msgid "Country"
 msgstr "国"
 
+#: prefs.ts:160
 msgid "Picsum"
 msgstr "Picsum"
 
+#: prefs.ts:163
 msgid "Resolution"
 msgstr "解像度"
 
+#: prefs.ts:166
 msgid "Width (px)"
 msgstr "幅 (px)"
 
+#: prefs.ts:175
 msgid "Height (px)"
 msgstr "高さ (px)"
 
+#: prefs.ts:254 prefs.ts:293
 msgid "(not set)"
 msgstr "(未設定)"
 
+#: prefs.ts:258
 msgid "Choose…"
 msgstr "選択…"
 
+#: prefs.ts:263
+#, javascript-format
 msgid "Select %s"
 msgstr "%s を選択"
 
+#: prefs.ts:264
 msgid "Select"
 msgstr "選択"
 
+#: prefs.ts:286
 msgid "Clear"
 msgstr "クリア"
 
+#: wallpaperManager.ts:122 wallpaperManager.ts:305
+msgid "Disable rotation"
+msgstr "ローテーションを無効化"
+
+#: wallpaperManager.ts:246
+#, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "壁紙の更新に失敗しました: %s"
 
+#: wallpaperManager.ts:312
 msgid "Change now"
 msgstr "今すぐ変更"
 
-msgid "Pause"
-msgstr "一時停止"
-
+#: wallpaperManager.ts:318
 msgid "Open current wallpaper"
 msgstr "現在の壁紙を開く"
 
+#: wallpaperManager.ts:322
 msgid "Preferences"
 msgstr "設定"
 
-msgid "Resume"
-msgstr "再開"
-
+#: wallpaperManager.ts:332
 msgid "No wallpaper has been applied yet"
 msgstr "まだ壁紙が適用されていません"
+
+#~ msgid "Pause"
+#~ msgstr "一時停止"
+
+#~ msgid "Resume"
+#~ msgstr "再開"

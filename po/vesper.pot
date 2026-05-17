@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"POT-Creation-Date: 2026-05-17 15:45+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,266 +17,271 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: prefs.ts:35 prefs.ts:114
+#: prefs.ts:35 prefs.ts:124
 msgid "General"
 msgstr ""
 
-#: prefs.ts:39
-msgid "Source"
+#: prefs.ts:40
+msgid ""
+"When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr ""
 
-#: prefs.ts:42
-msgid "Local folder"
-msgstr ""
-
-#: prefs.ts:42 prefs.ts:107
-msgid "Wallhaven"
-msgstr ""
-
-#: prefs.ts:42
-msgid "Bing (via Peapix)"
-msgstr ""
-
-#: prefs.ts:42
-msgid "Lorem Picsum"
-msgstr ""
-
-#: prefs.ts:43
-msgid "Wallpaper source"
-msgstr ""
-
-#: prefs.ts:47
-msgid "Rotation"
+#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+msgid "Enable rotation"
 msgstr ""
 
 #: prefs.ts:49
+msgid "Source"
+msgstr ""
+
+#: prefs.ts:52
+msgid "Local folder"
+msgstr ""
+
+#: prefs.ts:52 prefs.ts:117
+msgid "Wallhaven"
+msgstr ""
+
+#: prefs.ts:52
+msgid "Bing (via Peapix)"
+msgstr ""
+
+#: prefs.ts:52
+msgid "Lorem Picsum"
+msgstr ""
+
+#: prefs.ts:53
+msgid "Wallpaper source"
+msgstr ""
+
+#: prefs.ts:57
+msgid "Rotation"
+msgstr ""
+
+#: prefs.ts:59
 msgid "Interval (minutes)"
 msgstr ""
 
-#: prefs.ts:50
+#: prefs.ts:60
 msgid "How often to change the wallpaper"
 msgstr ""
 
-#: prefs.ts:60
+#: prefs.ts:70
 msgid "Random"
 msgstr ""
 
-#: prefs.ts:60
+#: prefs.ts:70
 msgid "Sequential"
 msgstr ""
 
-#: prefs.ts:61
+#: prefs.ts:71
 msgid "Switch mode"
 msgstr ""
 
-#: prefs.ts:61
+#: prefs.ts:71
 msgid "Only used for the local source"
 msgstr ""
 
-#: prefs.ts:66
+#: prefs.ts:76
 msgid "Color scheme"
 msgstr ""
 
-#: prefs.ts:67
+#: prefs.ts:77
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
 msgstr ""
 
-#: prefs.ts:70
+#: prefs.ts:80
 msgid "Use different wallpapers for light and dark modes"
 msgstr ""
 
-#: prefs.ts:76
+#: prefs.ts:86
 msgid "Cache"
 msgstr ""
 
-#: prefs.ts:78
+#: prefs.ts:88
 msgid "Keep last N downloaded images"
 msgstr ""
 
-#: prefs.ts:92
+#: prefs.ts:102
 msgid "Local"
 msgstr ""
 
-#: prefs.ts:96
+#: prefs.ts:106
 msgid "Folders"
 msgstr ""
 
-#: prefs.ts:97
+#: prefs.ts:107
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
 
-#: prefs.ts:99
+#: prefs.ts:109
 msgid "Light folder"
 msgstr ""
 
-#: prefs.ts:100
+#: prefs.ts:110
 msgid "Dark folder"
 msgstr ""
 
-#: prefs.ts:113
+#: prefs.ts:123
 msgid "Categories"
 msgstr ""
 
-#: prefs.ts:113
+#: prefs.ts:123
 msgid "At least one should be enabled."
 msgstr ""
 
-#: prefs.ts:114
+#: prefs.ts:124
 msgid "Anime"
 msgstr ""
 
-#: prefs.ts:114
+#: prefs.ts:124
 msgid "People"
 msgstr ""
 
-#: prefs.ts:119
+#: prefs.ts:129
 msgid "Purity"
 msgstr ""
 
-#: prefs.ts:119
+#: prefs.ts:129
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr ""
 
-#: prefs.ts:120
+#: prefs.ts:130
 msgid "SFW"
 msgstr ""
 
-#: prefs.ts:120
+#: prefs.ts:130
 msgid "Sketchy"
 msgstr ""
 
-#: prefs.ts:120
+#: prefs.ts:130
 msgid "NSFW"
 msgstr ""
 
-#: prefs.ts:128
+#: prefs.ts:138
 msgid "Peapix (Bing)"
 msgstr ""
 
-#: prefs.ts:132
+#: prefs.ts:142
 msgid "Region"
 msgstr ""
 
-#: prefs.ts:133
+#: prefs.ts:143
 msgid "Bing serves a different daily image in each region."
 msgstr ""
 
-#: prefs.ts:138
+#: prefs.ts:148
 msgid "United States"
 msgstr ""
 
-#: prefs.ts:138
+#: prefs.ts:148
 msgid "China"
 msgstr ""
 
-#: prefs.ts:138
+#: prefs.ts:148
 msgid "Germany"
 msgstr ""
 
-#: prefs.ts:138
+#: prefs.ts:148
 msgid "Japan"
 msgstr ""
 
-#: prefs.ts:139
+#: prefs.ts:149
 msgid "United Kingdom"
 msgstr ""
 
-#: prefs.ts:139
+#: prefs.ts:149
 msgid "France"
 msgstr ""
 
-#: prefs.ts:139
+#: prefs.ts:149
 msgid "Brazil"
 msgstr ""
 
-#: prefs.ts:139
+#: prefs.ts:149
 msgid "India"
 msgstr ""
 
-#: prefs.ts:140
+#: prefs.ts:150
 msgid "Australia"
 msgstr ""
 
-#: prefs.ts:140
+#: prefs.ts:150
 msgid "Canada"
 msgstr ""
 
-#: prefs.ts:140
+#: prefs.ts:150
 msgid "Italy"
 msgstr ""
 
-#: prefs.ts:140
+#: prefs.ts:150
 msgid "Spain"
 msgstr ""
 
-#: prefs.ts:142
+#: prefs.ts:152
 msgid "Country"
 msgstr ""
 
-#: prefs.ts:150
+#: prefs.ts:160
 msgid "Picsum"
 msgstr ""
 
-#: prefs.ts:153
+#: prefs.ts:163
 msgid "Resolution"
 msgstr ""
 
-#: prefs.ts:156
+#: prefs.ts:166
 msgid "Width (px)"
 msgstr ""
 
-#: prefs.ts:165
+#: prefs.ts:175
 msgid "Height (px)"
 msgstr ""
 
-#: prefs.ts:244 prefs.ts:283
+#: prefs.ts:254 prefs.ts:293
 msgid "(not set)"
 msgstr ""
 
-#: prefs.ts:248
+#: prefs.ts:258
 msgid "Choose…"
 msgstr ""
 
-#: prefs.ts:253
+#: prefs.ts:263
 #, javascript-format
 msgid "Select %s"
 msgstr ""
 
-#: prefs.ts:254
+#: prefs.ts:264
 msgid "Select"
 msgstr ""
 
-#: prefs.ts:276
+#: prefs.ts:286
 msgid "Clear"
 msgstr ""
 
-#: wallpaperManager.ts:173
+#: wallpaperManager.ts:122 wallpaperManager.ts:305
+msgid "Disable rotation"
+msgstr ""
+
+#: wallpaperManager.ts:246
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr ""
 
-#: wallpaperManager.ts:201
+#: wallpaperManager.ts:312
 msgid "Change now"
 msgstr ""
 
-#: wallpaperManager.ts:205 wallpaperManager.ts:224
-msgid "Pause"
-msgstr ""
-
-#: wallpaperManager.ts:211
+#: wallpaperManager.ts:318
 msgid "Open current wallpaper"
 msgstr ""
 
-#: wallpaperManager.ts:215
+#: wallpaperManager.ts:322
 msgid "Preferences"
 msgstr ""
 
-#: wallpaperManager.ts:224
-msgid "Resume"
-msgstr ""
-
-#: wallpaperManager.ts:238
+#: wallpaperManager.ts:332
 msgid "No wallpaper has been applied yet"
 msgstr ""

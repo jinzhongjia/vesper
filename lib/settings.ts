@@ -4,6 +4,14 @@ import type { ColorVariant, SourceType, SwitchMode } from '../types.js';
 export class TypedSettings {
   constructor(public readonly raw: Gio.Settings) {}
 
+  get active(): boolean {
+    return this.raw.get_boolean('active');
+  }
+
+  set active(v: boolean) {
+    this.raw.set_boolean('active', v);
+  }
+
   get sourceType(): SourceType {
     return this.raw.get_string('source-type') as SourceType;
   }

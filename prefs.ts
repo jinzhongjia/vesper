@@ -36,6 +36,16 @@ export default class VesperPreferences extends ExtensionPreferences {
       icon_name: 'preferences-system-symbolic',
     });
 
+    const activeGroup = new Adw.PreferencesGroup({
+      description: _('When off, Vesper is loaded but does not change the wallpaper automatically.'),
+    });
+    const activeRow = new Adw.SwitchRow({
+      title: _('Enable rotation'),
+    });
+    settings.bind('active', activeRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+    activeGroup.add(activeRow);
+    page.add(activeGroup);
+
     const sourceGroup = new Adw.PreferencesGroup({ title: _('Source') });
     sourceGroup.add(this.buildEnumComboRow(
       settings, 'source-type', SOURCE_KEYS,

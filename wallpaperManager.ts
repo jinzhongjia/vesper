@@ -30,12 +30,12 @@ export class WallpaperManager {
   private timerId = 0;
   private readonly handlerIds: number[] = [];
   private indicator: InstanceType<typeof PanelMenu.Button> | null = null;
-  private pauseItem: PopupMenu.PopupMenuItem | null = null;
+  private toggleItem: PopupMenu.PopupMenuItem | null = null;
   private lastDualState: boolean | null = null;
-  private paused = false;
   private lastTickFailed = false;
   private tickInFlight = false;
   private pendingTick = false;
+  private pendingTickManual = false;
   private consecutiveFailures = 0;
 
   constructor(private readonly extension: Extension) {
@@ -49,6 +49,9 @@ export class WallpaperManager {
     this.cancellable = new Gio.Cancellable();
     this.provider = this.makeProvider();
 
+    this.handlerIds.push(this.settings.raw.connect('changed::active', () => {
+      this.onActiveChanged();
+    }));
     this.handlerIds.push(this.settings.raw.connect('changed::source-type', () => {
       this.rebuildProvider();
       this.consecutiveFailures = 0;
@@ -68,8 +71,12 @@ export class WallpaperManager {
     }));
 
     this.addIndicator();
-    this.scheduleTimer();
-    void this.tick();
+    if (this.settings.active) {
+      this.scheduleTimer();
+      void this.tick();
+    } else {
+      this.log.info('loaded but rotation is OFF (active=false)');
+    }
   }
 
   dispose(): void {
@@ -88,7 +95,33 @@ export class WallpaperManager {
 
     this.indicator?.destroy();
     this.indicator = null;
-    this.pauseItem = null;
+    this.toggleItem = null;
+  }
+
+  // ────────────────────────────────────────────────────────────────────────
+  // Active toggle
+  // ────────────────────────────────────────────────────────────────────────
+
+  private onActiveChanged(): void {
+    const nowActive = this.settings.active;
+    this.updateToggleLabel();
+    if (nowActive) {
+      this.consecutiveFailures = 0;
+      this.log.info('rotation enabled');
+      this.scheduleTimer();
+      void this.tick();
+    } else {
+      this.log.info('rotation disabled');
+      this.cancelTimer();
+    }
+  }
+
+  private updateToggleLabel(): void {
+    if (this.toggleItem) {
+      this.toggleItem.label.text = this.settings.active
+        ? _('Disable rotation')
+        : _('Enable rotation');
+    }
   }
 
   // ────────────────────────────────────────────────────────────────────────
@@ -104,10 +137,10 @@ export class WallpaperManager {
     this.provider = this.makeProvider();
   }
 
-  /** Schedule a one-shot tick. Re-called by tick() in finally. */
+  /** Schedule a one-shot tick. Only fires when active. tick() reschedules on completion. */
   private scheduleTimer(): void {
     this.cancelTimer();
-    if (this.paused || !this.cancellable) return;
+    if (!this.settings.active || !this.cancellable) return;
     const baseSeconds = Math.max(1, this.settings.intervalMinutes * 60);
     const multiplier = this.consecutiveFailures === 0
       ? 1
@@ -152,10 +185,17 @@ export class WallpaperManager {
     return dualReady;
   }
 
-  private async tick(): Promise<void> {
-    if (this.paused) return;
+  /**
+   * Run one rotation cycle.
+   * - manual=false (default): respects `active`; called by timer / settings changes.
+   * - manual=true: bypasses `active`, used by "Change now" menu item.
+   */
+  private async tick(opts: { manual?: boolean } = {}): Promise<void> {
+    const manual = opts.manual ?? false;
+    if (!manual && !this.settings.active) return;
     if (this.tickInFlight) {
       this.pendingTick = true;
+      if (manual) this.pendingTickManual = true;
       return;
     }
     if (!this.provider || !this.cancellable) return;
@@ -216,16 +256,17 @@ export class WallpaperManager {
       }
       this.scheduleTimer();
       if (this.pendingTick) {
+        const manualPending = this.pendingTickManual;
         this.pendingTick = false;
+        this.pendingTickManual = false;
         GLib.idle_add(GLib.PRIORITY_LOW, () => {
-          void this.tick();
+          void this.tick({ manual: manualPending });
           return GLib.SOURCE_REMOVE;
         });
       }
     }
   }
 
-  /** Pick a random cached image distinct from the current one. Returns null if cache empty. */
   private pickCachedFallback(): string | null {
     const files = this.cache.listFiles();
     if (files.length === 0) return null;
@@ -260,13 +301,17 @@ export class WallpaperManager {
 
     const menu = this.indicator.menu as PopupMenu.PopupMenu;
 
-    const changeNow = new PopupMenu.PopupMenuItem(_('Change now'));
-    changeNow.connect('activate', () => void this.tick());
-    menu.addMenuItem(changeNow);
+    this.toggleItem = new PopupMenu.PopupMenuItem(
+      this.settings.active ? _('Disable rotation') : _('Enable rotation'),
+    );
+    this.toggleItem.connect('activate', () => {
+      this.settings.active = !this.settings.active;
+    });
+    menu.addMenuItem(this.toggleItem);
 
-    this.pauseItem = new PopupMenu.PopupMenuItem(_('Pause'));
-    this.pauseItem.connect('activate', () => this.togglePause());
-    menu.addMenuItem(this.pauseItem);
+    const changeNow = new PopupMenu.PopupMenuItem(_('Change now'));
+    changeNow.connect('activate', () => void this.tick({ manual: true }));
+    menu.addMenuItem(changeNow);
 
     menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 
@@ -279,20 +324,6 @@ export class WallpaperManager {
     menu.addMenuItem(prefs);
 
     Main.panel.addToStatusArea(this.extension.uuid, this.indicator);
-  }
-
-  private togglePause(): void {
-    this.paused = !this.paused;
-    if (this.pauseItem) this.pauseItem.label.text = this.paused ? _('Resume') : _('Pause');
-    if (this.paused) {
-      this.cancelTimer();
-      this.log.info('paused');
-    } else {
-      this.consecutiveFailures = 0;
-      this.scheduleTimer();
-      this.log.info('resumed');
-      void this.tick();
-    }
   }
 
   private openCurrentWallpaper(): void {

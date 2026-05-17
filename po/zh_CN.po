@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"POT-Creation-Date: 2026-05-17 15:45+0800\n"
 "PO-Revision-Date: 2026-05-17 15:00+0800\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -15,200 +15,278 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: prefs.ts:35 prefs.ts:124
 msgid "General"
 msgstr "常规"
 
+#: prefs.ts:40
+msgid ""
+"When off, Vesper is loaded but does not change the wallpaper automatically."
+msgstr "关闭时,Vesper 已载入但不会自动更换壁纸。"
+
+#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+msgid "Enable rotation"
+msgstr "启用轮换"
+
+#: prefs.ts:49
 msgid "Source"
 msgstr "来源"
 
+#: prefs.ts:52
 msgid "Local folder"
 msgstr "本地目录"
 
+#: prefs.ts:52 prefs.ts:117
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
+#: prefs.ts:52
 msgid "Bing (via Peapix)"
 msgstr "Bing(通过 Peapix)"
 
+#: prefs.ts:52
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
+#: prefs.ts:53
 msgid "Wallpaper source"
 msgstr "壁纸来源"
 
+#: prefs.ts:57
 msgid "Rotation"
 msgstr "轮换"
 
+#: prefs.ts:59
 msgid "Interval (minutes)"
 msgstr "间隔(分钟)"
 
+#: prefs.ts:60
 msgid "How often to change the wallpaper"
 msgstr "更换壁纸的频率"
 
+#: prefs.ts:70
 msgid "Random"
 msgstr "随机"
 
+#: prefs.ts:70
 msgid "Sequential"
 msgstr "顺序"
 
+#: prefs.ts:71
 msgid "Switch mode"
 msgstr "切换模式"
 
+#: prefs.ts:71
 msgid "Only used for the local source"
 msgstr "仅对本地来源生效"
 
+#: prefs.ts:76
 msgid "Color scheme"
 msgstr "颜色方案"
 
+#: prefs.ts:77
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
 msgstr ""
 "仅在来源为「本地目录」且设置了暗色目录时生效;远程来源无法保证暗色变体。"
 
+#: prefs.ts:80
 msgid "Use different wallpapers for light and dark modes"
 msgstr "为亮色和暗色模式使用不同壁纸"
 
+#: prefs.ts:86
 msgid "Cache"
 msgstr "缓存"
 
+#: prefs.ts:88
 msgid "Keep last N downloaded images"
 msgstr "保留最近下载的 N 张图片"
 
+#: prefs.ts:102
 msgid "Local"
 msgstr "本地"
 
+#: prefs.ts:106
 msgid "Folders"
 msgstr "目录"
 
+#: prefs.ts:107
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "当未启用「跟随颜色方案」时,也使用亮色目录。"
 
+#: prefs.ts:109
 msgid "Light folder"
 msgstr "亮色目录"
 
+#: prefs.ts:110
 msgid "Dark folder"
 msgstr "暗色目录"
 
+#: prefs.ts:123
 msgid "Categories"
 msgstr "类别"
 
+#: prefs.ts:123
 msgid "At least one should be enabled."
 msgstr "至少需要启用一项。"
 
+#: prefs.ts:124
 msgid "Anime"
 msgstr "动漫"
 
+#: prefs.ts:124
 msgid "People"
 msgstr "人物"
 
+#: prefs.ts:129
 msgid "Purity"
 msgstr "纯度"
 
+#: prefs.ts:129
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "默认仅启用 SFW,请自行决定是否启用其他级别。"
 
+#: prefs.ts:130
 msgid "SFW"
 msgstr "SFW"
 
+#: prefs.ts:130
 msgid "Sketchy"
 msgstr "略带暗示"
 
+#: prefs.ts:130
 msgid "NSFW"
 msgstr "NSFW"
 
+#: prefs.ts:138
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
+#: prefs.ts:142
 msgid "Region"
 msgstr "区域"
 
+#: prefs.ts:143
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing 在不同区域提供不同的每日图片。"
 
+#: prefs.ts:148
 msgid "United States"
 msgstr "美国"
 
+#: prefs.ts:148
 msgid "China"
 msgstr "中国"
 
+#: prefs.ts:148
 msgid "Germany"
 msgstr "德国"
 
+#: prefs.ts:148
 msgid "Japan"
 msgstr "日本"
 
+#: prefs.ts:149
 msgid "United Kingdom"
 msgstr "英国"
 
+#: prefs.ts:149
 msgid "France"
 msgstr "法国"
 
+#: prefs.ts:149
 msgid "Brazil"
 msgstr "巴西"
 
+#: prefs.ts:149
 msgid "India"
 msgstr "印度"
 
+#: prefs.ts:150
 msgid "Australia"
 msgstr "澳大利亚"
 
+#: prefs.ts:150
 msgid "Canada"
 msgstr "加拿大"
 
+#: prefs.ts:150
 msgid "Italy"
 msgstr "意大利"
 
+#: prefs.ts:150
 msgid "Spain"
 msgstr "西班牙"
 
+#: prefs.ts:152
 msgid "Country"
 msgstr "国家"
 
+#: prefs.ts:160
 msgid "Picsum"
 msgstr "Picsum"
 
+#: prefs.ts:163
 msgid "Resolution"
 msgstr "分辨率"
 
+#: prefs.ts:166
 msgid "Width (px)"
 msgstr "宽度(像素)"
 
+#: prefs.ts:175
 msgid "Height (px)"
 msgstr "高度(像素)"
 
+#: prefs.ts:254 prefs.ts:293
 msgid "(not set)"
 msgstr "(未设置)"
 
+#: prefs.ts:258
 msgid "Choose…"
 msgstr "选择…"
 
+#: prefs.ts:263
+#, javascript-format
 msgid "Select %s"
 msgstr "选择 %s"
 
+#: prefs.ts:264
 msgid "Select"
 msgstr "选择"
 
+#: prefs.ts:286
 msgid "Clear"
 msgstr "清除"
 
+#: wallpaperManager.ts:122 wallpaperManager.ts:305
+msgid "Disable rotation"
+msgstr "停用轮换"
+
+#: wallpaperManager.ts:246
+#, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "壁纸更新失败:%s"
 
+#: wallpaperManager.ts:312
 msgid "Change now"
 msgstr "立即更换"
 
-msgid "Pause"
-msgstr "暂停"
-
+#: wallpaperManager.ts:318
 msgid "Open current wallpaper"
 msgstr "打开当前壁纸"
 
+#: wallpaperManager.ts:322
 msgid "Preferences"
 msgstr "首选项"
 
-msgid "Resume"
-msgstr "恢复"
-
+#: wallpaperManager.ts:332
 msgid "No wallpaper has been applied yet"
 msgstr "尚未应用过任何壁纸"
+
+#~ msgid "Pause"
+#~ msgstr "暂停"
+
+#~ msgid "Resume"
+#~ msgstr "恢复"

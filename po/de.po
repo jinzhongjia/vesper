@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 14:57+0800\n"
+"POT-Creation-Date: 2026-05-17 15:45+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -14,51 +14,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: prefs.ts:35 prefs.ts:124
 msgid "General"
 msgstr "Allgemein"
 
+#: prefs.ts:40
+msgid ""
+"When off, Vesper is loaded but does not change the wallpaper automatically."
+msgstr "Wenn aus, ist Vesper geladen, ändert aber nicht automatisch das Hintergrundbild."
+
+#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+msgid "Enable rotation"
+msgstr "Rotation aktivieren"
+
+#: prefs.ts:49
 msgid "Source"
 msgstr "Quelle"
 
+#: prefs.ts:52
 msgid "Local folder"
 msgstr "Lokaler Ordner"
 
+#: prefs.ts:52 prefs.ts:117
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
+#: prefs.ts:52
 msgid "Bing (via Peapix)"
 msgstr "Bing (über Peapix)"
 
+#: prefs.ts:52
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
+#: prefs.ts:53
 msgid "Wallpaper source"
 msgstr "Hintergrundbild-Quelle"
 
+#: prefs.ts:57
 msgid "Rotation"
 msgstr "Rotation"
 
+#: prefs.ts:59
 msgid "Interval (minutes)"
 msgstr "Intervall (Minuten)"
 
+#: prefs.ts:60
 msgid "How often to change the wallpaper"
 msgstr "Wie oft das Hintergrundbild gewechselt wird"
 
+#: prefs.ts:70
 msgid "Random"
 msgstr "Zufällig"
 
+#: prefs.ts:70
 msgid "Sequential"
 msgstr "Sequentiell"
 
+#: prefs.ts:71
 msgid "Switch mode"
 msgstr "Wechselmodus"
 
+#: prefs.ts:71
 msgid "Only used for the local source"
 msgstr "Wird nur für die lokale Quelle verwendet"
 
+#: prefs.ts:76
 msgid "Color scheme"
 msgstr "Farbschema"
 
+#: prefs.ts:77
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
@@ -66,150 +91,204 @@ msgstr ""
 "Nur wirksam, wenn die Quelle „Lokaler Ordner“ ist und ein dunkler Ordner "
 "festgelegt wurde; entfernte Quellen können keine dunkle Variante garantieren."
 
+#: prefs.ts:80
 msgid "Use different wallpapers for light and dark modes"
 msgstr "Unterschiedliche Hintergrundbilder für helle und dunkle Modi verwenden"
 
+#: prefs.ts:86
 msgid "Cache"
 msgstr "Cache"
 
+#: prefs.ts:88
 msgid "Keep last N downloaded images"
 msgstr "Letzte N heruntergeladene Bilder behalten"
 
+#: prefs.ts:102
 msgid "Local"
 msgstr "Lokal"
 
+#: prefs.ts:106
 msgid "Folders"
 msgstr "Ordner"
 
+#: prefs.ts:107
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
-"Der helle Ordner wird auch verwendet, wenn „Farbschema folgen“ deaktiviert ist."
+"Der helle Ordner wird auch verwendet, wenn „Farbschema folgen“ deaktiviert "
+"ist."
 
+#: prefs.ts:109
 msgid "Light folder"
 msgstr "Heller Ordner"
 
+#: prefs.ts:110
 msgid "Dark folder"
 msgstr "Dunkler Ordner"
 
+#: prefs.ts:123
 msgid "Categories"
 msgstr "Kategorien"
 
+#: prefs.ts:123
 msgid "At least one should be enabled."
 msgstr "Mindestens eine sollte aktiviert sein."
 
+#: prefs.ts:124
 msgid "Anime"
 msgstr "Anime"
 
+#: prefs.ts:124
 msgid "People"
 msgstr "Menschen"
 
+#: prefs.ts:129
 msgid "Purity"
 msgstr "Inhalt"
 
+#: prefs.ts:129
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "Standardmäßig nur SFW. Andere auf eigene Verantwortung aktivieren."
 
+#: prefs.ts:130
 msgid "SFW"
 msgstr "SFW"
 
+#: prefs.ts:130
 msgid "Sketchy"
 msgstr "Anzüglich"
 
+#: prefs.ts:130
 msgid "NSFW"
 msgstr "NSFW"
 
+#: prefs.ts:138
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
+#: prefs.ts:142
 msgid "Region"
 msgstr "Region"
 
+#: prefs.ts:143
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing liefert in jeder Region ein anderes tägliches Bild."
 
+#: prefs.ts:148
 msgid "United States"
 msgstr "Vereinigte Staaten"
 
+#: prefs.ts:148
 msgid "China"
 msgstr "China"
 
+#: prefs.ts:148
 msgid "Germany"
 msgstr "Deutschland"
 
+#: prefs.ts:148
 msgid "Japan"
 msgstr "Japan"
 
+#: prefs.ts:149
 msgid "United Kingdom"
 msgstr "Vereinigtes Königreich"
 
+#: prefs.ts:149
 msgid "France"
 msgstr "Frankreich"
 
+#: prefs.ts:149
 msgid "Brazil"
 msgstr "Brasilien"
 
+#: prefs.ts:149
 msgid "India"
 msgstr "Indien"
 
+#: prefs.ts:150
 msgid "Australia"
 msgstr "Australien"
 
+#: prefs.ts:150
 msgid "Canada"
 msgstr "Kanada"
 
+#: prefs.ts:150
 msgid "Italy"
 msgstr "Italien"
 
+#: prefs.ts:150
 msgid "Spain"
 msgstr "Spanien"
 
+#: prefs.ts:152
 msgid "Country"
 msgstr "Land"
 
+#: prefs.ts:160
 msgid "Picsum"
 msgstr "Picsum"
 
+#: prefs.ts:163
 msgid "Resolution"
 msgstr "Auflösung"
 
+#: prefs.ts:166
 msgid "Width (px)"
 msgstr "Breite (px)"
 
+#: prefs.ts:175
 msgid "Height (px)"
 msgstr "Höhe (px)"
 
+#: prefs.ts:254 prefs.ts:293
 msgid "(not set)"
 msgstr "(nicht festgelegt)"
 
+#: prefs.ts:258
 msgid "Choose…"
 msgstr "Auswählen …"
 
+#: prefs.ts:263
+#, javascript-format
 msgid "Select %s"
 msgstr "%s auswählen"
 
+#: prefs.ts:264
 msgid "Select"
 msgstr "Auswählen"
 
+#: prefs.ts:286
 msgid "Clear"
 msgstr "Leeren"
 
+#: wallpaperManager.ts:122 wallpaperManager.ts:305
+msgid "Disable rotation"
+msgstr "Rotation deaktivieren"
+
+#: wallpaperManager.ts:246
+#, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Hintergrundbild-Aktualisierung fehlgeschlagen: %s"
 
+#: wallpaperManager.ts:312
 msgid "Change now"
 msgstr "Jetzt wechseln"
 
-msgid "Pause"
-msgstr "Pause"
-
+#: wallpaperManager.ts:318
 msgid "Open current wallpaper"
 msgstr "Aktuelles Hintergrundbild öffnen"
 
+#: wallpaperManager.ts:322
 msgid "Preferences"
 msgstr "Einstellungen"
 
-msgid "Resume"
-msgstr "Fortsetzen"
-
+#: wallpaperManager.ts:332
 msgid "No wallpaper has been applied yet"
 msgstr "Es wurde noch kein Hintergrundbild angewendet"
+
+#~ msgid "Pause"
+#~ msgstr "Pause"
+
+#~ msgid "Resume"
+#~ msgstr "Fortsetzen"
