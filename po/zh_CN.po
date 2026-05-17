@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:53+0800\n"
+"POT-Creation-Date: 2026-05-17 16:06+0800\n"
 "PO-Revision-Date: 2026-05-17 15:00+0800\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:133
+#: prefs.ts:35 prefs.ts:134
 msgid "General"
 msgstr "常规"
 
@@ -36,7 +36,7 @@ msgstr "来源"
 msgid "Local folder"
 msgstr "本地目录"
 
-#: prefs.ts:52 prefs.ts:126
+#: prefs.ts:52 prefs.ts:127
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -107,170 +107,176 @@ msgstr "显示面板图标"
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
-msgstr "关闭时,通过扩展应用程序或 `gnome-extensions prefs vesper@nvimer.org` 打开偏好设置。"
+msgstr ""
+"关闭时,通过扩展应用程序或 `gnome-extensions prefs vesper@nvimer.org` 打开偏好"
+"设置。"
 
 #: prefs.ts:95
 msgid "Cache"
 msgstr "缓存"
 
 #: prefs.ts:97
-msgid "Keep last N downloaded images"
-msgstr "保留最近下载的 N 张图片"
+msgid "Maximum cache size (MB)"
+msgstr "最大缓存容量 (MB)"
 
-#: prefs.ts:111
+#: prefs.ts:98
+msgid "Older downloads are deleted to stay under this limit."
+msgstr "会删除较旧的下载以保持在此上限以下。"
+
+#: prefs.ts:112
 msgid "Local"
 msgstr "本地"
 
-#: prefs.ts:115
+#: prefs.ts:116
 msgid "Folders"
 msgstr "目录"
 
-#: prefs.ts:116
+#: prefs.ts:117
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "当未启用「跟随颜色方案」时,也使用亮色目录。"
 
-#: prefs.ts:118
+#: prefs.ts:119
 msgid "Light folder"
 msgstr "亮色目录"
 
-#: prefs.ts:119
+#: prefs.ts:120
 msgid "Dark folder"
 msgstr "暗色目录"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "Categories"
 msgstr "类别"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "At least one should be enabled."
 msgstr "至少需要启用一项。"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "Anime"
 msgstr "动漫"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "People"
 msgstr "人物"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Purity"
 msgstr "纯度"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "默认仅启用 SFW,请自行决定是否启用其他级别。"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "Sketchy"
 msgstr "略带暗示"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:147
+#: prefs.ts:148
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:151
+#: prefs.ts:152
 msgid "Region"
 msgstr "区域"
 
-#: prefs.ts:152
+#: prefs.ts:153
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing 在不同区域提供不同的每日图片。"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "United States"
 msgstr "美国"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Germany"
 msgstr "德国"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "United Kingdom"
 msgstr "英国"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "France"
 msgstr "法国"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "Brazil"
 msgstr "巴西"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "India"
 msgstr "印度"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Australia"
 msgstr "澳大利亚"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Canada"
 msgstr "加拿大"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Italy"
 msgstr "意大利"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Spain"
 msgstr "西班牙"
 
-#: prefs.ts:161
+#: prefs.ts:162
 msgid "Country"
 msgstr "国家"
 
-#: prefs.ts:169
+#: prefs.ts:170
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:172
+#: prefs.ts:173
 msgid "Resolution"
 msgstr "分辨率"
 
-#: prefs.ts:175
+#: prefs.ts:176
 msgid "Width (px)"
 msgstr "宽度(像素)"
 
-#: prefs.ts:184
+#: prefs.ts:185
 msgid "Height (px)"
 msgstr "高度(像素)"
 
-#: prefs.ts:263 prefs.ts:302
+#: prefs.ts:264 prefs.ts:303
 msgid "(not set)"
 msgstr "(未设置)"
 
-#: prefs.ts:267
+#: prefs.ts:268
 msgid "Choose…"
 msgstr "选择…"
 
-#: prefs.ts:272
+#: prefs.ts:273
 #, javascript-format
 msgid "Select %s"
 msgstr "选择 %s"
 
-#: prefs.ts:273
+#: prefs.ts:274
 msgid "Select"
 msgstr "选择"
 
-#: prefs.ts:295
+#: prefs.ts:296
 msgid "Clear"
 msgstr "清除"
 
@@ -298,6 +304,45 @@ msgstr "首选项"
 #: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "尚未应用过任何壁纸"
+
+#: lib/http.ts:44
+#, javascript-format
+msgid "Malformed URL: %s"
+msgstr "URL 格式错误: %s"
+
+#: lib/http.ts:48
+#, javascript-format
+msgid "HTTP %d from %s"
+msgstr "HTTP %d 来自 %s"
+
+#: providers/localProvider.ts:24
+msgid "Dark folder is not set"
+msgstr "未设置暗色目录"
+
+#: providers/localProvider.ts:25
+msgid "Local folder is not set"
+msgstr "未设置本地目录"
+
+#: providers/localProvider.ts:31
+#, javascript-format
+msgid "No supported images found in %s"
+msgstr "在 %s 中未找到受支持的图片"
+
+#: providers/peapixProvider.ts:32
+msgid "Peapix returned no entries"
+msgstr "Peapix 未返回任何条目"
+
+#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
+#: providers/wallhavenProvider.ts:41
+msgid "Cache file has no path"
+msgstr "缓存文件没有路径"
+
+#: providers/wallhavenProvider.ts:35
+msgid "Wallhaven returned no images"
+msgstr "Wallhaven 未返回任何图片"
+
+#~ msgid "Keep last N downloaded images"
+#~ msgstr "保留最近下载的 N 张图片"
 
 #~ msgid "Pause"
 #~ msgstr "暂停"

@@ -1,3 +1,5 @@
+import { gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
+
 import type { CacheDir } from '../lib/cache.js';
 import type { HttpClient } from '../lib/http.js';
 import { Logger } from '../lib/log.js';
@@ -30,13 +32,13 @@ export class WallhavenProvider implements WallpaperProvider {
 
     const data = await this.http.getJson<WallhavenSearchResponse>(searchUrl, req.cancellable);
     if (!data.data || data.data.length === 0) {
-      throw new Error('wallhaven returned no images');
+      throw new Error(_('Wallhaven returned no images'));
     }
     const item = data.data[0]!;
     const ext = this.extensionFor(item.path, item.file_type);
     const file = this.cache.fileFor(`wh-${item.id}.${ext}`);
     const path = file.get_path();
-    if (!path) throw new Error('cache file has no path');
+    if (!path) throw new Error(_('Cache file has no path'));
 
     if (!file.query_exists(null)) {
       await this.http.download(item.path, file, req.cancellable);

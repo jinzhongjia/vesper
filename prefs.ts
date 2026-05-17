@@ -93,14 +93,15 @@ export default class VesperPreferences extends ExtensionPreferences {
     page.add(appearanceGroup);
 
     const cacheGroup = new Adw.PreferencesGroup({ title: _('Cache') });
-    const keepRow = new Adw.SpinRow({
-      title: _('Keep last N downloaded images'),
+    const sizeRow = new Adw.SpinRow({
+      title: _('Maximum cache size (MB)'),
+      subtitle: _('Older downloads are deleted to stay under this limit.'),
       adjustment: new Gtk.Adjustment({
-        lower: 1, upper: 1000, step_increment: 1, page_increment: 10,
+        lower: 10, upper: 10000, step_increment: 10, page_increment: 100,
       }),
     });
-    settings.bind('cache-keep-count', keepRow, 'value', Gio.SettingsBindFlags.DEFAULT);
-    cacheGroup.add(keepRow);
+    settings.bind('cache-max-mb', sizeRow, 'value', Gio.SettingsBindFlags.DEFAULT);
+    cacheGroup.add(sizeRow);
     page.add(cacheGroup);
 
     return page;

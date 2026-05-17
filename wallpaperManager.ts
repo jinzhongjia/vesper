@@ -228,7 +228,7 @@ export class WallpaperManager {
         this.applyVariant('dark', light.localPath);
       }
 
-      this.cache.prune(this.settings.cacheKeepCount);
+      this.cache.prune(this.settings.cacheMaxBytes);
       apiSucceeded = true;
       if (this.lastTickFailed) {
         this.lastTickFailed = false;

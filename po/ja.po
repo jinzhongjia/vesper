@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:53+0800\n"
+"POT-Creation-Date: 2026-05-17 16:06+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:133
+#: prefs.ts:35 prefs.ts:134
 msgid "General"
 msgstr "一般"
 
@@ -35,7 +35,7 @@ msgstr "ソース"
 msgid "Local folder"
 msgstr "ローカルフォルダー"
 
-#: prefs.ts:52 prefs.ts:126
+#: prefs.ts:52 prefs.ts:127
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -107,170 +107,176 @@ msgstr "パネルインジケーターを表示"
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
-msgstr "オフのとき、拡張機能アプリまたは `gnome-extensions prefs vesper@nvimer.org` から設定を開きます。"
+msgstr ""
+"オフのとき、拡張機能アプリまたは `gnome-extensions prefs vesper@nvimer.org` "
+"から設定を開きます。"
 
 #: prefs.ts:95
 msgid "Cache"
 msgstr "キャッシュ"
 
 #: prefs.ts:97
-msgid "Keep last N downloaded images"
-msgstr "ダウンロードした最新の N 枚を保持"
+msgid "Maximum cache size (MB)"
+msgstr "最大キャッシュサイズ (MB)"
 
-#: prefs.ts:111
+#: prefs.ts:98
+msgid "Older downloads are deleted to stay under this limit."
+msgstr "この上限を超えないように、古いダウンロードが削除されます。"
+
+#: prefs.ts:112
 msgid "Local"
 msgstr "ローカル"
 
-#: prefs.ts:115
+#: prefs.ts:116
 msgid "Folders"
 msgstr "フォルダー"
 
-#: prefs.ts:116
+#: prefs.ts:117
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "「カラースキームに従う」が無効の場合もライトフォルダーが使用されます。"
 
-#: prefs.ts:118
+#: prefs.ts:119
 msgid "Light folder"
 msgstr "ライトフォルダー"
 
-#: prefs.ts:119
+#: prefs.ts:120
 msgid "Dark folder"
 msgstr "ダークフォルダー"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "Categories"
 msgstr "カテゴリ"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "At least one should be enabled."
 msgstr "少なくとも 1 つを有効にしてください。"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "Anime"
 msgstr "アニメ"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "People"
 msgstr "人物"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Purity"
 msgstr "純度"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "既定では SFW のみ有効です。他の項目は自己責任で有効にしてください。"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "Sketchy"
 msgstr "際どい"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:147
+#: prefs.ts:148
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:151
+#: prefs.ts:152
 msgid "Region"
 msgstr "地域"
 
-#: prefs.ts:152
+#: prefs.ts:153
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing は地域ごとに異なる日替わり画像を提供します。"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "United States"
 msgstr "アメリカ合衆国"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Germany"
 msgstr "ドイツ"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "United Kingdom"
 msgstr "イギリス"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "France"
 msgstr "フランス"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "Brazil"
 msgstr "ブラジル"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "India"
 msgstr "インド"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Australia"
 msgstr "オーストラリア"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Canada"
 msgstr "カナダ"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Italy"
 msgstr "イタリア"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Spain"
 msgstr "スペイン"
 
-#: prefs.ts:161
+#: prefs.ts:162
 msgid "Country"
 msgstr "国"
 
-#: prefs.ts:169
+#: prefs.ts:170
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:172
+#: prefs.ts:173
 msgid "Resolution"
 msgstr "解像度"
 
-#: prefs.ts:175
+#: prefs.ts:176
 msgid "Width (px)"
 msgstr "幅 (px)"
 
-#: prefs.ts:184
+#: prefs.ts:185
 msgid "Height (px)"
 msgstr "高さ (px)"
 
-#: prefs.ts:263 prefs.ts:302
+#: prefs.ts:264 prefs.ts:303
 msgid "(not set)"
 msgstr "(未設定)"
 
-#: prefs.ts:267
+#: prefs.ts:268
 msgid "Choose…"
 msgstr "選択…"
 
-#: prefs.ts:272
+#: prefs.ts:273
 #, javascript-format
 msgid "Select %s"
 msgstr "%s を選択"
 
-#: prefs.ts:273
+#: prefs.ts:274
 msgid "Select"
 msgstr "選択"
 
-#: prefs.ts:295
+#: prefs.ts:296
 msgid "Clear"
 msgstr "クリア"
 
@@ -298,6 +304,45 @@ msgstr "設定"
 #: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "まだ壁紙が適用されていません"
+
+#: lib/http.ts:44
+#, javascript-format
+msgid "Malformed URL: %s"
+msgstr "不正な URL: %s"
+
+#: lib/http.ts:48
+#, javascript-format
+msgid "HTTP %d from %s"
+msgstr "HTTP %d (%s)"
+
+#: providers/localProvider.ts:24
+msgid "Dark folder is not set"
+msgstr "ダークフォルダーが設定されていません"
+
+#: providers/localProvider.ts:25
+msgid "Local folder is not set"
+msgstr "ローカルフォルダーが設定されていません"
+
+#: providers/localProvider.ts:31
+#, javascript-format
+msgid "No supported images found in %s"
+msgstr "%s に対応する画像が見つかりません"
+
+#: providers/peapixProvider.ts:32
+msgid "Peapix returned no entries"
+msgstr "Peapix からエントリーが返されませんでした"
+
+#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
+#: providers/wallhavenProvider.ts:41
+msgid "Cache file has no path"
+msgstr "キャッシュファイルにパスがありません"
+
+#: providers/wallhavenProvider.ts:35
+msgid "Wallhaven returned no images"
+msgstr "Wallhaven から画像が返されませんでした"
+
+#~ msgid "Keep last N downloaded images"
+#~ msgstr "ダウンロードした最新の N 枚を保持"
 
 #~ msgid "Pause"
 #~ msgstr "一時停止"

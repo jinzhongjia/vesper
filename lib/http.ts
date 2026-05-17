@@ -2,6 +2,8 @@ import type GLib from 'gi://GLib';
 import type Gio from 'gi://Gio';
 import Soup from 'gi://Soup?version=3.0';
 
+import { gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
+
 import { Logger } from './log.js';
 import { soupGetBytes, writeBytes } from './promisify.js';
 
@@ -39,11 +41,11 @@ export class HttpClient {
 
   private async fetch(url: string, cancellable: Gio.Cancellable | null): Promise<GLib.Bytes> {
     const message = Soup.Message.new('GET', url);
-    if (!message) throw new Error(`malformed URL: ${url}`);
+    if (!message) throw new Error(_('Malformed URL: %s').format(url));
     const bytes = await soupGetBytes(this.session, message, cancellable);
     const status = message.get_status();
     if (status !== Soup.Status.OK) {
-      throw new Error(`HTTP ${status} from ${url}`);
+      throw new Error(_('HTTP %d from %s').format(status, url));
     }
     this.log.info(`fetched ${url} (${bytes.get_size()} bytes)`);
     return bytes;

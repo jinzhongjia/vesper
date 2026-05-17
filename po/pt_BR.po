@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:53+0800\n"
+"POT-Creation-Date: 2026-05-17 16:06+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: prefs.ts:35 prefs.ts:133
+#: prefs.ts:35 prefs.ts:134
 msgid "General"
 msgstr "Geral"
 
@@ -37,7 +37,7 @@ msgstr "Origem"
 msgid "Local folder"
 msgstr "Pasta local"
 
-#: prefs.ts:52 prefs.ts:126
+#: prefs.ts:52 prefs.ts:127
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -109,172 +109,178 @@ msgstr "Mostrar indicador do painel"
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
-msgstr "Quando desligado, abra as preferências pelo aplicativo Extensões ou `gnome-extensions prefs vesper@nvimer.org`."
+msgstr ""
+"Quando desligado, abra as preferências pelo aplicativo Extensões ou `gnome-"
+"extensions prefs vesper@nvimer.org`."
 
 #: prefs.ts:95
 msgid "Cache"
 msgstr "Cache"
 
 #: prefs.ts:97
-msgid "Keep last N downloaded images"
-msgstr "Manter as últimas N imagens baixadas"
+msgid "Maximum cache size (MB)"
+msgstr "Tamanho máximo do cache (MB)"
 
-#: prefs.ts:111
+#: prefs.ts:98
+msgid "Older downloads are deleted to stay under this limit."
+msgstr "Downloads mais antigos são excluídos para permanecer sob esse limite."
+
+#: prefs.ts:112
 msgid "Local"
 msgstr "Local"
 
-#: prefs.ts:115
+#: prefs.ts:116
 msgid "Folders"
 msgstr "Pastas"
 
-#: prefs.ts:116
+#: prefs.ts:117
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
 "A pasta clara também é usada quando \"seguir esquema de cores\" está "
 "desativado."
 
-#: prefs.ts:118
+#: prefs.ts:119
 msgid "Light folder"
 msgstr "Pasta clara"
 
-#: prefs.ts:119
+#: prefs.ts:120
 msgid "Dark folder"
 msgstr "Pasta escura"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "Categories"
 msgstr "Categorias"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "At least one should be enabled."
 msgstr "Pelo menos uma deve estar ativada."
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "Anime"
 msgstr "Anime"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "People"
 msgstr "Pessoas"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Purity"
 msgstr "Pureza"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "Apenas SFW por padrão. Ative as outras por sua própria conta e risco."
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "Sketchy"
 msgstr "Sugestivo"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:147
+#: prefs.ts:148
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:151
+#: prefs.ts:152
 msgid "Region"
 msgstr "Região"
 
-#: prefs.ts:152
+#: prefs.ts:153
 msgid "Bing serves a different daily image in each region."
 msgstr "O Bing oferece uma imagem diária diferente em cada região."
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "United States"
 msgstr "Estados Unidos"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "China"
 msgstr "China"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Germany"
 msgstr "Alemanha"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Japan"
 msgstr "Japão"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "United Kingdom"
 msgstr "Reino Unido"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "France"
 msgstr "França"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "Brazil"
 msgstr "Brasil"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "India"
 msgstr "Índia"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Australia"
 msgstr "Austrália"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Canada"
 msgstr "Canadá"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Italy"
 msgstr "Itália"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Spain"
 msgstr "Espanha"
 
-#: prefs.ts:161
+#: prefs.ts:162
 msgid "Country"
 msgstr "País"
 
-#: prefs.ts:169
+#: prefs.ts:170
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:172
+#: prefs.ts:173
 msgid "Resolution"
 msgstr "Resolução"
 
-#: prefs.ts:175
+#: prefs.ts:176
 msgid "Width (px)"
 msgstr "Largura (px)"
 
-#: prefs.ts:184
+#: prefs.ts:185
 msgid "Height (px)"
 msgstr "Altura (px)"
 
-#: prefs.ts:263 prefs.ts:302
+#: prefs.ts:264 prefs.ts:303
 msgid "(not set)"
 msgstr "(não definido)"
 
-#: prefs.ts:267
+#: prefs.ts:268
 msgid "Choose…"
 msgstr "Escolher…"
 
-#: prefs.ts:272
+#: prefs.ts:273
 #, javascript-format
 msgid "Select %s"
 msgstr "Selecionar %s"
 
-#: prefs.ts:273
+#: prefs.ts:274
 msgid "Select"
 msgstr "Selecionar"
 
-#: prefs.ts:295
+#: prefs.ts:296
 msgid "Clear"
 msgstr "Limpar"
 
@@ -302,6 +308,45 @@ msgstr "Preferências"
 #: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "Nenhum papel de parede foi aplicado ainda"
+
+#: lib/http.ts:44
+#, javascript-format
+msgid "Malformed URL: %s"
+msgstr "URL malformada: %s"
+
+#: lib/http.ts:48
+#, javascript-format
+msgid "HTTP %d from %s"
+msgstr "HTTP %d de %s"
+
+#: providers/localProvider.ts:24
+msgid "Dark folder is not set"
+msgstr "A pasta escura não está definida"
+
+#: providers/localProvider.ts:25
+msgid "Local folder is not set"
+msgstr "A pasta local não está definida"
+
+#: providers/localProvider.ts:31
+#, javascript-format
+msgid "No supported images found in %s"
+msgstr "Nenhuma imagem compatível encontrada em %s"
+
+#: providers/peapixProvider.ts:32
+msgid "Peapix returned no entries"
+msgstr "O Peapix não retornou nenhuma entrada"
+
+#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
+#: providers/wallhavenProvider.ts:41
+msgid "Cache file has no path"
+msgstr "O arquivo de cache não tem caminho"
+
+#: providers/wallhavenProvider.ts:35
+msgid "Wallhaven returned no images"
+msgstr "O Wallhaven não retornou nenhuma imagem"
+
+#~ msgid "Keep last N downloaded images"
+#~ msgstr "Manter as últimas N imagens baixadas"
 
 #~ msgid "Pause"
 #~ msgstr "Pausar"

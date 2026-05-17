@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:53+0800\n"
+"POT-Creation-Date: 2026-05-17 16:06+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:133
+#: prefs.ts:35 prefs.ts:134
 msgid "General"
 msgstr "일반"
 
@@ -36,7 +36,7 @@ msgstr "소스"
 msgid "Local folder"
 msgstr "로컬 폴더"
 
-#: prefs.ts:52 prefs.ts:126
+#: prefs.ts:52 prefs.ts:127
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -108,171 +108,177 @@ msgstr "패널 표시기 표시"
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
-msgstr "꺼져 있을 때 확장 앱 또는 `gnome-extensions prefs vesper@nvimer.org`을 통해 환경 설정을 엽니다."
+msgstr ""
+"꺼져 있을 때 확장 앱 또는 `gnome-extensions prefs vesper@nvimer.org`을 통해 "
+"환경 설정을 엽니다."
 
 #: prefs.ts:95
 msgid "Cache"
 msgstr "캐시"
 
 #: prefs.ts:97
-msgid "Keep last N downloaded images"
-msgstr "최근 다운로드한 N개의 이미지 보관"
+msgid "Maximum cache size (MB)"
+msgstr "최대 캐시 크기 (MB)"
 
-#: prefs.ts:111
+#: prefs.ts:98
+msgid "Older downloads are deleted to stay under this limit."
+msgstr "이 한도를 초과하지 않도록 오래된 다운로드가 삭제됩니다."
+
+#: prefs.ts:112
 msgid "Local"
 msgstr "로컬"
 
-#: prefs.ts:115
+#: prefs.ts:116
 msgid "Folders"
 msgstr "폴더"
 
-#: prefs.ts:116
+#: prefs.ts:117
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "\"색 구성표 따르기\"가 꺼져 있을 때도 밝은 폴더가 사용됩니다."
 
-#: prefs.ts:118
+#: prefs.ts:119
 msgid "Light folder"
 msgstr "밝은 폴더"
 
-#: prefs.ts:119
+#: prefs.ts:120
 msgid "Dark folder"
 msgstr "어두운 폴더"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "Categories"
 msgstr "분류"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "At least one should be enabled."
 msgstr "최소 하나 이상 활성화해야 합니다."
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "Anime"
 msgstr "애니메이션"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "People"
 msgstr "인물"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Purity"
 msgstr "수위"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr ""
 "기본적으로 SFW만 활성화됩니다. 다른 항목은 본인 판단에 따라 활성화하십시오."
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "Sketchy"
 msgstr "다소 자극적"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:147
+#: prefs.ts:148
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:151
+#: prefs.ts:152
 msgid "Region"
 msgstr "지역"
 
-#: prefs.ts:152
+#: prefs.ts:153
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing은 지역마다 다른 일일 이미지를 제공합니다."
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "United States"
 msgstr "미국"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "China"
 msgstr "중국"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Germany"
 msgstr "독일"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Japan"
 msgstr "일본"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "United Kingdom"
 msgstr "영국"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "France"
 msgstr "프랑스"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "Brazil"
 msgstr "브라질"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "India"
 msgstr "인도"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Australia"
 msgstr "호주"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Canada"
 msgstr "캐나다"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Italy"
 msgstr "이탈리아"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Spain"
 msgstr "스페인"
 
-#: prefs.ts:161
+#: prefs.ts:162
 msgid "Country"
 msgstr "국가"
 
-#: prefs.ts:169
+#: prefs.ts:170
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:172
+#: prefs.ts:173
 msgid "Resolution"
 msgstr "해상도"
 
-#: prefs.ts:175
+#: prefs.ts:176
 msgid "Width (px)"
 msgstr "너비 (px)"
 
-#: prefs.ts:184
+#: prefs.ts:185
 msgid "Height (px)"
 msgstr "높이 (px)"
 
-#: prefs.ts:263 prefs.ts:302
+#: prefs.ts:264 prefs.ts:303
 msgid "(not set)"
 msgstr "(설정되지 않음)"
 
-#: prefs.ts:267
+#: prefs.ts:268
 msgid "Choose…"
 msgstr "선택…"
 
-#: prefs.ts:272
+#: prefs.ts:273
 #, javascript-format
 msgid "Select %s"
 msgstr "%s 선택"
 
-#: prefs.ts:273
+#: prefs.ts:274
 msgid "Select"
 msgstr "선택"
 
-#: prefs.ts:295
+#: prefs.ts:296
 msgid "Clear"
 msgstr "지우기"
 
@@ -300,6 +306,45 @@ msgstr "환경 설정"
 #: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "아직 배경 화면이 적용되지 않았습니다"
+
+#: lib/http.ts:44
+#, javascript-format
+msgid "Malformed URL: %s"
+msgstr "잘못된 URL: %s"
+
+#: lib/http.ts:48
+#, javascript-format
+msgid "HTTP %d from %s"
+msgstr "HTTP %d (%s)"
+
+#: providers/localProvider.ts:24
+msgid "Dark folder is not set"
+msgstr "어두운 폴더가 설정되지 않았습니다"
+
+#: providers/localProvider.ts:25
+msgid "Local folder is not set"
+msgstr "로컬 폴더가 설정되지 않았습니다"
+
+#: providers/localProvider.ts:31
+#, javascript-format
+msgid "No supported images found in %s"
+msgstr "%s에서 지원되는 이미지를 찾을 수 없습니다"
+
+#: providers/peapixProvider.ts:32
+msgid "Peapix returned no entries"
+msgstr "Peapix가 항목을 반환하지 않았습니다"
+
+#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
+#: providers/wallhavenProvider.ts:41
+msgid "Cache file has no path"
+msgstr "캐시 파일에 경로가 없습니다"
+
+#: providers/wallhavenProvider.ts:35
+msgid "Wallhaven returned no images"
+msgstr "Wallhaven이 이미지를 반환하지 않았습니다"
+
+#~ msgid "Keep last N downloaded images"
+#~ msgstr "최근 다운로드한 N개의 이미지 보관"
 
 #~ msgid "Pause"
 #~ msgstr "일시 정지"

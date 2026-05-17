@@ -60,8 +60,8 @@ export class TypedSettings {
     return this.raw.get_int('picsum-height');
   }
 
-  get cacheKeepCount(): number {
-    return this.raw.get_int('cache-keep-count');
+  get cacheMaxBytes(): number {
+    return this.raw.get_int('cache-max-mb') * 1024 * 1024;
   }
 
   getLastAppliedUri(variant: ColorVariant): string {

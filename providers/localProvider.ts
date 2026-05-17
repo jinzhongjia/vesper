@@ -1,6 +1,8 @@
 import GLib from 'gi://GLib';
 import Gio from 'gi://Gio';
 
+import { gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
+
 import { Logger } from '../lib/log.js';
 import type { TypedSettings } from '../lib/settings.js';
 import type { ColorVariant, SourceType } from '../types.js';
@@ -19,14 +21,14 @@ export class LocalProvider implements WallpaperProvider {
     if (!folder) {
       throw new Error(
         req.variant === 'dark'
-          ? 'local-folder-dark is empty'
-          : 'local-folder is empty; set it via prefs or gsettings',
+          ? _('Dark folder is not set')
+          : _('Local folder is not set'),
       );
     }
 
     const files = this.scanFolder(folder);
     if (files.length === 0) {
-      throw new Error(`no supported images found in ${folder}`);
+      throw new Error(_('No supported images found in %s').format(folder));
     }
 
     const pick = this.settings.switchMode === 'sequential'

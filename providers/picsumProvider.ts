@@ -1,5 +1,7 @@
 import GLib from 'gi://GLib';
 
+import { gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
+
 import type { CacheDir } from '../lib/cache.js';
 import type { HttpClient } from '../lib/http.js';
 import { Logger } from '../lib/log.js';
@@ -25,7 +27,7 @@ export class PicsumProvider implements WallpaperProvider {
     const url = `https://picsum.photos/seed/${seed}/${w}/${h}.jpg`;
     const file = this.cache.fileFor(`picsum-${seed}.jpg`);
     const path = file.get_path();
-    if (!path) throw new Error('cache file has no path');
+    if (!path) throw new Error(_('Cache file has no path'));
 
     await this.http.download(url, file, req.cancellable);
     this.log.info(`downloaded ${url} -> ${path}`);

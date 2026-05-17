@@ -1,3 +1,5 @@
+import { gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
+
 import type { CacheDir } from '../lib/cache.js';
 import type { HttpClient } from '../lib/http.js';
 import { Logger } from '../lib/log.js';
@@ -27,7 +29,7 @@ export class PeapixProvider implements WallpaperProvider {
     const feedUrl = `https://peapix.com/bing/feed?country=${encodeURIComponent(country)}&n=1`;
     const items = await this.http.getJson<PeapixEntry[]>(feedUrl, req.cancellable);
     if (!Array.isArray(items) || items.length === 0) {
-      throw new Error('peapix returned no entries');
+      throw new Error(_('Peapix returned no entries'));
     }
     const entry = items[0]!;
     const url = entry.fullUrl;
@@ -35,7 +37,7 @@ export class PeapixProvider implements WallpaperProvider {
     const ext = this.extFor(url);
     const file = this.cache.fileFor(`peapix-${id}.${ext}`);
     const path = file.get_path();
-    if (!path) throw new Error('cache file has no path');
+    if (!path) throw new Error(_('Cache file has no path'));
 
     if (!file.query_exists(null)) {
       await this.http.download(url, file, req.cancellable);

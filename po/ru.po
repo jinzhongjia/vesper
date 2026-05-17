@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:53+0800\n"
+"POT-Creation-Date: 2026-05-17 16:06+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: prefs.ts:35 prefs.ts:133
+#: prefs.ts:35 prefs.ts:134
 msgid "General"
 msgstr "Общие"
 
@@ -36,7 +36,7 @@ msgstr "Источник"
 msgid "Local folder"
 msgstr "Локальная папка"
 
-#: prefs.ts:52 prefs.ts:126
+#: prefs.ts:52 prefs.ts:127
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -108,171 +108,177 @@ msgstr "Показывать индикатор на панели"
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
-msgstr "Когда выключено, открывайте параметры через приложение «Расширения» или `gnome-extensions prefs vesper@nvimer.org`."
+msgstr ""
+"Когда выключено, открывайте параметры через приложение «Расширения» или "
+"`gnome-extensions prefs vesper@nvimer.org`."
 
 #: prefs.ts:95
 msgid "Cache"
 msgstr "Кэш"
 
 #: prefs.ts:97
-msgid "Keep last N downloaded images"
-msgstr "Сохранять последние N загруженных изображений"
+msgid "Maximum cache size (MB)"
+msgstr "Максимальный размер кэша (МБ)"
 
-#: prefs.ts:111
+#: prefs.ts:98
+msgid "Older downloads are deleted to stay under this limit."
+msgstr "Более старые загрузки удаляются, чтобы оставаться в пределах этого лимита."
+
+#: prefs.ts:112
 msgid "Local"
 msgstr "Локальный"
 
-#: prefs.ts:115
+#: prefs.ts:116
 msgid "Folders"
 msgstr "Папки"
 
-#: prefs.ts:116
+#: prefs.ts:117
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
 "Светлая папка также используется, когда «следовать цветовой схеме» отключено."
 
-#: prefs.ts:118
+#: prefs.ts:119
 msgid "Light folder"
 msgstr "Светлая папка"
 
-#: prefs.ts:119
+#: prefs.ts:120
 msgid "Dark folder"
 msgstr "Тёмная папка"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "Categories"
 msgstr "Категории"
 
-#: prefs.ts:132
+#: prefs.ts:133
 msgid "At least one should be enabled."
 msgstr "Должна быть включена хотя бы одна."
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "Anime"
 msgstr "Аниме"
 
-#: prefs.ts:133
+#: prefs.ts:134
 msgid "People"
 msgstr "Люди"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Purity"
 msgstr "Содержание"
 
-#: prefs.ts:138
+#: prefs.ts:139
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "По умолчанию только SFW. Включайте остальные на свой страх и риск."
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "Sketchy"
 msgstr "Двусмысленное"
 
-#: prefs.ts:139
+#: prefs.ts:140
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:147
+#: prefs.ts:148
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:151
+#: prefs.ts:152
 msgid "Region"
 msgstr "Регион"
 
-#: prefs.ts:152
+#: prefs.ts:153
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing предлагает разные ежедневные изображения для каждого региона."
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "United States"
 msgstr "США"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "China"
 msgstr "Китай"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Germany"
 msgstr "Германия"
 
-#: prefs.ts:157
+#: prefs.ts:158
 msgid "Japan"
 msgstr "Япония"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "United Kingdom"
 msgstr "Великобритания"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "France"
 msgstr "Франция"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "Brazil"
 msgstr "Бразилия"
 
-#: prefs.ts:158
+#: prefs.ts:159
 msgid "India"
 msgstr "Индия"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Australia"
 msgstr "Австралия"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Canada"
 msgstr "Канада"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Italy"
 msgstr "Италия"
 
-#: prefs.ts:159
+#: prefs.ts:160
 msgid "Spain"
 msgstr "Испания"
 
-#: prefs.ts:161
+#: prefs.ts:162
 msgid "Country"
 msgstr "Страна"
 
-#: prefs.ts:169
+#: prefs.ts:170
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:172
+#: prefs.ts:173
 msgid "Resolution"
 msgstr "Разрешение"
 
-#: prefs.ts:175
+#: prefs.ts:176
 msgid "Width (px)"
 msgstr "Ширина (px)"
 
-#: prefs.ts:184
+#: prefs.ts:185
 msgid "Height (px)"
 msgstr "Высота (px)"
 
-#: prefs.ts:263 prefs.ts:302
+#: prefs.ts:264 prefs.ts:303
 msgid "(not set)"
 msgstr "(не задано)"
 
-#: prefs.ts:267
+#: prefs.ts:268
 msgid "Choose…"
 msgstr "Выбрать…"
 
-#: prefs.ts:272
+#: prefs.ts:273
 #, javascript-format
 msgid "Select %s"
 msgstr "Выбрать %s"
 
-#: prefs.ts:273
+#: prefs.ts:274
 msgid "Select"
 msgstr "Выбрать"
 
-#: prefs.ts:295
+#: prefs.ts:296
 msgid "Clear"
 msgstr "Очистить"
 
@@ -300,6 +306,45 @@ msgstr "Параметры"
 #: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "Обои ещё не применены"
+
+#: lib/http.ts:44
+#, javascript-format
+msgid "Malformed URL: %s"
+msgstr "Некорректный URL: %s"
+
+#: lib/http.ts:48
+#, javascript-format
+msgid "HTTP %d from %s"
+msgstr "HTTP %d от %s"
+
+#: providers/localProvider.ts:24
+msgid "Dark folder is not set"
+msgstr "Тёмная папка не задана"
+
+#: providers/localProvider.ts:25
+msgid "Local folder is not set"
+msgstr "Локальная папка не задана"
+
+#: providers/localProvider.ts:31
+#, javascript-format
+msgid "No supported images found in %s"
+msgstr "Поддерживаемые изображения в %s не найдены"
+
+#: providers/peapixProvider.ts:32
+msgid "Peapix returned no entries"
+msgstr "Peapix не вернул ни одной записи"
+
+#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
+#: providers/wallhavenProvider.ts:41
+msgid "Cache file has no path"
+msgstr "Файл кэша не имеет пути"
+
+#: providers/wallhavenProvider.ts:35
+msgid "Wallhaven returned no images"
+msgstr "Wallhaven не вернул ни одного изображения"
+
+#~ msgid "Keep last N downloaded images"
+#~ msgstr "Сохранять последние N загруженных изображений"
 
 #~ msgid "Pause"
 #~ msgstr "Пауза"

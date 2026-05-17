@@ -86,10 +86,11 @@
       <summary>Picsum image height</summary>
     </key>
 
-    <key name="cache-keep-count" type="i">
-      <range min="1" max="1000"/>
-      <default>30</default>
-      <summary>How many downloaded wallpapers to keep on disk</summary>
+    <key name="cache-max-mb" type="i">
+      <range min="10" max="10000"/>
+      <default>200</default>
+      <summary>Maximum disk space for downloaded wallpapers (MB)</summary>
+      <description>The cache directory is pruned to stay below this size, oldest files first.</description>
     </key>
 
     <key name="last-applied-uri-light" type="s">

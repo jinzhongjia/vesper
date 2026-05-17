@@ -47,14 +47,14 @@ export class CacheDir {
     return out;
   }
 
-  /** Keep the `keep` most-recently-modified entries; delete the rest. */
-  prune(keep: number): void {
-    if (keep < 1) return;
+  /** Keep cache below `maxBytes` total size, evicting oldest files first. */
+  prune(maxBytes: number): void {
+    if (maxBytes < 1) return;
     const dir = Gio.File.new_for_path(this.root);
     let enumerator: Gio.FileEnumerator;
     try {
       enumerator = dir.enumerate_children(
-        'standard::name,standard::type,time::modified',
+        'standard::name,standard::type,standard::size,time::modified',
         Gio.FileQueryInfoFlags.NOFOLLOW_SYMLINKS,
         null,
       );
@@ -63,28 +63,45 @@ export class CacheDir {
       return;
     }
 
-    const entries: { path: string; mtime: number }[] = [];
+    const entries: { path: string; mtime: number; size: number }[] = [];
     let info = enumerator.next_file(null);
     while (info !== null) {
       if (info.get_file_type() === Gio.FileType.REGULAR) {
         const name = info.get_name();
         const dt = info.get_modification_date_time();
         const mtime = dt ? dt.to_unix() : 0;
-        entries.push({ path: GLib.build_filenamev([this.root, name]), mtime });
+        const size = info.get_size();
+        entries.push({ path: GLib.build_filenamev([this.root, name]), mtime, size });
       }
       info = enumerator.next_file(null);
     }
     enumerator.close(null);
 
-    if (entries.length <= keep) return;
+    // Newest first; keep adding until budget exceeded, then mark the rest for deletion.
     entries.sort((a, b) => b.mtime - a.mtime);
-    for (const entry of entries.slice(keep)) {
-      try {
-        Gio.File.new_for_path(entry.path).delete(null);
-      } catch (e) {
-        this.log.warn(`failed to delete ${entry.path}: ${e}`);
+    let running = 0;
+    const toDelete: typeof entries = [];
+    for (const e of entries) {
+      if (running + e.size <= maxBytes) {
+        running += e.size;
+      } else {
+        toDelete.push(e);
       }
     }
-    this.log.info(`pruned cache to ${keep} files (was ${entries.length})`);
+    if (toDelete.length === 0) return;
+
+    let freed = 0;
+    for (const e of toDelete) {
+      try {
+        Gio.File.new_for_path(e.path).delete(null);
+        freed += e.size;
+      } catch (err) {
+        this.log.warn(`failed to delete ${e.path}: ${err}`);
+      }
+    }
+    const mb = (n: number) => (n / 1024 / 1024).toFixed(1);
+    this.log.info(
+      `pruned ${toDelete.length} files (${mb(freed)} MB freed), keeping cache under ${mb(maxBytes)} MB`,
+    );
   }
 }
