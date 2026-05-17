@@ -22,6 +22,31 @@ export class CacheDir {
     return Gio.File.new_for_path(this.pathFor(name));
   }
 
+  /** List absolute paths of all regular files in the cache. */
+  listFiles(): string[] {
+    const dir = Gio.File.new_for_path(this.root);
+    let enumerator: Gio.FileEnumerator;
+    try {
+      enumerator = dir.enumerate_children(
+        'standard::name,standard::type',
+        Gio.FileQueryInfoFlags.NOFOLLOW_SYMLINKS,
+        null,
+      );
+    } catch {
+      return [];
+    }
+    const out: string[] = [];
+    let info = enumerator.next_file(null);
+    while (info !== null) {
+      if (info.get_file_type() === Gio.FileType.REGULAR) {
+        out.push(GLib.build_filenamev([this.root, info.get_name()]));
+      }
+      info = enumerator.next_file(null);
+    }
+    enumerator.close(null);
+    return out;
+  }
+
   /** Keep the `keep` most-recently-modified entries; delete the rest. */
   prune(keep: number): void {
     if (keep < 1) return;

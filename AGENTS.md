@@ -101,6 +101,14 @@ Schemas need regeneration after editing `*.gschema.xml`. `make build` handles th
 - Automatic light/dark image classification for remote sources
 - Image brightness analysis
 - GNOME Shell <50 compatibility
+- **Cross-provider fallback.** When the configured provider fails, the manager picks a random already-downloaded image from `~/.cache/vesper` instead of switching source. Trying e.g. Peapix → Wallhaven → Picsum was considered and rejected: it muddles "what source is the user actually using", doubles the API surface to test, and the cache fallback covers the real need (keep rotating during outages).
+
+## Failure handling (network down, API errors)
+
+- **Single-flight tick.** `tickInFlight` guards `tick()`; concurrent calls are coalesced into one `pendingTick` that runs after the current finishes. The recurring timer is one-shot + reschedule, not `SOURCE_CONTINUE`, so settings changes during a tick still get applied promptly.
+- **Exponential backoff.** Each consecutive `tick()` failure increments `consecutiveFailures`; next-tick delay is `baseInterval × 2^N`, capped at 1 hour. Resets to base on success.
+- **Cache fallback.** On provider failure (and the cancellable isn't cancelled), `pickCachedFallback()` chooses a random file from `~/.cache/vesper` distinct from the currently applied one and applies it. Notification only fires when there's nothing to fall back to. The user's chosen `source-type` is **not** swapped to anything else — `picture-uri` still rotates, the configured provider just stays in retry/backoff.
+- **Source change resets backoff.** `changed::source-type` zeros `consecutiveFailures` so the user's manual intervention isn't penalised.
 
 ## Development plan
 
