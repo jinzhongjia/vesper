@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:45+0800\n"
+"POT-Creation-Date: 2026-05-17 15:53+0800\n"
 "PO-Revision-Date: 2026-05-17 15:00+0800\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:124
+#: prefs.ts:35 prefs.ts:133
 msgid "General"
 msgstr "常规"
 
@@ -24,7 +24,7 @@ msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "关闭时,Vesper 已载入但不会自动更换壁纸。"
 
-#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
 msgid "Enable rotation"
 msgstr "启用轮换"
 
@@ -36,7 +36,7 @@ msgstr "来源"
 msgid "Local folder"
 msgstr "本地目录"
 
-#: prefs.ts:52 prefs.ts:117
+#: prefs.ts:52 prefs.ts:126
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -96,192 +96,206 @@ msgid "Use different wallpapers for light and dark modes"
 msgstr "为亮色和暗色模式使用不同壁纸"
 
 #: prefs.ts:86
+msgid "Appearance"
+msgstr "外观"
+
+#: prefs.ts:88
+msgid "Show panel indicator"
+msgstr "显示面板图标"
+
+#: prefs.ts:89
+msgid ""
+"When off, open preferences via the Extensions app or `gnome-extensions prefs "
+"vesper@nvimer.org`."
+msgstr "关闭时,通过扩展应用程序或 `gnome-extensions prefs vesper@nvimer.org` 打开偏好设置。"
+
+#: prefs.ts:95
 msgid "Cache"
 msgstr "缓存"
 
-#: prefs.ts:88
+#: prefs.ts:97
 msgid "Keep last N downloaded images"
 msgstr "保留最近下载的 N 张图片"
 
-#: prefs.ts:102
+#: prefs.ts:111
 msgid "Local"
 msgstr "本地"
 
-#: prefs.ts:106
+#: prefs.ts:115
 msgid "Folders"
 msgstr "目录"
 
-#: prefs.ts:107
+#: prefs.ts:116
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "当未启用「跟随颜色方案」时,也使用亮色目录。"
 
-#: prefs.ts:109
+#: prefs.ts:118
 msgid "Light folder"
 msgstr "亮色目录"
 
-#: prefs.ts:110
+#: prefs.ts:119
 msgid "Dark folder"
 msgstr "暗色目录"
 
-#: prefs.ts:123
+#: prefs.ts:132
 msgid "Categories"
 msgstr "类别"
 
-#: prefs.ts:123
+#: prefs.ts:132
 msgid "At least one should be enabled."
 msgstr "至少需要启用一项。"
 
-#: prefs.ts:124
+#: prefs.ts:133
 msgid "Anime"
 msgstr "动漫"
 
-#: prefs.ts:124
+#: prefs.ts:133
 msgid "People"
 msgstr "人物"
 
-#: prefs.ts:129
+#: prefs.ts:138
 msgid "Purity"
 msgstr "纯度"
 
-#: prefs.ts:129
+#: prefs.ts:138
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "默认仅启用 SFW,请自行决定是否启用其他级别。"
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "Sketchy"
 msgstr "略带暗示"
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:138
+#: prefs.ts:147
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:142
+#: prefs.ts:151
 msgid "Region"
 msgstr "区域"
 
-#: prefs.ts:143
+#: prefs.ts:152
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing 在不同区域提供不同的每日图片。"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "United States"
 msgstr "美国"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "Germany"
 msgstr "德国"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "United Kingdom"
 msgstr "英国"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "France"
 msgstr "法国"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "Brazil"
 msgstr "巴西"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "India"
 msgstr "印度"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Australia"
 msgstr "澳大利亚"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Canada"
 msgstr "加拿大"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Italy"
 msgstr "意大利"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Spain"
 msgstr "西班牙"
 
-#: prefs.ts:152
+#: prefs.ts:161
 msgid "Country"
 msgstr "国家"
 
-#: prefs.ts:160
+#: prefs.ts:169
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:163
+#: prefs.ts:172
 msgid "Resolution"
 msgstr "分辨率"
 
-#: prefs.ts:166
+#: prefs.ts:175
 msgid "Width (px)"
 msgstr "宽度(像素)"
 
-#: prefs.ts:175
+#: prefs.ts:184
 msgid "Height (px)"
 msgstr "高度(像素)"
 
-#: prefs.ts:254 prefs.ts:293
+#: prefs.ts:263 prefs.ts:302
 msgid "(not set)"
 msgstr "(未设置)"
 
-#: prefs.ts:258
+#: prefs.ts:267
 msgid "Choose…"
 msgstr "选择…"
 
-#: prefs.ts:263
+#: prefs.ts:272
 #, javascript-format
 msgid "Select %s"
 msgstr "选择 %s"
 
-#: prefs.ts:264
+#: prefs.ts:273
 msgid "Select"
 msgstr "选择"
 
-#: prefs.ts:286
+#: prefs.ts:295
 msgid "Clear"
 msgstr "清除"
 
-#: wallpaperManager.ts:122 wallpaperManager.ts:305
+#: wallpaperManager.ts:125 wallpaperManager.ts:319
 msgid "Disable rotation"
 msgstr "停用轮换"
 
-#: wallpaperManager.ts:246
+#: wallpaperManager.ts:249
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "壁纸更新失败:%s"
 
-#: wallpaperManager.ts:312
+#: wallpaperManager.ts:326
 msgid "Change now"
 msgstr "立即更换"
 
-#: wallpaperManager.ts:318
+#: wallpaperManager.ts:332
 msgid "Open current wallpaper"
 msgstr "打开当前壁纸"
 
-#: wallpaperManager.ts:322
+#: wallpaperManager.ts:336
 msgid "Preferences"
 msgstr "首选项"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "尚未应用过任何壁纸"
 

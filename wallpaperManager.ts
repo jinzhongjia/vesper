@@ -69,8 +69,11 @@ export class WallpaperManager {
     this.handlerIds.push(this.settings.raw.connect('changed::follow-color-scheme', () => {
       void this.tick();
     }));
+    this.handlerIds.push(this.settings.raw.connect('changed::show-indicator', () => {
+      this.refreshIndicator();
+    }));
 
-    this.addIndicator();
+    this.refreshIndicator();
     if (this.settings.active) {
       this.scheduleTimer();
       void this.tick();
@@ -290,6 +293,17 @@ export class WallpaperManager {
   // ────────────────────────────────────────────────────────────────────────
   // Panel button / menu
   // ────────────────────────────────────────────────────────────────────────
+
+  private refreshIndicator(): void {
+    const shouldShow = this.settings.showIndicator;
+    if (shouldShow && !this.indicator) {
+      this.addIndicator();
+    } else if (!shouldShow && this.indicator) {
+      this.indicator.destroy();
+      this.indicator = null;
+      this.toggleItem = null;
+    }
+  }
 
   private addIndicator(): void {
     this.indicator = new PanelMenu.Button(0.0, this.extension.metadata.name, false);

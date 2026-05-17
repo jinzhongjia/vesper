@@ -83,6 +83,15 @@ export default class VesperPreferences extends ExtensionPreferences {
     colorGroup.add(followRow);
     page.add(colorGroup);
 
+    const appearanceGroup = new Adw.PreferencesGroup({ title: _('Appearance') });
+    const indicatorRow = new Adw.SwitchRow({
+      title: _('Show panel indicator'),
+      subtitle: _('When off, open preferences via the Extensions app or `gnome-extensions prefs vesper@nvimer.org`.'),
+    });
+    settings.bind('show-indicator', indicatorRow, 'active', Gio.SettingsBindFlags.DEFAULT);
+    appearanceGroup.add(indicatorRow);
+    page.add(appearanceGroup);
+
     const cacheGroup = new Adw.PreferencesGroup({ title: _('Cache') });
     const keepRow = new Adw.SpinRow({
       title: _('Keep last N downloaded images'),

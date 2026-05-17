@@ -20,6 +20,12 @@
       <description>When false, the extension is loaded but does not change the wallpaper on a schedule. "Change now" from the panel menu still works as a one-shot action regardless of this setting.</description>
     </key>
 
+    <key name="show-indicator" type="b">
+      <default>true</default>
+      <summary>Show the panel indicator icon</summary>
+      <description>When off, the wallpaper icon is hidden from the top panel. The extension still runs; open preferences via the Extensions app or `gnome-extensions prefs vesper@nvimer.org`.</description>
+    </key>
+
     <key name="source-type" enum="org.gnome.shell.extensions.vesper.SourceType">
       <default>"wallhaven"</default>
       <summary>Wallpaper source</summary>

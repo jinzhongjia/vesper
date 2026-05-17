@@ -12,6 +12,10 @@ export class TypedSettings {
     this.raw.set_boolean('active', v);
   }
 
+  get showIndicator(): boolean {
+    return this.raw.get_boolean('show-indicator');
+  }
+
   get sourceType(): SourceType {
     return this.raw.get_string('source-type') as SourceType;
   }

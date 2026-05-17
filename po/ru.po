@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 15:45+0800\n"
+"POT-Creation-Date: 2026-05-17 15:53+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: prefs.ts:35 prefs.ts:124
+#: prefs.ts:35 prefs.ts:133
 msgid "General"
 msgstr "Общие"
 
@@ -24,7 +24,7 @@ msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "Когда выключено, Vesper загружен, но обои автоматически не меняются."
 
-#: prefs.ts:43 wallpaperManager.ts:123 wallpaperManager.ts:305
+#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
 msgid "Enable rotation"
 msgstr "Включить ротацию"
 
@@ -36,7 +36,7 @@ msgstr "Источник"
 msgid "Local folder"
 msgstr "Локальная папка"
 
-#: prefs.ts:52 prefs.ts:117
+#: prefs.ts:52 prefs.ts:126
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
@@ -97,193 +97,207 @@ msgid "Use different wallpapers for light and dark modes"
 msgstr "Использовать разные обои для светлой и тёмной тем"
 
 #: prefs.ts:86
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: prefs.ts:88
+msgid "Show panel indicator"
+msgstr "Показывать индикатор на панели"
+
+#: prefs.ts:89
+msgid ""
+"When off, open preferences via the Extensions app or `gnome-extensions prefs "
+"vesper@nvimer.org`."
+msgstr "Когда выключено, открывайте параметры через приложение «Расширения» или `gnome-extensions prefs vesper@nvimer.org`."
+
+#: prefs.ts:95
 msgid "Cache"
 msgstr "Кэш"
 
-#: prefs.ts:88
+#: prefs.ts:97
 msgid "Keep last N downloaded images"
 msgstr "Сохранять последние N загруженных изображений"
 
-#: prefs.ts:102
+#: prefs.ts:111
 msgid "Local"
 msgstr "Локальный"
 
-#: prefs.ts:106
+#: prefs.ts:115
 msgid "Folders"
 msgstr "Папки"
 
-#: prefs.ts:107
+#: prefs.ts:116
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
 "Светлая папка также используется, когда «следовать цветовой схеме» отключено."
 
-#: prefs.ts:109
+#: prefs.ts:118
 msgid "Light folder"
 msgstr "Светлая папка"
 
-#: prefs.ts:110
+#: prefs.ts:119
 msgid "Dark folder"
 msgstr "Тёмная папка"
 
-#: prefs.ts:123
+#: prefs.ts:132
 msgid "Categories"
 msgstr "Категории"
 
-#: prefs.ts:123
+#: prefs.ts:132
 msgid "At least one should be enabled."
 msgstr "Должна быть включена хотя бы одна."
 
-#: prefs.ts:124
+#: prefs.ts:133
 msgid "Anime"
 msgstr "Аниме"
 
-#: prefs.ts:124
+#: prefs.ts:133
 msgid "People"
 msgstr "Люди"
 
-#: prefs.ts:129
+#: prefs.ts:138
 msgid "Purity"
 msgstr "Содержание"
 
-#: prefs.ts:129
+#: prefs.ts:138
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "По умолчанию только SFW. Включайте остальные на свой страх и риск."
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "Sketchy"
 msgstr "Двусмысленное"
 
-#: prefs.ts:130
+#: prefs.ts:139
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:138
+#: prefs.ts:147
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:142
+#: prefs.ts:151
 msgid "Region"
 msgstr "Регион"
 
-#: prefs.ts:143
+#: prefs.ts:152
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing предлагает разные ежедневные изображения для каждого региона."
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "United States"
 msgstr "США"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "China"
 msgstr "Китай"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "Germany"
 msgstr "Германия"
 
-#: prefs.ts:148
+#: prefs.ts:157
 msgid "Japan"
 msgstr "Япония"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "United Kingdom"
 msgstr "Великобритания"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "France"
 msgstr "Франция"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "Brazil"
 msgstr "Бразилия"
 
-#: prefs.ts:149
+#: prefs.ts:158
 msgid "India"
 msgstr "Индия"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Australia"
 msgstr "Австралия"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Canada"
 msgstr "Канада"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Italy"
 msgstr "Италия"
 
-#: prefs.ts:150
+#: prefs.ts:159
 msgid "Spain"
 msgstr "Испания"
 
-#: prefs.ts:152
+#: prefs.ts:161
 msgid "Country"
 msgstr "Страна"
 
-#: prefs.ts:160
+#: prefs.ts:169
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:163
+#: prefs.ts:172
 msgid "Resolution"
 msgstr "Разрешение"
 
-#: prefs.ts:166
+#: prefs.ts:175
 msgid "Width (px)"
 msgstr "Ширина (px)"
 
-#: prefs.ts:175
+#: prefs.ts:184
 msgid "Height (px)"
 msgstr "Высота (px)"
 
-#: prefs.ts:254 prefs.ts:293
+#: prefs.ts:263 prefs.ts:302
 msgid "(not set)"
 msgstr "(не задано)"
 
-#: prefs.ts:258
+#: prefs.ts:267
 msgid "Choose…"
 msgstr "Выбрать…"
 
-#: prefs.ts:263
+#: prefs.ts:272
 #, javascript-format
 msgid "Select %s"
 msgstr "Выбрать %s"
 
-#: prefs.ts:264
+#: prefs.ts:273
 msgid "Select"
 msgstr "Выбрать"
 
-#: prefs.ts:286
+#: prefs.ts:295
 msgid "Clear"
 msgstr "Очистить"
 
-#: wallpaperManager.ts:122 wallpaperManager.ts:305
+#: wallpaperManager.ts:125 wallpaperManager.ts:319
 msgid "Disable rotation"
 msgstr "Отключить ротацию"
 
-#: wallpaperManager.ts:246
+#: wallpaperManager.ts:249
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Не удалось обновить обои: %s"
 
-#: wallpaperManager.ts:312
+#: wallpaperManager.ts:326
 msgid "Change now"
 msgstr "Сменить сейчас"
 
-#: wallpaperManager.ts:318
+#: wallpaperManager.ts:332
 msgid "Open current wallpaper"
 msgstr "Открыть текущие обои"
 
-#: wallpaperManager.ts:322
+#: wallpaperManager.ts:336
 msgid "Preferences"
 msgstr "Параметры"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:346
 msgid "No wallpaper has been applied yet"
 msgstr "Обои ещё не применены"
 
