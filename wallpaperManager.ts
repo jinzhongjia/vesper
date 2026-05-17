@@ -4,6 +4,7 @@ import St from 'gi://St';
 
 import { type Extension, gettext as _ } from 'resource:///org/gnome/shell/extensions/extension.js';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as MessageTray from 'resource:///org/gnome/shell/ui/messageTray.js';
 import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
@@ -430,13 +431,36 @@ export class WallpaperManager {
 
     try {
       srcFile.copy(targetFile, Gio.FileCopyFlags.NONE, null, null);
-      Main.notify('Vesper', _('Saved to %s').format(targetPath));
       this.log.info(`saved wallpaper to ${targetPath}`);
+      this.notifySavedWithOpenAction(targetPath);
     } catch (e) {
       const msg = e instanceof Error ? e.message : String(e);
       this.log.error('failed to save wallpaper', e);
       Main.notify('Vesper', _('Failed to save wallpaper: %s').format(msg));
     }
+  }
+
+  /** Notification with an "Open" button that launches the file in the default viewer. */
+  private notifySavedWithOpenAction(targetPath: string): void {
+    const source = new MessageTray.Source({
+      title: 'Vesper',
+      icon: new Gio.ThemedIcon({ name: 'preferences-desktop-wallpaper-symbolic' }),
+    });
+    Main.messageTray.add(source);
+
+    const notification = new MessageTray.Notification({
+      source,
+      title: 'Vesper',
+      body: _('Saved to %s').format(targetPath),
+    });
+    notification.addAction(_('Open'), () => {
+      try {
+        Gio.AppInfo.launch_default_for_uri(`file://${encodeURI(targetPath)}`, null);
+      } catch (e) {
+        this.log.error('failed to open saved wallpaper', e);
+      }
+    });
+    source.addNotification(notification);
   }
 
   /** If `<dir>/<base>` exists, return `<dir>/<base-stem>_N.<ext>` for the next free N. */

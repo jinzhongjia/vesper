@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:05+0800\n"
+"POT-Creation-Date: 2026-05-18 01:16+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "꺼져 있을 때 Vesper는 로드되지만 배경 화면을 자동으로 변경하지 않습니다."
 
-#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
+#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "교체 활성화"
 
@@ -302,56 +302,60 @@ msgstr "선택"
 msgid "Clear"
 msgstr "지우기"
 
-#: wallpaperManager.ts:167 wallpaperManager.ts:357
+#: wallpaperManager.ts:168 wallpaperManager.ts:358
 msgid "Disable rotation"
 msgstr "교체 비활성화"
 
-#: wallpaperManager.ts:287
+#: wallpaperManager.ts:288
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "배경 화면 업데이트 실패: %s"
 
-#: wallpaperManager.ts:364
+#: wallpaperManager.ts:365
 msgid "Change now"
 msgstr "지금 변경"
 
-#: wallpaperManager.ts:370
+#: wallpaperManager.ts:371
 msgid "Open current wallpaper"
 msgstr "현재 배경 화면 열기"
 
-#: wallpaperManager.ts:374
+#: wallpaperManager.ts:375
 msgid "Save current wallpaper"
 msgstr "현재 배경 화면 저장"
 
-#: wallpaperManager.ts:378
+#: wallpaperManager.ts:379
 msgid "Preferences"
 msgstr "환경 설정"
 
-#: wallpaperManager.ts:388
+#: wallpaperManager.ts:389
 msgid "No wallpaper has been applied yet"
 msgstr "아직 배경 화면이 적용되지 않았습니다"
 
-#: wallpaperManager.ts:401 wallpaperManager.ts:415
+#: wallpaperManager.ts:402 wallpaperManager.ts:416
 msgid "No wallpaper to save"
 msgstr "저장할 배경 화면이 없습니다"
 
-#: wallpaperManager.ts:409
+#: wallpaperManager.ts:410
 msgid "Only Vesper-rotated wallpapers can be saved"
 msgstr "Vesper가 적용한 배경 화면만 저장할 수 있습니다"
 
-#: wallpaperManager.ts:421
+#: wallpaperManager.ts:422
 msgid "Could not locate the Pictures directory"
 msgstr "사진 디렉터리를 찾을 수 없습니다"
 
-#: wallpaperManager.ts:433
+#: wallpaperManager.ts:439
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "배경 화면 저장 실패: %s"
+
+#: wallpaperManager.ts:454
 #, javascript-format
 msgid "Saved to %s"
 msgstr "%s에 저장됨"
 
-#: wallpaperManager.ts:438
-#, javascript-format
-msgid "Failed to save wallpaper: %s"
-msgstr "배경 화면 저장 실패: %s"
+#: wallpaperManager.ts:456
+msgid "Open"
+msgstr "열기"
 
 #: lib/http.ts:44
 #, javascript-format

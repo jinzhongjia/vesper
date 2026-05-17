@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:05+0800\n"
+"POT-Creation-Date: 2026-05-18 01:16+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Quando desligado, o Vesper é carregado mas não altera o papel de parede "
 "automaticamente."
 
-#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
+#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "Ativar rotação"
 
@@ -304,56 +304,60 @@ msgstr "Selecionar"
 msgid "Clear"
 msgstr "Limpar"
 
-#: wallpaperManager.ts:167 wallpaperManager.ts:357
+#: wallpaperManager.ts:168 wallpaperManager.ts:358
 msgid "Disable rotation"
 msgstr "Desativar rotação"
 
-#: wallpaperManager.ts:287
+#: wallpaperManager.ts:288
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Falha ao atualizar o papel de parede: %s"
 
-#: wallpaperManager.ts:364
+#: wallpaperManager.ts:365
 msgid "Change now"
 msgstr "Alterar agora"
 
-#: wallpaperManager.ts:370
+#: wallpaperManager.ts:371
 msgid "Open current wallpaper"
 msgstr "Abrir papel de parede atual"
 
-#: wallpaperManager.ts:374
+#: wallpaperManager.ts:375
 msgid "Save current wallpaper"
 msgstr "Salvar papel de parede atual"
 
-#: wallpaperManager.ts:378
+#: wallpaperManager.ts:379
 msgid "Preferences"
 msgstr "Preferências"
 
-#: wallpaperManager.ts:388
+#: wallpaperManager.ts:389
 msgid "No wallpaper has been applied yet"
 msgstr "Nenhum papel de parede foi aplicado ainda"
 
-#: wallpaperManager.ts:401 wallpaperManager.ts:415
+#: wallpaperManager.ts:402 wallpaperManager.ts:416
 msgid "No wallpaper to save"
 msgstr "Nenhum papel de parede para salvar"
 
-#: wallpaperManager.ts:409
+#: wallpaperManager.ts:410
 msgid "Only Vesper-rotated wallpapers can be saved"
 msgstr "Apenas papéis de parede rotacionados pelo Vesper podem ser salvos"
 
-#: wallpaperManager.ts:421
+#: wallpaperManager.ts:422
 msgid "Could not locate the Pictures directory"
 msgstr "Não foi possível localizar a pasta Imagens"
 
-#: wallpaperManager.ts:433
+#: wallpaperManager.ts:439
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "Falha ao salvar o papel de parede: %s"
+
+#: wallpaperManager.ts:454
 #, javascript-format
 msgid "Saved to %s"
 msgstr "Salvo em %s"
 
-#: wallpaperManager.ts:438
-#, javascript-format
-msgid "Failed to save wallpaper: %s"
-msgstr "Falha ao salvar o papel de parede: %s"
+#: wallpaperManager.ts:456
+msgid "Open"
+msgstr "Abrir"
 
 #: lib/http.ts:44
 #, javascript-format

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:05+0800\n"
+"POT-Creation-Date: 2026-05-18 01:16+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Wenn aus, ist Vesper geladen, ändert aber nicht automatisch das "
 "Hintergrundbild."
 
-#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
+#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "Rotation aktivieren"
 
@@ -304,56 +304,60 @@ msgstr "Auswählen"
 msgid "Clear"
 msgstr "Leeren"
 
-#: wallpaperManager.ts:167 wallpaperManager.ts:357
+#: wallpaperManager.ts:168 wallpaperManager.ts:358
 msgid "Disable rotation"
 msgstr "Rotation deaktivieren"
 
-#: wallpaperManager.ts:287
+#: wallpaperManager.ts:288
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Hintergrundbild-Aktualisierung fehlgeschlagen: %s"
 
-#: wallpaperManager.ts:364
+#: wallpaperManager.ts:365
 msgid "Change now"
 msgstr "Jetzt wechseln"
 
-#: wallpaperManager.ts:370
+#: wallpaperManager.ts:371
 msgid "Open current wallpaper"
 msgstr "Aktuelles Hintergrundbild öffnen"
 
-#: wallpaperManager.ts:374
+#: wallpaperManager.ts:375
 msgid "Save current wallpaper"
 msgstr "Aktuelles Hintergrundbild speichern"
 
-#: wallpaperManager.ts:378
+#: wallpaperManager.ts:379
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: wallpaperManager.ts:388
+#: wallpaperManager.ts:389
 msgid "No wallpaper has been applied yet"
 msgstr "Es wurde noch kein Hintergrundbild angewendet"
 
-#: wallpaperManager.ts:401 wallpaperManager.ts:415
+#: wallpaperManager.ts:402 wallpaperManager.ts:416
 msgid "No wallpaper to save"
 msgstr "Kein Hintergrundbild zum Speichern"
 
-#: wallpaperManager.ts:409
+#: wallpaperManager.ts:410
 msgid "Only Vesper-rotated wallpapers can be saved"
 msgstr "Nur von Vesper rotierte Hintergrundbilder können gespeichert werden"
 
-#: wallpaperManager.ts:421
+#: wallpaperManager.ts:422
 msgid "Could not locate the Pictures directory"
 msgstr "Bilder-Verzeichnis konnte nicht gefunden werden"
 
-#: wallpaperManager.ts:433
+#: wallpaperManager.ts:439
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "Hintergrundbild konnte nicht gespeichert werden: %s"
+
+#: wallpaperManager.ts:454
 #, javascript-format
 msgid "Saved to %s"
 msgstr "Gespeichert unter %s"
 
-#: wallpaperManager.ts:438
-#, javascript-format
-msgid "Failed to save wallpaper: %s"
-msgstr "Hintergrundbild konnte nicht gespeichert werden: %s"
+#: wallpaperManager.ts:456
+msgid "Open"
+msgstr "Öffnen"
 
 #: lib/http.ts:44
 #, javascript-format
