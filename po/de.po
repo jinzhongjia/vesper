@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 16:06+0800\n"
+"POT-Creation-Date: 2026-05-17 21:10+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Wenn aus, ist Vesper geladen, ändert aber nicht automatisch das "
 "Hintergrundbild."
 
-#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
+#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
 msgid "Enable rotation"
 msgstr "Rotation aktivieren"
 
@@ -183,129 +183,147 @@ msgstr "Anzüglich"
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:148
+#: prefs.ts:141
+msgid "Requires an API key (set below)."
+msgstr "Erfordert einen API-Schlüssel (unten festlegen)."
+
+#: prefs.ts:145
+msgid "Account"
+msgstr "Konto"
+
+#: prefs.ts:146
+msgid ""
+"Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
+"account."
+msgstr "Nur für NSFW-Suchergebnisse nötig. Schlüssel erhältst du unter https://wallhaven.cc/settings/account."
+
+#: prefs.ts:149
+msgid "API key"
+msgstr "API-Schlüssel"
+
+#: prefs.ts:160
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:152
+#: prefs.ts:164
 msgid "Region"
 msgstr "Region"
 
-#: prefs.ts:153
+#: prefs.ts:165
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing liefert in jeder Region ein anderes tägliches Bild."
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "United States"
 msgstr "Vereinigte Staaten"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "China"
 msgstr "China"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Germany"
 msgstr "Deutschland"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Japan"
 msgstr "Japan"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "United Kingdom"
 msgstr "Vereinigtes Königreich"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "France"
 msgstr "Frankreich"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "Brazil"
 msgstr "Brasilien"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "India"
 msgstr "Indien"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Australia"
 msgstr "Australien"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Canada"
 msgstr "Kanada"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Italy"
 msgstr "Italien"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Spain"
 msgstr "Spanien"
 
-#: prefs.ts:162
+#: prefs.ts:174
 msgid "Country"
 msgstr "Land"
 
-#: prefs.ts:170
+#: prefs.ts:182
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:173
+#: prefs.ts:185
 msgid "Resolution"
 msgstr "Auflösung"
 
-#: prefs.ts:176
+#: prefs.ts:188
 msgid "Width (px)"
 msgstr "Breite (px)"
 
-#: prefs.ts:185
+#: prefs.ts:197
 msgid "Height (px)"
 msgstr "Höhe (px)"
 
-#: prefs.ts:264 prefs.ts:303
+#: prefs.ts:281 prefs.ts:320
 msgid "(not set)"
 msgstr "(nicht festgelegt)"
 
-#: prefs.ts:268
+#: prefs.ts:285
 msgid "Choose…"
 msgstr "Auswählen …"
 
-#: prefs.ts:273
+#: prefs.ts:290
 #, javascript-format
 msgid "Select %s"
 msgstr "%s auswählen"
 
-#: prefs.ts:274
+#: prefs.ts:291
 msgid "Select"
 msgstr "Auswählen"
 
-#: prefs.ts:296
+#: prefs.ts:313
 msgid "Clear"
 msgstr "Leeren"
 
-#: wallpaperManager.ts:125 wallpaperManager.ts:319
+#: wallpaperManager.ts:167 wallpaperManager.ts:357
 msgid "Disable rotation"
 msgstr "Rotation deaktivieren"
 
-#: wallpaperManager.ts:249
+#: wallpaperManager.ts:287
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Hintergrundbild-Aktualisierung fehlgeschlagen: %s"
 
-#: wallpaperManager.ts:326
+#: wallpaperManager.ts:364
 msgid "Change now"
 msgstr "Jetzt wechseln"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:370
 msgid "Open current wallpaper"
 msgstr "Aktuelles Hintergrundbild öffnen"
 
-#: wallpaperManager.ts:336
+#: wallpaperManager.ts:374
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: wallpaperManager.ts:346
+#: wallpaperManager.ts:384
 msgid "No wallpaper has been applied yet"
 msgstr "Es wurde noch kein Hintergrundbild angewendet"
 
@@ -337,11 +355,11 @@ msgid "Peapix returned no entries"
 msgstr "Peapix hat keine Einträge zurückgegeben"
 
 #: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:41
+#: providers/wallhavenProvider.ts:45
 msgid "Cache file has no path"
 msgstr "Cache-Datei hat keinen Pfad"
 
-#: providers/wallhavenProvider.ts:35
+#: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven hat keine Bilder zurückgegeben"
 

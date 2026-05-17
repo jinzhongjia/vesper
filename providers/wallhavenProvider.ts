@@ -28,7 +28,11 @@ export class WallhavenProvider implements WallpaperProvider {
   async getNext(req: WallpaperRequest): Promise<WallpaperResult> {
     const categories = encodeURIComponent(this.settings.wallhavenCategories || '111');
     const purity = encodeURIComponent(this.settings.wallhavenPurity || '100');
-    const searchUrl = `https://wallhaven.cc/api/v1/search?sorting=random&categories=${categories}&purity=${purity}`;
+    const apiKey = this.settings.wallhavenApiKey.trim();
+    let searchUrl = `https://wallhaven.cc/api/v1/search?sorting=random&categories=${categories}&purity=${purity}`;
+    if (apiKey) {
+      searchUrl += `&apikey=${encodeURIComponent(apiKey)}`;
+    }
 
     const data = await this.http.getJson<WallhavenSearchResponse>(searchUrl, req.cancellable);
     if (!data.data || data.data.length === 0) {

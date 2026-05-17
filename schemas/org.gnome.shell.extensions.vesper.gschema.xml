@@ -67,6 +67,13 @@
     <key name="wallhaven-purity" type="s">
       <default>"100"</default>
       <summary>Wallhaven purity: 3 bits for SFW/sketchy/NSFW</summary>
+      <description>NSFW (3rd bit) is only honored by the server when a valid API key is set.</description>
+    </key>
+
+    <key name="wallhaven-api-key" type="s">
+      <default>""</default>
+      <summary>Wallhaven API key (optional)</summary>
+      <description>Required only for NSFW search results. Get one at https://wallhaven.cc/settings/account. Stored in dconf as plain text.</description>
     </key>
 
     <key name="peapix-country" type="s">

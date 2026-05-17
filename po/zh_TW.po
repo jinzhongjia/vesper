@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 16:06+0800\n"
+"POT-Creation-Date: 2026-05-17 21:10+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Chinese (Traditional)\n"
 "Language: zh_TW\n"
@@ -23,7 +23,7 @@ msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "關閉時,Vesper 已載入但不會自動更換桌布。"
 
-#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
+#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
 msgid "Enable rotation"
 msgstr "啟用輪換"
 
@@ -178,129 +178,147 @@ msgstr "略帶暗示"
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:148
+#: prefs.ts:141
+msgid "Requires an API key (set below)."
+msgstr "需要在下方設定 API 金鑰。"
+
+#: prefs.ts:145
+msgid "Account"
+msgstr "帳號"
+
+#: prefs.ts:146
+msgid ""
+"Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
+"account."
+msgstr "僅 NSFW 搜尋需要。在 https://wallhaven.cc/settings/account 取得金鑰。"
+
+#: prefs.ts:149
+msgid "API key"
+msgstr "API 金鑰"
+
+#: prefs.ts:160
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:152
+#: prefs.ts:164
 msgid "Region"
 msgstr "區域"
 
-#: prefs.ts:153
+#: prefs.ts:165
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing 在不同區域提供不同的每日圖片。"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "United States"
 msgstr "美國"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "China"
 msgstr "中國"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Germany"
 msgstr "德國"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "United Kingdom"
 msgstr "英國"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "France"
 msgstr "法國"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "Brazil"
 msgstr "巴西"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "India"
 msgstr "印度"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Australia"
 msgstr "澳洲"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Canada"
 msgstr "加拿大"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Italy"
 msgstr "義大利"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Spain"
 msgstr "西班牙"
 
-#: prefs.ts:162
+#: prefs.ts:174
 msgid "Country"
 msgstr "國家"
 
-#: prefs.ts:170
+#: prefs.ts:182
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:173
+#: prefs.ts:185
 msgid "Resolution"
 msgstr "解析度"
 
-#: prefs.ts:176
+#: prefs.ts:188
 msgid "Width (px)"
 msgstr "寬度(像素)"
 
-#: prefs.ts:185
+#: prefs.ts:197
 msgid "Height (px)"
 msgstr "高度(像素)"
 
-#: prefs.ts:264 prefs.ts:303
+#: prefs.ts:281 prefs.ts:320
 msgid "(not set)"
 msgstr "(未設定)"
 
-#: prefs.ts:268
+#: prefs.ts:285
 msgid "Choose…"
 msgstr "選擇…"
 
-#: prefs.ts:273
+#: prefs.ts:290
 #, javascript-format
 msgid "Select %s"
 msgstr "選擇 %s"
 
-#: prefs.ts:274
+#: prefs.ts:291
 msgid "Select"
 msgstr "選擇"
 
-#: prefs.ts:296
+#: prefs.ts:313
 msgid "Clear"
 msgstr "清除"
 
-#: wallpaperManager.ts:125 wallpaperManager.ts:319
+#: wallpaperManager.ts:167 wallpaperManager.ts:357
 msgid "Disable rotation"
 msgstr "停用輪換"
 
-#: wallpaperManager.ts:249
+#: wallpaperManager.ts:287
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "桌布更新失敗:%s"
 
-#: wallpaperManager.ts:326
+#: wallpaperManager.ts:364
 msgid "Change now"
 msgstr "立即更換"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:370
 msgid "Open current wallpaper"
 msgstr "開啟目前桌布"
 
-#: wallpaperManager.ts:336
+#: wallpaperManager.ts:374
 msgid "Preferences"
 msgstr "偏好設定"
 
-#: wallpaperManager.ts:346
+#: wallpaperManager.ts:384
 msgid "No wallpaper has been applied yet"
 msgstr "尚未套用任何桌布"
 
@@ -332,11 +350,11 @@ msgid "Peapix returned no entries"
 msgstr "Peapix 未傳回任何項目"
 
 #: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:41
+#: providers/wallhavenProvider.ts:45
 msgid "Cache file has no path"
 msgstr "快取檔案沒有路徑"
 
-#: providers/wallhavenProvider.ts:35
+#: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven 未傳回任何圖片"
 

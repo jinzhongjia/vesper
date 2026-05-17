@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 16:06+0800\n"
+"POT-Creation-Date: 2026-05-17 21:10+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -23,7 +23,7 @@ msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "オフのとき、Vesper は読み込まれますが、壁紙を自動的に変更しません。"
 
-#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
+#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
 msgid "Enable rotation"
 msgstr "ローテーションを有効化"
 
@@ -179,129 +179,147 @@ msgstr "際どい"
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:148
+#: prefs.ts:141
+msgid "Requires an API key (set below)."
+msgstr "API キーが必要です (下で設定)。"
+
+#: prefs.ts:145
+msgid "Account"
+msgstr "アカウント"
+
+#: prefs.ts:146
+msgid ""
+"Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
+"account."
+msgstr "NSFW 検索結果にのみ必要です。キーは https://wallhaven.cc/settings/account で取得できます。"
+
+#: prefs.ts:149
+msgid "API key"
+msgstr "API キー"
+
+#: prefs.ts:160
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:152
+#: prefs.ts:164
 msgid "Region"
 msgstr "地域"
 
-#: prefs.ts:153
+#: prefs.ts:165
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing は地域ごとに異なる日替わり画像を提供します。"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "United States"
 msgstr "アメリカ合衆国"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Germany"
 msgstr "ドイツ"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "United Kingdom"
 msgstr "イギリス"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "France"
 msgstr "フランス"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "Brazil"
 msgstr "ブラジル"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "India"
 msgstr "インド"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Australia"
 msgstr "オーストラリア"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Canada"
 msgstr "カナダ"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Italy"
 msgstr "イタリア"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Spain"
 msgstr "スペイン"
 
-#: prefs.ts:162
+#: prefs.ts:174
 msgid "Country"
 msgstr "国"
 
-#: prefs.ts:170
+#: prefs.ts:182
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:173
+#: prefs.ts:185
 msgid "Resolution"
 msgstr "解像度"
 
-#: prefs.ts:176
+#: prefs.ts:188
 msgid "Width (px)"
 msgstr "幅 (px)"
 
-#: prefs.ts:185
+#: prefs.ts:197
 msgid "Height (px)"
 msgstr "高さ (px)"
 
-#: prefs.ts:264 prefs.ts:303
+#: prefs.ts:281 prefs.ts:320
 msgid "(not set)"
 msgstr "(未設定)"
 
-#: prefs.ts:268
+#: prefs.ts:285
 msgid "Choose…"
 msgstr "選択…"
 
-#: prefs.ts:273
+#: prefs.ts:290
 #, javascript-format
 msgid "Select %s"
 msgstr "%s を選択"
 
-#: prefs.ts:274
+#: prefs.ts:291
 msgid "Select"
 msgstr "選択"
 
-#: prefs.ts:296
+#: prefs.ts:313
 msgid "Clear"
 msgstr "クリア"
 
-#: wallpaperManager.ts:125 wallpaperManager.ts:319
+#: wallpaperManager.ts:167 wallpaperManager.ts:357
 msgid "Disable rotation"
 msgstr "ローテーションを無効化"
 
-#: wallpaperManager.ts:249
+#: wallpaperManager.ts:287
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "壁紙の更新に失敗しました: %s"
 
-#: wallpaperManager.ts:326
+#: wallpaperManager.ts:364
 msgid "Change now"
 msgstr "今すぐ変更"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:370
 msgid "Open current wallpaper"
 msgstr "現在の壁紙を開く"
 
-#: wallpaperManager.ts:336
+#: wallpaperManager.ts:374
 msgid "Preferences"
 msgstr "設定"
 
-#: wallpaperManager.ts:346
+#: wallpaperManager.ts:384
 msgid "No wallpaper has been applied yet"
 msgstr "まだ壁紙が適用されていません"
 
@@ -333,11 +351,11 @@ msgid "Peapix returned no entries"
 msgstr "Peapix からエントリーが返されませんでした"
 
 #: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:41
+#: providers/wallhavenProvider.ts:45
 msgid "Cache file has no path"
 msgstr "キャッシュファイルにパスがありません"
 
-#: providers/wallhavenProvider.ts:35
+#: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven から画像が返されませんでした"
 

@@ -2,7 +2,8 @@
 
 A GNOME 50 wallpaper rotator written in TypeScript. Pulls from a local folder
 or remote APIs on a timer, with optional separate light/dark variants. No API
-keys, no signup.
+keys required for normal use; an optional Wallhaven key unlocks NSFW search
+results.
 
 ## Features
 
@@ -63,12 +64,12 @@ gsettings --schemadir $SCHEMA_DIR set org.gnome.shell.extensions.vesper interval
 
 ### Sources
 
-| Source     | Needs key | Light/dark | Notes |
-|------------|-----------|------------|-------|
-| Local      | –         | Yes        | Set `local-folder` (and optionally `local-folder-dark`). |
-| Wallhaven  | No        | No         | Anonymous SFW by default. Tune categories/purity in prefs. |
-| Peapix     | No        | No         | Single daily image per region. |
-| Picsum     | No        | No         | Random per tick at configured resolution. |
+| Source     | Needs key      | Light/dark | Notes |
+|------------|----------------|------------|-------|
+| Local      | –              | Yes        | Set `local-folder` (and optionally `local-folder-dark`). |
+| Wallhaven  | No (NSFW: yes) | No         | Anonymous returns SFW + Sketchy. Optional API key in prefs unlocks NSFW. |
+| Peapix     | No             | No         | Single daily image per region. |
+| Picsum     | No             | No         | Random per tick at configured resolution. |
 
 Light/dark mode separation is local-only. Remote sources write the same image to
 both `picture-uri` and `picture-uri-dark` because they can't guarantee a

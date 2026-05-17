@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 16:06+0800\n"
+"POT-Creation-Date: 2026-05-17 21:10+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "꺼져 있을 때 Vesper는 로드되지만 배경 화면을 자동으로 변경하지 않습니다."
 
-#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
+#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
 msgid "Enable rotation"
 msgstr "교체 활성화"
 
@@ -181,129 +181,147 @@ msgstr "다소 자극적"
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:148
+#: prefs.ts:141
+msgid "Requires an API key (set below)."
+msgstr "API 키가 필요합니다 (아래에서 설정)."
+
+#: prefs.ts:145
+msgid "Account"
+msgstr "계정"
+
+#: prefs.ts:146
+msgid ""
+"Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
+"account."
+msgstr "NSFW 검색 결과에만 필요합니다. https://wallhaven.cc/settings/account 에서 키를 받으세요."
+
+#: prefs.ts:149
+msgid "API key"
+msgstr "API 키"
+
+#: prefs.ts:160
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:152
+#: prefs.ts:164
 msgid "Region"
 msgstr "지역"
 
-#: prefs.ts:153
+#: prefs.ts:165
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing은 지역마다 다른 일일 이미지를 제공합니다."
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "United States"
 msgstr "미국"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "China"
 msgstr "중국"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Germany"
 msgstr "독일"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Japan"
 msgstr "일본"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "United Kingdom"
 msgstr "영국"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "France"
 msgstr "프랑스"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "Brazil"
 msgstr "브라질"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "India"
 msgstr "인도"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Australia"
 msgstr "호주"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Canada"
 msgstr "캐나다"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Italy"
 msgstr "이탈리아"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Spain"
 msgstr "스페인"
 
-#: prefs.ts:162
+#: prefs.ts:174
 msgid "Country"
 msgstr "국가"
 
-#: prefs.ts:170
+#: prefs.ts:182
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:173
+#: prefs.ts:185
 msgid "Resolution"
 msgstr "해상도"
 
-#: prefs.ts:176
+#: prefs.ts:188
 msgid "Width (px)"
 msgstr "너비 (px)"
 
-#: prefs.ts:185
+#: prefs.ts:197
 msgid "Height (px)"
 msgstr "높이 (px)"
 
-#: prefs.ts:264 prefs.ts:303
+#: prefs.ts:281 prefs.ts:320
 msgid "(not set)"
 msgstr "(설정되지 않음)"
 
-#: prefs.ts:268
+#: prefs.ts:285
 msgid "Choose…"
 msgstr "선택…"
 
-#: prefs.ts:273
+#: prefs.ts:290
 #, javascript-format
 msgid "Select %s"
 msgstr "%s 선택"
 
-#: prefs.ts:274
+#: prefs.ts:291
 msgid "Select"
 msgstr "선택"
 
-#: prefs.ts:296
+#: prefs.ts:313
 msgid "Clear"
 msgstr "지우기"
 
-#: wallpaperManager.ts:125 wallpaperManager.ts:319
+#: wallpaperManager.ts:167 wallpaperManager.ts:357
 msgid "Disable rotation"
 msgstr "교체 비활성화"
 
-#: wallpaperManager.ts:249
+#: wallpaperManager.ts:287
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "배경 화면 업데이트 실패: %s"
 
-#: wallpaperManager.ts:326
+#: wallpaperManager.ts:364
 msgid "Change now"
 msgstr "지금 변경"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:370
 msgid "Open current wallpaper"
 msgstr "현재 배경 화면 열기"
 
-#: wallpaperManager.ts:336
+#: wallpaperManager.ts:374
 msgid "Preferences"
 msgstr "환경 설정"
 
-#: wallpaperManager.ts:346
+#: wallpaperManager.ts:384
 msgid "No wallpaper has been applied yet"
 msgstr "아직 배경 화면이 적용되지 않았습니다"
 
@@ -335,11 +353,11 @@ msgid "Peapix returned no entries"
 msgstr "Peapix가 항목을 반환하지 않았습니다"
 
 #: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:41
+#: providers/wallhavenProvider.ts:45
 msgid "Cache file has no path"
 msgstr "캐시 파일에 경로가 없습니다"
 
-#: providers/wallhavenProvider.ts:35
+#: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven이 이미지를 반환하지 않았습니다"
 

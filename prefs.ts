@@ -138,7 +138,19 @@ export default class VesperPreferences extends ExtensionPreferences {
       settings, 'wallhaven-purity',
       _('Purity'), _('Defaults to SFW only. Enable others at your own discretion.'),
       [_('SFW'), _('Sketchy'), _('NSFW')],
+      [null, null, _('Requires an API key (set below).')],
     ));
+
+    const accountGroup = new Adw.PreferencesGroup({
+      title: _('Account'),
+      description: _('Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/account.'),
+    });
+    const keyRow = new Adw.PasswordEntryRow({
+      title: _('API key'),
+    });
+    settings.bind('wallhaven-api-key', keyRow, 'text', Gio.SettingsBindFlags.DEFAULT);
+    accountGroup.add(keyRow);
+    page.add(accountGroup);
 
     return page;
   }
@@ -233,11 +245,16 @@ export default class VesperPreferences extends ExtensionPreferences {
     title: string,
     description: string,
     labels: string[],
+    subtitles: Array<string | null> = [],
   ): Adw.PreferencesGroup {
     const group = new Adw.PreferencesGroup({ title, description });
     for (let i = 0; i < labels.length; i++) {
       const idx = i;
-      const row = new Adw.SwitchRow({ title: labels[idx]! });
+      const sub = subtitles[idx];
+      const row = new Adw.SwitchRow({
+        title: labels[idx]!,
+        ...(sub ? { subtitle: sub } : {}),
+      });
       row.active = this.flagAt(settings.get_string(key), idx);
       row.connect('notify::active', () => {
         const cur = settings.get_string(key);

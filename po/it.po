@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 16:06+0800\n"
+"POT-Creation-Date: 2026-05-17 21:10+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Quando disattivato, Vesper è caricato ma non cambia automaticamente lo "
 "sfondo."
 
-#: prefs.ts:43 wallpaperManager.ts:126 wallpaperManager.ts:319
+#: prefs.ts:43 wallpaperManager.ts:168 wallpaperManager.ts:357
 msgid "Enable rotation"
 msgstr "Attiva rotazione"
 
@@ -123,7 +123,8 @@ msgstr "Dimensione massima della cache (MB)"
 
 #: prefs.ts:98
 msgid "Older downloads are deleted to stay under this limit."
-msgstr "I download più vecchi vengono eliminati per rimanere sotto questo limite."
+msgstr ""
+"I download più vecchi vengono eliminati per rimanere sotto questo limite."
 
 #: prefs.ts:112
 msgid "Local"
@@ -184,129 +185,147 @@ msgstr "Allusivo"
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:148
+#: prefs.ts:141
+msgid "Requires an API key (set below)."
+msgstr "Richiede una chiave API (impostare sotto)."
+
+#: prefs.ts:145
+msgid "Account"
+msgstr "Account"
+
+#: prefs.ts:146
+msgid ""
+"Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
+"account."
+msgstr "Necessaria solo per risultati NSFW. Ottieni una chiave su https://wallhaven.cc/settings/account."
+
+#: prefs.ts:149
+msgid "API key"
+msgstr "Chiave API"
+
+#: prefs.ts:160
 msgid "Peapix (Bing)"
 msgstr "Peapix (Bing)"
 
-#: prefs.ts:152
+#: prefs.ts:164
 msgid "Region"
 msgstr "Regione"
 
-#: prefs.ts:153
+#: prefs.ts:165
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing offre un’immagine giornaliera diversa in ogni regione."
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "United States"
 msgstr "Stati Uniti"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "China"
 msgstr "Cina"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Germany"
 msgstr "Germania"
 
-#: prefs.ts:158
+#: prefs.ts:170
 msgid "Japan"
 msgstr "Giappone"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "United Kingdom"
 msgstr "Regno Unito"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "France"
 msgstr "Francia"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "Brazil"
 msgstr "Brasile"
 
-#: prefs.ts:159
+#: prefs.ts:171
 msgid "India"
 msgstr "India"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Australia"
 msgstr "Australia"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Canada"
 msgstr "Canada"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Italy"
 msgstr "Italia"
 
-#: prefs.ts:160
+#: prefs.ts:172
 msgid "Spain"
 msgstr "Spagna"
 
-#: prefs.ts:162
+#: prefs.ts:174
 msgid "Country"
 msgstr "Paese"
 
-#: prefs.ts:170
+#: prefs.ts:182
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:173
+#: prefs.ts:185
 msgid "Resolution"
 msgstr "Risoluzione"
 
-#: prefs.ts:176
+#: prefs.ts:188
 msgid "Width (px)"
 msgstr "Larghezza (px)"
 
-#: prefs.ts:185
+#: prefs.ts:197
 msgid "Height (px)"
 msgstr "Altezza (px)"
 
-#: prefs.ts:264 prefs.ts:303
+#: prefs.ts:281 prefs.ts:320
 msgid "(not set)"
 msgstr "(non impostato)"
 
-#: prefs.ts:268
+#: prefs.ts:285
 msgid "Choose…"
 msgstr "Scegli…"
 
-#: prefs.ts:273
+#: prefs.ts:290
 #, javascript-format
 msgid "Select %s"
 msgstr "Seleziona %s"
 
-#: prefs.ts:274
+#: prefs.ts:291
 msgid "Select"
 msgstr "Seleziona"
 
-#: prefs.ts:296
+#: prefs.ts:313
 msgid "Clear"
 msgstr "Cancella"
 
-#: wallpaperManager.ts:125 wallpaperManager.ts:319
+#: wallpaperManager.ts:167 wallpaperManager.ts:357
 msgid "Disable rotation"
 msgstr "Disattiva rotazione"
 
-#: wallpaperManager.ts:249
+#: wallpaperManager.ts:287
 #, javascript-format
 msgid "Wallpaper update failed: %s"
 msgstr "Aggiornamento dello sfondo non riuscito: %s"
 
-#: wallpaperManager.ts:326
+#: wallpaperManager.ts:364
 msgid "Change now"
 msgstr "Cambia ora"
 
-#: wallpaperManager.ts:332
+#: wallpaperManager.ts:370
 msgid "Open current wallpaper"
 msgstr "Apri sfondo attuale"
 
-#: wallpaperManager.ts:336
+#: wallpaperManager.ts:374
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: wallpaperManager.ts:346
+#: wallpaperManager.ts:384
 msgid "No wallpaper has been applied yet"
 msgstr "Nessuno sfondo è ancora stato applicato"
 
@@ -338,11 +357,11 @@ msgid "Peapix returned no entries"
 msgstr "Peapix non ha restituito alcuna voce"
 
 #: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:41
+#: providers/wallhavenProvider.ts:45
 msgid "Cache file has no path"
 msgstr "Il file della cache non ha un percorso"
 
-#: providers/wallhavenProvider.ts:35
+#: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven non ha restituito alcuna immagine"
 

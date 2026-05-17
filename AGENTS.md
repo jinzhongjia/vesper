@@ -43,7 +43,7 @@ po/
 ## Hard rules
 
 - **GNOME 50 only.** `shell-version: ["50"]`. Don't add fallbacks for older Shell APIs.
-- **No API-key sources.** Anything that requires user registration/keys is rejected by design.
+- **Baseline must work without an API key.** Default operation never requires registration or a key. Optional API keys are allowed *only* to unlock additional features of a source we already support (e.g., the Wallhaven NSFW search results). They must never gate baseline behaviour, and they must not introduce compliance burdens (Unsplash-style "you must call the download endpoint" rules).
 - **No multi-workspace per-wallpaper.** GNOME has no native concept; was deliberately cut.
 - **Light/dark separation is local-only.** Remote sources cannot guarantee a dark-toned image, so when `follow-color-scheme=true` and source is remote, manager degrades to single mode and logs once.
 
@@ -97,7 +97,7 @@ Schemas need regeneration after editing `*.gschema.xml`. `make build` handles th
 ## Out of scope (don't add unless asked)
 
 - Per-workspace wallpapers
-- Sources that require an API key (Unsplash, Pexels, …)
+- Sources that *require* an API key for any usable baseline (Unsplash, Pexels, …). Sources where a key only unlocks extras (Wallhaven NSFW) are fine.
 - Automatic light/dark image classification for remote sources
 - Image brightness analysis
 - GNOME Shell <50 compatibility

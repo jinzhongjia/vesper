@@ -48,6 +48,10 @@ export class TypedSettings {
     return this.raw.get_string('wallhaven-purity');
   }
 
+  get wallhavenApiKey(): string {
+    return this.raw.get_string('wallhaven-api-key');
+  }
+
   get peapixCountry(): string {
     return this.raw.get_string('peapix-country');
   }

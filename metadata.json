@@ -1,7 +1,7 @@
 {
   "uuid": "vesper@nvimer.org",
   "name": "Vesper",
-  "description": "Rotates desktop wallpapers on a schedule. Sources: local folders (with optional separate light/dark folders), Wallhaven, Bing (via Peapix), or Lorem Picsum. No API keys required.",
+  "description": "Rotates desktop wallpapers on a schedule. Sources: local folders (with optional separate light/dark folders), Wallhaven, Bing (via Peapix), or Lorem Picsum. No API keys required for normal use; an optional Wallhaven key unlocks NSFW results.",
   "shell-version": ["50"],
   "url": "https://github.com/jinzhongjia/vesper",
   "version-name": "0.1.0",
