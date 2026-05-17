@@ -77,6 +77,10 @@ make clean       # remove dist, node_modules, locale, gschemas.compiled, zip
 
 Schemas need regeneration after editing `*.gschema.xml`. `make build` handles this; from CLI: `glib-compile-schemas schemas`.
 
+**After any schema change you MUST restart GNOME Shell** (Wayland: log out + log back in; X11: `Alt+F2` → `r`). `gnome-extensions disable+enable` is **not enough** — it reloads the JS, but the GLib `GSettingsSchemaSource` is cached at the process level, so a running Shell keeps using the old in-memory schema. Symptom of forgetting: at some point after the rebuild, a code path that reads a newly-added key throws `Settings schema 'org.gnome.shell.extensions.vesper' does not contain a key named '<key>'`. That critical can escape into GJS/GLib and **segfault GNOME Shell**. This crash has happened once during development (5月 17 21:22) — the schema was rebuilt at 21:12 with a new `active` key, the running Shell still had the old schema cached, and a settings access 10 minutes later took down the whole session.
+
+We deliberately do NOT add defensive try/catch around settings access to paper over this — the user-facing release flow ships one matched (code, schema) pair, so this only bites in-development. Just remember to log out + back in.
+
 ## Verifying behaviour
 
 - `gnome-extensions info vesper@nvimer.org` only talks to the running Shell; after `make link` the **main session won't see it** until restart. The **nested Shell from `make dev`** does see it after launching.
