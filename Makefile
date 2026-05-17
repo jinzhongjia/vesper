@@ -54,7 +54,7 @@ build: dist/extension.js $(COMPILED_SCHEMA) $(MO_FILES)
 	@if [ -d $(LOCALE_DIR) ]; then cp -r $(LOCALE_DIR) dist/; fi
 
 $(NAME).zip: build
-	@(cd dist && zip ../$(NAME).zip -9r .)
+	@(cd dist && zip ../$(NAME).zip -9r . -x 'schemas/gschemas.compiled')
 
 pack: $(NAME).zip
 
