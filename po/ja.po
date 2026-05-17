@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -191,7 +191,9 @@ msgstr "アカウント"
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
-msgstr "NSFW 検索結果にのみ必要です。キーは https://wallhaven.cc/settings/account で取得できます。"
+msgstr ""
+"NSFW 検索結果にのみ必要です。キーは https://wallhaven.cc/settings/account で"
+"取得できます。"
 
 #: prefs.ts:149
 msgid "API key"
@@ -316,12 +318,38 @@ msgid "Open current wallpaper"
 msgstr "現在の壁紙を開く"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "現在の壁紙を保存"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "設定"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "まだ壁紙が適用されていません"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "保存する壁紙がありません"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "Vesper でローテーションされた壁紙のみ保存できます"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "ピクチャディレクトリが見つかりません"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "%s に保存しました"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "壁紙の保存に失敗しました: %s"
 
 #: lib/http.ts:44
 #, javascript-format

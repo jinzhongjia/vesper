@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -193,7 +193,9 @@ msgstr "계정"
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
-msgstr "NSFW 검색 결과에만 필요합니다. https://wallhaven.cc/settings/account 에서 키를 받으세요."
+msgstr ""
+"NSFW 검색 결과에만 필요합니다. https://wallhaven.cc/settings/account 에서 키"
+"를 받으세요."
 
 #: prefs.ts:149
 msgid "API key"
@@ -318,12 +320,38 @@ msgid "Open current wallpaper"
 msgstr "현재 배경 화면 열기"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "현재 배경 화면 저장"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "환경 설정"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "아직 배경 화면이 적용되지 않았습니다"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "저장할 배경 화면이 없습니다"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "Vesper가 적용한 배경 화면만 저장할 수 있습니다"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "사진 디렉터리를 찾을 수 없습니다"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "%s에 저장됨"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "배경 화면 저장 실패: %s"
 
 #: lib/http.ts:44
 #, javascript-format

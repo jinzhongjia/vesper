@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Chinese (Traditional)\n"
 "Language: zh_TW\n"
@@ -315,12 +315,38 @@ msgid "Open current wallpaper"
 msgstr "開啟目前桌布"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "儲存目前桌布"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "偏好設定"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "尚未套用任何桌布"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "沒有可儲存的桌布"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "僅能儲存 Vesper 輪換的桌布"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "無法定位圖片資料夾"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "已儲存至 %s"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "儲存桌布失敗: %s"
 
 #: lib/http.ts:44
 #, javascript-format

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -315,11 +315,37 @@ msgid "Open current wallpaper"
 msgstr ""
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr ""
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr ""
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
+msgstr ""
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr ""
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr ""
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr ""
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr ""
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
 msgstr ""
 
 #: lib/http.ts:44

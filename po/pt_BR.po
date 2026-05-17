@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt_BR\n"
@@ -195,7 +195,9 @@ msgstr "Conta"
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
-msgstr "Necessária apenas para resultados NSFW. Obtenha uma chave em https://wallhaven.cc/settings/account."
+msgstr ""
+"Necessária apenas para resultados NSFW. Obtenha uma chave em https://"
+"wallhaven.cc/settings/account."
 
 #: prefs.ts:149
 msgid "API key"
@@ -320,12 +322,38 @@ msgid "Open current wallpaper"
 msgstr "Abrir papel de parede atual"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "Salvar papel de parede atual"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "Preferências"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "Nenhum papel de parede foi aplicado ainda"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "Nenhum papel de parede para salvar"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "Apenas papéis de parede rotacionados pelo Vesper podem ser salvos"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "Não foi possível localizar a pasta Imagens"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "Salvo em %s"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "Falha ao salvar o papel de parede: %s"
 
 #: lib/http.ts:44
 #, javascript-format

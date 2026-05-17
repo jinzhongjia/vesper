@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -197,7 +197,9 @@ msgstr "Account"
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
-msgstr "Necessaria solo per risultati NSFW. Ottieni una chiave su https://wallhaven.cc/settings/account."
+msgstr ""
+"Necessaria solo per risultati NSFW. Ottieni una chiave su https://"
+"wallhaven.cc/settings/account."
 
 #: prefs.ts:149
 msgid "API key"
@@ -322,12 +324,38 @@ msgid "Open current wallpaper"
 msgstr "Apri sfondo attuale"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "Salva sfondo attuale"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "Nessuno sfondo è ancora stato applicato"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "Nessuno sfondo da salvare"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "Possono essere salvati solo gli sfondi ruotati da Vesper"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "Impossibile trovare la cartella Immagini"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "Salvato in %s"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "Salvataggio dello sfondo non riuscito: %s"
 
 #: lib/http.ts:44
 #, javascript-format

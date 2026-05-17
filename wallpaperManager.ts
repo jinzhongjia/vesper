@@ -371,6 +371,10 @@ export class WallpaperManager {
     openCurrent.connect('activate', () => this.openCurrentWallpaper());
     menu.addMenuItem(openCurrent);
 
+    const saveCurrent = new PopupMenu.PopupMenuItem(_('Save current wallpaper'));
+    saveCurrent.connect('activate', () => this.saveCurrentWallpaper());
+    menu.addMenuItem(saveCurrent);
+
     const prefs = new PopupMenu.PopupMenuItem(_('Preferences'));
     prefs.connect('activate', () => this.extension.openPreferences());
     menu.addMenuItem(prefs);
@@ -389,5 +393,64 @@ export class WallpaperManager {
     } catch (e) {
       this.log.error('failed to open current wallpaper', e);
     }
+  }
+
+  private saveCurrentWallpaper(): void {
+    const uri = this.bgSettings.get_string('picture-uri');
+    if (!uri || !uri.startsWith('file://')) {
+      Main.notify('Vesper', _('No wallpaper to save'));
+      return;
+    }
+    const srcPath = decodeURI(uri.slice(7));
+
+    // Only Vesper-rotated images live under our cache dir; reject system
+    // pre-existing wallpapers (e.g. /usr/share/backgrounds/...).
+    if (!srcPath.startsWith(this.cache.root + '/')) {
+      Main.notify('Vesper', _('Only Vesper-rotated wallpapers can be saved'));
+      return;
+    }
+
+    const srcFile = Gio.File.new_for_path(srcPath);
+    if (!srcFile.query_exists(null)) {
+      Main.notify('Vesper', _('No wallpaper to save'));
+      return;
+    }
+
+    const picturesDir = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_PICTURES);
+    if (!picturesDir) {
+      Main.notify('Vesper', _('Could not locate the Pictures directory'));
+      return;
+    }
+    const targetDir = GLib.build_filenamev([picturesDir, 'vesper']);
+    GLib.mkdir_with_parents(targetDir, 0o755);
+
+    const basename = srcFile.get_basename() ?? 'wallpaper';
+    const targetPath = this.uniqueTargetPath(targetDir, basename);
+    const targetFile = Gio.File.new_for_path(targetPath);
+
+    try {
+      srcFile.copy(targetFile, Gio.FileCopyFlags.NONE, null, null);
+      Main.notify('Vesper', _('Saved to %s').format(targetPath));
+      this.log.info(`saved wallpaper to ${targetPath}`);
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : String(e);
+      this.log.error('failed to save wallpaper', e);
+      Main.notify('Vesper', _('Failed to save wallpaper: %s').format(msg));
+    }
+  }
+
+  /** If `<dir>/<base>` exists, return `<dir>/<base-stem>_N.<ext>` for the next free N. */
+  private uniqueTargetPath(dir: string, basename: string): string {
+    const direct = GLib.build_filenamev([dir, basename]);
+    if (!Gio.File.new_for_path(direct).query_exists(null)) return direct;
+
+    const dot = basename.lastIndexOf('.');
+    const stem = dot > 0 ? basename.slice(0, dot) : basename;
+    const ext = dot > 0 ? basename.slice(dot) : '';
+    for (let i = 1; i < 1000; i++) {
+      const candidate = GLib.build_filenamev([dir, `${stem}_${i}${ext}`]);
+      if (!Gio.File.new_for_path(candidate).query_exists(null)) return candidate;
+    }
+    return direct;
   }
 }

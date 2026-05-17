@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 21:10+0800\n"
+"POT-Creation-Date: 2026-05-18 01:05+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -198,7 +198,9 @@ msgstr "Compte"
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
-msgstr "Nécessaire uniquement pour les résultats NSFW. Obtenez une clé sur https://wallhaven.cc/settings/account."
+msgstr ""
+"Nécessaire uniquement pour les résultats NSFW. Obtenez une clé sur https://"
+"wallhaven.cc/settings/account."
 
 #: prefs.ts:149
 msgid "API key"
@@ -323,12 +325,38 @@ msgid "Open current wallpaper"
 msgstr "Ouvrir le fond d’écran actuel"
 
 #: wallpaperManager.ts:374
+msgid "Save current wallpaper"
+msgstr "Enregistrer le fond d’écran actuel"
+
+#: wallpaperManager.ts:378
 msgid "Preferences"
 msgstr "Préférences"
 
-#: wallpaperManager.ts:384
+#: wallpaperManager.ts:388
 msgid "No wallpaper has been applied yet"
 msgstr "Aucun fond d’écran n’a encore été appliqué"
+
+#: wallpaperManager.ts:401 wallpaperManager.ts:415
+msgid "No wallpaper to save"
+msgstr "Aucun fond d’écran à enregistrer"
+
+#: wallpaperManager.ts:409
+msgid "Only Vesper-rotated wallpapers can be saved"
+msgstr "Seuls les fonds d’écran provenant de Vesper peuvent être enregistrés"
+
+#: wallpaperManager.ts:421
+msgid "Could not locate the Pictures directory"
+msgstr "Impossible de localiser le dossier Images"
+
+#: wallpaperManager.ts:433
+#, javascript-format
+msgid "Saved to %s"
+msgstr "Enregistré dans %s"
+
+#: wallpaperManager.ts:438
+#, javascript-format
+msgid "Failed to save wallpaper: %s"
+msgstr "Échec de l’enregistrement du fond d’écran : %s"
 
 #: lib/http.ts:44
 #, javascript-format
