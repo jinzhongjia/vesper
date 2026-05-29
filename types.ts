@@ -1,4 +1,4 @@
-export type SourceType = 'local' | 'wallhaven' | 'peapix' | 'picsum';
+export type SourceType = 'local' | 'wallhaven' | 'bing' | 'picsum' | 'nasa';
 
 export type SwitchMode = 'random' | 'sequential';
 

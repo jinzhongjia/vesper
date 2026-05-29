@@ -3,8 +3,9 @@
   <enum id="org.gnome.shell.extensions.vesper.SourceType">
     <value nick="local" value="0"/>
     <value nick="wallhaven" value="1"/>
-    <value nick="peapix" value="2"/>
+    <value nick="bing" value="2"/>
     <value nick="picsum" value="3"/>
+    <value nick="nasa" value="4"/>
   </enum>
 
   <enum id="org.gnome.shell.extensions.vesper.SwitchMode">
@@ -76,9 +77,16 @@
       <description>Required only for NSFW search results. Get one at https://wallhaven.cc/settings/account. Stored in dconf as plain text.</description>
     </key>
 
-    <key name="peapix-country" type="s">
-      <default>"us"</default>
-      <summary>Peapix region code (us, cn, de, jp, ...)</summary>
+    <key name="bing-market" type="s">
+      <default>"en-US"</default>
+      <summary>Bing market code (en-US, zh-CN, de-DE, ja-JP, ...)</summary>
+      <description>Bing serves a different daily image per market. See https://www.bing.com/HPImageArchive.aspx for the upstream endpoint.</description>
+    </key>
+
+    <key name="nasa-api-key" type="s">
+      <default>""</default>
+      <summary>NASA API key (optional)</summary>
+      <description>If empty, the public DEMO_KEY is used (30 requests/hour shared). Register at https://api.nasa.gov/ to get your own key (1000/hour).</description>
     </key>
 
     <key name="picsum-width" type="i">

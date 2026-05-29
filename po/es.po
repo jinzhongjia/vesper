@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:16+0800\n"
+"POT-Creation-Date: 2026-05-18 09:50+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -14,78 +14,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: prefs.ts:35 prefs.ts:134
+#: prefs.ts:39 prefs.ts:138
 msgid "General"
 msgstr "General"
 
-#: prefs.ts:40
+#: prefs.ts:44
 msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr ""
 "Cuando está desactivado, Vesper está cargado pero no cambia el fondo de "
 "pantalla automáticamente."
 
-#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
+#: prefs.ts:47 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "Activar rotación"
 
-#: prefs.ts:49
+#: prefs.ts:53
 msgid "Source"
 msgstr "Fuente"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Local folder"
 msgstr "Carpeta local"
 
-#: prefs.ts:52 prefs.ts:127
+#: prefs.ts:56 prefs.ts:131
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
-#: prefs.ts:52
-msgid "Bing (via Peapix)"
-msgstr "Bing (vía Peapix)"
+#: prefs.ts:56 prefs.ts:164
+msgid "Bing"
+msgstr "Bing"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
-#: prefs.ts:53
+#: prefs.ts:56 prefs.ts:215
+msgid "NASA APOD"
+msgstr "NASA APOD"
+
+#: prefs.ts:57
 msgid "Wallpaper source"
 msgstr "Fuente del fondo de pantalla"
 
-#: prefs.ts:57
+#: prefs.ts:61
 msgid "Rotation"
 msgstr "Rotación"
 
-#: prefs.ts:59
+#: prefs.ts:63
 msgid "Interval (minutes)"
 msgstr "Intervalo (minutos)"
 
-#: prefs.ts:60
+#: prefs.ts:64
 msgid "How often to change the wallpaper"
 msgstr "Con qué frecuencia cambiar el fondo de pantalla"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Random"
 msgstr "Aleatorio"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Sequential"
 msgstr "Secuencial"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Switch mode"
 msgstr "Modo de cambio"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Only used for the local source"
 msgstr "Solo se usa para la fuente local"
 
-#: prefs.ts:76
+#: prefs.ts:80
 msgid "Color scheme"
 msgstr "Esquema de color"
 
-#: prefs.ts:77
+#: prefs.ts:81
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
@@ -93,19 +97,19 @@ msgstr ""
 "Solo es efectivo cuando la fuente es «Carpeta local» y se ha establecido una "
 "carpeta oscura; las fuentes remotas no pueden garantizar una variante oscura."
 
-#: prefs.ts:80
+#: prefs.ts:84
 msgid "Use different wallpapers for light and dark modes"
 msgstr "Usar diferentes fondos de pantalla para los modos claro y oscuro"
 
-#: prefs.ts:86
+#: prefs.ts:90
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: prefs.ts:88
+#: prefs.ts:92
 msgid "Show panel indicator"
 msgstr "Mostrar indicador del panel"
 
-#: prefs.ts:89
+#: prefs.ts:93
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
@@ -113,86 +117,86 @@ msgstr ""
 "Cuando está desactivado, abre las preferencias mediante la aplicación "
 "Extensiones o `gnome-extensions prefs vesper@nvimer.org`."
 
-#: prefs.ts:95
+#: prefs.ts:99
 msgid "Cache"
 msgstr "Caché"
 
-#: prefs.ts:97
+#: prefs.ts:101
 msgid "Maximum cache size (MB)"
 msgstr "Tamaño máximo de caché (MB)"
 
-#: prefs.ts:98
+#: prefs.ts:102
 msgid "Older downloads are deleted to stay under this limit."
 msgstr ""
 "Las descargas más antiguas se eliminan para mantenerse bajo este límite."
 
-#: prefs.ts:112
+#: prefs.ts:116
 msgid "Local"
 msgstr "Local"
 
-#: prefs.ts:116
+#: prefs.ts:120
 msgid "Folders"
 msgstr "Carpetas"
 
-#: prefs.ts:117
+#: prefs.ts:121
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr ""
 "La carpeta clara también se usa cuando «seguir esquema de color» está "
 "desactivado."
 
-#: prefs.ts:119
+#: prefs.ts:123
 msgid "Light folder"
 msgstr "Carpeta clara"
 
-#: prefs.ts:120
+#: prefs.ts:124
 msgid "Dark folder"
 msgstr "Carpeta oscura"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "Categories"
 msgstr "Categorías"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "At least one should be enabled."
 msgstr "Al menos una debe estar activada."
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "Anime"
 msgstr "Anime"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "People"
 msgstr "Personas"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Purity"
 msgstr "Pureza"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "Por defecto solo SFW. Active otras a su propia discreción."
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "Sketchy"
 msgstr "Sugerente"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:141
+#: prefs.ts:145
 msgid "Requires an API key (set below)."
 msgstr "Requiere una clave API (configurar abajo)."
 
-#: prefs.ts:145
+#: prefs.ts:149 prefs.ts:219
 msgid "Account"
 msgstr "Cuenta"
 
-#: prefs.ts:146
+#: prefs.ts:150
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
@@ -200,108 +204,110 @@ msgstr ""
 "Solo necesaria para resultados NSFW. Obtén una clave en https://wallhaven.cc/"
 "settings/account."
 
-#: prefs.ts:149
+#: prefs.ts:153 prefs.ts:223
 msgid "API key"
 msgstr "Clave API"
 
-#: prefs.ts:160
-msgid "Peapix (Bing)"
-msgstr "Peapix (Bing)"
-
-#: prefs.ts:164
+#: prefs.ts:168
 msgid "Region"
 msgstr "Región"
 
-#: prefs.ts:165
+#: prefs.ts:169
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing ofrece una imagen diaria diferente en cada región."
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "United States"
 msgstr "Estados Unidos"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "China"
 msgstr "China"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Germany"
 msgstr "Alemania"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Japan"
 msgstr "Japón"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "United Kingdom"
 msgstr "Reino Unido"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "France"
 msgstr "Francia"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "Brazil"
 msgstr "Brasil"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "India"
 msgstr "India"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Australia"
 msgstr "Australia"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Canada"
 msgstr "Canadá"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Italy"
 msgstr "Italia"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Spain"
 msgstr "España"
 
-#: prefs.ts:174
+#: prefs.ts:178
 msgid "Country"
 msgstr "País"
 
-#: prefs.ts:182
+#: prefs.ts:186
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:185
+#: prefs.ts:189
 msgid "Resolution"
 msgstr "Resolución"
 
-#: prefs.ts:188
+#: prefs.ts:192
 msgid "Width (px)"
 msgstr "Ancho (px)"
 
-#: prefs.ts:197
+#: prefs.ts:201
 msgid "Height (px)"
 msgstr "Alto (px)"
 
-#: prefs.ts:281 prefs.ts:320
+#: prefs.ts:220
+msgid ""
+"DEMO_KEY works without registration but is shared (30 requests/hour). Get a "
+"free key at https://api.nasa.gov/ for 1000/hour."
+msgstr "DEMO_KEY funciona sin registro pero es compartida (30 solicitudes/hora). Obtén una clave gratuita en https://api.nasa.gov/ para 1000/hora."
+
+#: prefs.ts:303 prefs.ts:342
 msgid "(not set)"
 msgstr "(no establecido)"
 
-#: prefs.ts:285
+#: prefs.ts:307
 msgid "Choose…"
 msgstr "Elegir…"
 
-#: prefs.ts:290
+#: prefs.ts:312
 #, javascript-format
 msgid "Select %s"
 msgstr "Seleccionar %s"
 
-#: prefs.ts:291
+#: prefs.ts:313
 msgid "Select"
 msgstr "Seleccionar"
 
-#: prefs.ts:313
+#: prefs.ts:335
 msgid "Clear"
 msgstr "Limpiar"
 
@@ -370,6 +376,15 @@ msgstr "URL mal formada: %s"
 msgid "HTTP %d from %s"
 msgstr "HTTP %d desde %s"
 
+#: providers/bingProvider.ts:42
+msgid "Bing returned no images"
+msgstr "Bing no devolvió ninguna imagen"
+
+#: providers/bingProvider.ts:50 providers/nasaProvider.ts:57
+#: providers/picsumProvider.ts:30 providers/wallhavenProvider.ts:45
+msgid "Cache file has no path"
+msgstr "El archivo de caché no tiene ruta"
+
 #: providers/localProvider.ts:24
 msgid "Dark folder is not set"
 msgstr "La carpeta oscura no está configurada"
@@ -383,18 +398,22 @@ msgstr "La carpeta local no está configurada"
 msgid "No supported images found in %s"
 msgstr "No se encontraron imágenes compatibles en %s"
 
-#: providers/peapixProvider.ts:32
-msgid "Peapix returned no entries"
-msgstr "Peapix no devolvió ninguna entrada"
-
-#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:45
-msgid "Cache file has no path"
-msgstr "El archivo de caché no tiene ruta"
+#: providers/nasaProvider.ts:49
+msgid "NASA returned no image (got videos only)"
+msgstr "NASA no devolvió ninguna imagen (solo videos)"
 
 #: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven no devolvió ninguna imagen"
+
+#~ msgid "Bing (via Peapix)"
+#~ msgstr "Bing (vía Peapix)"
+
+#~ msgid "Peapix (Bing)"
+#~ msgstr "Peapix (Bing)"
+
+#~ msgid "Peapix returned no entries"
+#~ msgstr "Peapix no devolvió ninguna entrada"
 
 #~ msgid "Keep last N downloaded images"
 #~ msgstr "Mantener las últimas N imágenes descargadas"

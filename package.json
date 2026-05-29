@@ -1,7 +1,7 @@
 {
   "name": "vesper",
-  "version": "0.0.0",
-  "description": "Rotates desktop wallpapers on a schedule. Sources: local folders (with optional separate light/dark folders), Wallhaven, Bing (via Peapix), or Lorem Picsum. No API keys required for normal use; an optional Wallhaven key unlocks NSFW results.",
+  "version": "0.2.0",
+  "description": "Rotates desktop wallpapers on a schedule. Sources: local folders (with optional separate light/dark folders), Wallhaven, Bing daily image, Lorem Picsum, or NASA Astronomy Picture of the Day. No API keys required for normal use; an optional Wallhaven key unlocks NSFW results and an optional NASA key raises the rate limit.",
   "type": "module",
   "private": true,
   "repository": {

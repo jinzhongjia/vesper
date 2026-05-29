@@ -11,8 +11,9 @@ GNOME Shell 50 — no backward compatibility.
 Sources, all anonymous (no API keys, ever):
 - Local folder (with optional separate light/dark folders)
 - Wallhaven (`/api/v1/search?sorting=random`)
-- Bing daily, via Peapix (`/bing/feed`)
+- Bing daily (`https://www.bing.com/HPImageArchive.aspx?format=js`)
 - Lorem Picsum (`/seed/<uuid>/<w>/<h>.jpg`)
+- NASA APOD (`api.nasa.gov/planetary/apod?count=1`; `DEMO_KEY` is the default — optional user key raises rate limit 30/h → 1000/h)
 
 ## Project layout
 
@@ -25,7 +26,8 @@ providers/
   index.ts                  # createProvider factory
   localProvider.ts          # filesystem; variant-aware folder selection
   wallhavenProvider.ts
-  peapixProvider.ts
+  bingProvider.ts
+  nasaProvider.ts
   picsumProvider.ts
 lib/
   http.ts                   # Soup 3 client
@@ -105,7 +107,7 @@ We deliberately do NOT add defensive try/catch around settings access to paper o
 - Automatic light/dark image classification for remote sources
 - Image brightness analysis
 - GNOME Shell <50 compatibility
-- **Cross-provider fallback.** When the configured provider fails, the manager picks a random already-downloaded image from `~/.cache/vesper` instead of switching source. Trying e.g. Peapix → Wallhaven → Picsum was considered and rejected: it muddles "what source is the user actually using", doubles the API surface to test, and the cache fallback covers the real need (keep rotating during outages).
+- **Cross-provider fallback.** When the configured provider fails, the manager picks a random already-downloaded image from `~/.cache/vesper` instead of switching source. Trying e.g. Bing → Wallhaven → Picsum was considered and rejected: it muddles "what source is the user actually using", doubles the API surface to test, and the cache fallback covers the real need (keep rotating during outages).
 
 ## Failure handling (network down, API errors)
 

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:16+0800\n"
+"POT-Creation-Date: 2026-05-18 09:50+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -14,76 +14,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:134
+#: prefs.ts:39 prefs.ts:138
 msgid "General"
 msgstr "一般"
 
-#: prefs.ts:40
+#: prefs.ts:44
 msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "オフのとき、Vesper は読み込まれますが、壁紙を自動的に変更しません。"
 
-#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
+#: prefs.ts:47 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "ローテーションを有効化"
 
-#: prefs.ts:49
+#: prefs.ts:53
 msgid "Source"
 msgstr "ソース"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Local folder"
 msgstr "ローカルフォルダー"
 
-#: prefs.ts:52 prefs.ts:127
+#: prefs.ts:56 prefs.ts:131
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
-#: prefs.ts:52
-msgid "Bing (via Peapix)"
-msgstr "Bing (Peapix 経由)"
+#: prefs.ts:56 prefs.ts:164
+msgid "Bing"
+msgstr "Bing"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
-#: prefs.ts:53
+#: prefs.ts:56 prefs.ts:215
+msgid "NASA APOD"
+msgstr "NASA APOD"
+
+#: prefs.ts:57
 msgid "Wallpaper source"
 msgstr "壁紙のソース"
 
-#: prefs.ts:57
+#: prefs.ts:61
 msgid "Rotation"
 msgstr "ローテーション"
 
-#: prefs.ts:59
+#: prefs.ts:63
 msgid "Interval (minutes)"
 msgstr "間隔 (分)"
 
-#: prefs.ts:60
+#: prefs.ts:64
 msgid "How often to change the wallpaper"
 msgstr "壁紙を変更する頻度"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Random"
 msgstr "ランダム"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Sequential"
 msgstr "順次"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Switch mode"
 msgstr "切り替えモード"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Only used for the local source"
 msgstr "ローカルソースでのみ使用されます"
 
-#: prefs.ts:76
+#: prefs.ts:80
 msgid "Color scheme"
 msgstr "カラースキーム"
 
-#: prefs.ts:77
+#: prefs.ts:81
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
@@ -91,19 +95,19 @@ msgstr ""
 "ソースが「ローカルフォルダー」で、ダークフォルダーが設定されている場合にのみ"
 "有効です。リモートソースではダークバリアントを保証できません。"
 
-#: prefs.ts:80
+#: prefs.ts:84
 msgid "Use different wallpapers for light and dark modes"
 msgstr "ライトモードとダークモードで異なる壁紙を使用する"
 
-#: prefs.ts:86
+#: prefs.ts:90
 msgid "Appearance"
 msgstr "外観"
 
-#: prefs.ts:88
+#: prefs.ts:92
 msgid "Show panel indicator"
 msgstr "パネルインジケーターを表示"
 
-#: prefs.ts:89
+#: prefs.ts:93
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
@@ -111,83 +115,83 @@ msgstr ""
 "オフのとき、拡張機能アプリまたは `gnome-extensions prefs vesper@nvimer.org` "
 "から設定を開きます。"
 
-#: prefs.ts:95
+#: prefs.ts:99
 msgid "Cache"
 msgstr "キャッシュ"
 
-#: prefs.ts:97
+#: prefs.ts:101
 msgid "Maximum cache size (MB)"
 msgstr "最大キャッシュサイズ (MB)"
 
-#: prefs.ts:98
+#: prefs.ts:102
 msgid "Older downloads are deleted to stay under this limit."
 msgstr "この上限を超えないように、古いダウンロードが削除されます。"
 
-#: prefs.ts:112
+#: prefs.ts:116
 msgid "Local"
 msgstr "ローカル"
 
-#: prefs.ts:116
+#: prefs.ts:120
 msgid "Folders"
 msgstr "フォルダー"
 
-#: prefs.ts:117
+#: prefs.ts:121
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "「カラースキームに従う」が無効の場合もライトフォルダーが使用されます。"
 
-#: prefs.ts:119
+#: prefs.ts:123
 msgid "Light folder"
 msgstr "ライトフォルダー"
 
-#: prefs.ts:120
+#: prefs.ts:124
 msgid "Dark folder"
 msgstr "ダークフォルダー"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "Categories"
 msgstr "カテゴリ"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "At least one should be enabled."
 msgstr "少なくとも 1 つを有効にしてください。"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "Anime"
 msgstr "アニメ"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "People"
 msgstr "人物"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Purity"
 msgstr "純度"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "既定では SFW のみ有効です。他の項目は自己責任で有効にしてください。"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "Sketchy"
 msgstr "際どい"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:141
+#: prefs.ts:145
 msgid "Requires an API key (set below)."
 msgstr "API キーが必要です (下で設定)。"
 
-#: prefs.ts:145
+#: prefs.ts:149 prefs.ts:219
 msgid "Account"
 msgstr "アカウント"
 
-#: prefs.ts:146
+#: prefs.ts:150
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
@@ -195,108 +199,110 @@ msgstr ""
 "NSFW 検索結果にのみ必要です。キーは https://wallhaven.cc/settings/account で"
 "取得できます。"
 
-#: prefs.ts:149
+#: prefs.ts:153 prefs.ts:223
 msgid "API key"
 msgstr "API キー"
 
-#: prefs.ts:160
-msgid "Peapix (Bing)"
-msgstr "Peapix (Bing)"
-
-#: prefs.ts:164
+#: prefs.ts:168
 msgid "Region"
 msgstr "地域"
 
-#: prefs.ts:165
+#: prefs.ts:169
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing は地域ごとに異なる日替わり画像を提供します。"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "United States"
 msgstr "アメリカ合衆国"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Germany"
 msgstr "ドイツ"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "United Kingdom"
 msgstr "イギリス"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "France"
 msgstr "フランス"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "Brazil"
 msgstr "ブラジル"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "India"
 msgstr "インド"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Australia"
 msgstr "オーストラリア"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Canada"
 msgstr "カナダ"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Italy"
 msgstr "イタリア"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Spain"
 msgstr "スペイン"
 
-#: prefs.ts:174
+#: prefs.ts:178
 msgid "Country"
 msgstr "国"
 
-#: prefs.ts:182
+#: prefs.ts:186
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:185
+#: prefs.ts:189
 msgid "Resolution"
 msgstr "解像度"
 
-#: prefs.ts:188
+#: prefs.ts:192
 msgid "Width (px)"
 msgstr "幅 (px)"
 
-#: prefs.ts:197
+#: prefs.ts:201
 msgid "Height (px)"
 msgstr "高さ (px)"
 
-#: prefs.ts:281 prefs.ts:320
+#: prefs.ts:220
+msgid ""
+"DEMO_KEY works without registration but is shared (30 requests/hour). Get a "
+"free key at https://api.nasa.gov/ for 1000/hour."
+msgstr "DEMO_KEY は登録不要で使えますが共有 (30 リクエスト/時間) です。https://api.nasa.gov/ で無料の専用キーを取得すれば 1000/時間 になります。"
+
+#: prefs.ts:303 prefs.ts:342
 msgid "(not set)"
 msgstr "(未設定)"
 
-#: prefs.ts:285
+#: prefs.ts:307
 msgid "Choose…"
 msgstr "選択…"
 
-#: prefs.ts:290
+#: prefs.ts:312
 #, javascript-format
 msgid "Select %s"
 msgstr "%s を選択"
 
-#: prefs.ts:291
+#: prefs.ts:313
 msgid "Select"
 msgstr "選択"
 
-#: prefs.ts:313
+#: prefs.ts:335
 msgid "Clear"
 msgstr "クリア"
 
@@ -365,6 +371,15 @@ msgstr "不正な URL: %s"
 msgid "HTTP %d from %s"
 msgstr "HTTP %d (%s)"
 
+#: providers/bingProvider.ts:42
+msgid "Bing returned no images"
+msgstr "Bing から画像が返されませんでした"
+
+#: providers/bingProvider.ts:50 providers/nasaProvider.ts:57
+#: providers/picsumProvider.ts:30 providers/wallhavenProvider.ts:45
+msgid "Cache file has no path"
+msgstr "キャッシュファイルにパスがありません"
+
 #: providers/localProvider.ts:24
 msgid "Dark folder is not set"
 msgstr "ダークフォルダーが設定されていません"
@@ -378,18 +393,22 @@ msgstr "ローカルフォルダーが設定されていません"
 msgid "No supported images found in %s"
 msgstr "%s に対応する画像が見つかりません"
 
-#: providers/peapixProvider.ts:32
-msgid "Peapix returned no entries"
-msgstr "Peapix からエントリーが返されませんでした"
-
-#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:45
-msgid "Cache file has no path"
-msgstr "キャッシュファイルにパスがありません"
+#: providers/nasaProvider.ts:49
+msgid "NASA returned no image (got videos only)"
+msgstr "NASA から画像が返されませんでした (動画のみ)"
 
 #: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven から画像が返されませんでした"
+
+#~ msgid "Bing (via Peapix)"
+#~ msgstr "Bing (Peapix 経由)"
+
+#~ msgid "Peapix (Bing)"
+#~ msgstr "Peapix (Bing)"
+
+#~ msgid "Peapix returned no entries"
+#~ msgstr "Peapix からエントリーが返されませんでした"
 
 #~ msgid "Keep last N downloaded images"
 #~ msgstr "ダウンロードした最新の N 枚を保持"

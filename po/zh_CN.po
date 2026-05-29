@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:16+0800\n"
+"POT-Creation-Date: 2026-05-18 09:50+0800\n"
 "PO-Revision-Date: 2026-05-17 15:00+0800\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
@@ -15,95 +15,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:134
+#: prefs.ts:39 prefs.ts:138
 msgid "General"
 msgstr "常规"
 
-#: prefs.ts:40
+#: prefs.ts:44
 msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr "关闭时,Vesper 已载入但不会自动更换壁纸。"
 
-#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
+#: prefs.ts:47 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "启用轮换"
 
-#: prefs.ts:49
+#: prefs.ts:53
 msgid "Source"
 msgstr "来源"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Local folder"
 msgstr "本地目录"
 
-#: prefs.ts:52 prefs.ts:127
+#: prefs.ts:56 prefs.ts:131
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
-#: prefs.ts:52
-msgid "Bing (via Peapix)"
-msgstr "Bing(通过 Peapix)"
+#: prefs.ts:56 prefs.ts:164
+msgid "Bing"
+msgstr "必应"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
-#: prefs.ts:53
+#: prefs.ts:56 prefs.ts:215
+msgid "NASA APOD"
+msgstr "NASA 每日天文图"
+
+#: prefs.ts:57
 msgid "Wallpaper source"
 msgstr "壁纸来源"
 
-#: prefs.ts:57
+#: prefs.ts:61
 msgid "Rotation"
 msgstr "轮换"
 
-#: prefs.ts:59
+#: prefs.ts:63
 msgid "Interval (minutes)"
 msgstr "间隔(分钟)"
 
-#: prefs.ts:60
+#: prefs.ts:64
 msgid "How often to change the wallpaper"
 msgstr "更换壁纸的频率"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Random"
 msgstr "随机"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Sequential"
 msgstr "顺序"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Switch mode"
 msgstr "切换模式"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Only used for the local source"
 msgstr "仅对本地来源生效"
 
-#: prefs.ts:76
+#: prefs.ts:80
 msgid "Color scheme"
 msgstr "颜色方案"
 
-#: prefs.ts:77
+#: prefs.ts:81
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
 msgstr ""
 "仅在来源为「本地目录」且设置了暗色目录时生效;远程来源无法保证暗色变体。"
 
-#: prefs.ts:80
+#: prefs.ts:84
 msgid "Use different wallpapers for light and dark modes"
 msgstr "为亮色和暗色模式使用不同壁纸"
 
-#: prefs.ts:86
+#: prefs.ts:90
 msgid "Appearance"
 msgstr "外观"
 
-#: prefs.ts:88
+#: prefs.ts:92
 msgid "Show panel indicator"
 msgstr "显示面板图标"
 
-#: prefs.ts:89
+#: prefs.ts:93
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
@@ -111,190 +115,192 @@ msgstr ""
 "关闭时,通过扩展应用程序或 `gnome-extensions prefs vesper@nvimer.org` 打开偏好"
 "设置。"
 
-#: prefs.ts:95
+#: prefs.ts:99
 msgid "Cache"
 msgstr "缓存"
 
-#: prefs.ts:97
+#: prefs.ts:101
 msgid "Maximum cache size (MB)"
 msgstr "最大缓存容量 (MB)"
 
-#: prefs.ts:98
+#: prefs.ts:102
 msgid "Older downloads are deleted to stay under this limit."
 msgstr "会删除较旧的下载以保持在此上限以下。"
 
-#: prefs.ts:112
+#: prefs.ts:116
 msgid "Local"
 msgstr "本地"
 
-#: prefs.ts:116
+#: prefs.ts:120
 msgid "Folders"
 msgstr "目录"
 
-#: prefs.ts:117
+#: prefs.ts:121
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "当未启用「跟随颜色方案」时,也使用亮色目录。"
 
-#: prefs.ts:119
+#: prefs.ts:123
 msgid "Light folder"
 msgstr "亮色目录"
 
-#: prefs.ts:120
+#: prefs.ts:124
 msgid "Dark folder"
 msgstr "暗色目录"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "Categories"
 msgstr "类别"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "At least one should be enabled."
 msgstr "至少需要启用一项。"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "Anime"
 msgstr "动漫"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "People"
 msgstr "人物"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Purity"
 msgstr "纯度"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr "默认仅启用 SFW,请自行决定是否启用其他级别。"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "Sketchy"
 msgstr "略带暗示"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:141
+#: prefs.ts:145
 msgid "Requires an API key (set below)."
 msgstr "需要在下方设置 API 密钥。"
 
-#: prefs.ts:145
+#: prefs.ts:149 prefs.ts:219
 msgid "Account"
 msgstr "账号"
 
-#: prefs.ts:146
+#: prefs.ts:150
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
 msgstr "仅 NSFW 搜索需要。在 https://wallhaven.cc/settings/account 获取密钥。"
 
-#: prefs.ts:149
+#: prefs.ts:153 prefs.ts:223
 msgid "API key"
 msgstr "API 密钥"
 
-#: prefs.ts:160
-msgid "Peapix (Bing)"
-msgstr "Peapix (Bing)"
-
-#: prefs.ts:164
+#: prefs.ts:168
 msgid "Region"
 msgstr "区域"
 
-#: prefs.ts:165
+#: prefs.ts:169
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing 在不同区域提供不同的每日图片。"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "United States"
 msgstr "美国"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "China"
 msgstr "中国"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Germany"
 msgstr "德国"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Japan"
 msgstr "日本"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "United Kingdom"
 msgstr "英国"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "France"
 msgstr "法国"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "Brazil"
 msgstr "巴西"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "India"
 msgstr "印度"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Australia"
 msgstr "澳大利亚"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Canada"
 msgstr "加拿大"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Italy"
 msgstr "意大利"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Spain"
 msgstr "西班牙"
 
-#: prefs.ts:174
+#: prefs.ts:178
 msgid "Country"
 msgstr "国家"
 
-#: prefs.ts:182
+#: prefs.ts:186
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:185
+#: prefs.ts:189
 msgid "Resolution"
 msgstr "分辨率"
 
-#: prefs.ts:188
+#: prefs.ts:192
 msgid "Width (px)"
 msgstr "宽度(像素)"
 
-#: prefs.ts:197
+#: prefs.ts:201
 msgid "Height (px)"
 msgstr "高度(像素)"
 
-#: prefs.ts:281 prefs.ts:320
+#: prefs.ts:220
+msgid ""
+"DEMO_KEY works without registration but is shared (30 requests/hour). Get a "
+"free key at https://api.nasa.gov/ for 1000/hour."
+msgstr "DEMO_KEY 无需注册即可使用,但是共享速率(30 次/小时)。在 https://api.nasa.gov/ 免费申请专属密钥可获 1000/小时。"
+
+#: prefs.ts:303 prefs.ts:342
 msgid "(not set)"
 msgstr "(未设置)"
 
-#: prefs.ts:285
+#: prefs.ts:307
 msgid "Choose…"
 msgstr "选择…"
 
-#: prefs.ts:290
+#: prefs.ts:312
 #, javascript-format
 msgid "Select %s"
 msgstr "选择 %s"
 
-#: prefs.ts:291
+#: prefs.ts:313
 msgid "Select"
 msgstr "选择"
 
-#: prefs.ts:313
+#: prefs.ts:335
 msgid "Clear"
 msgstr "清除"
 
@@ -363,6 +369,15 @@ msgstr "URL 格式错误: %s"
 msgid "HTTP %d from %s"
 msgstr "HTTP %d 来自 %s"
 
+#: providers/bingProvider.ts:42
+msgid "Bing returned no images"
+msgstr "必应未返回任何图片"
+
+#: providers/bingProvider.ts:50 providers/nasaProvider.ts:57
+#: providers/picsumProvider.ts:30 providers/wallhavenProvider.ts:45
+msgid "Cache file has no path"
+msgstr "缓存文件没有路径"
+
 #: providers/localProvider.ts:24
 msgid "Dark folder is not set"
 msgstr "未设置暗色目录"
@@ -376,18 +391,22 @@ msgstr "未设置本地目录"
 msgid "No supported images found in %s"
 msgstr "在 %s 中未找到受支持的图片"
 
-#: providers/peapixProvider.ts:32
-msgid "Peapix returned no entries"
-msgstr "Peapix 未返回任何条目"
-
-#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:45
-msgid "Cache file has no path"
-msgstr "缓存文件没有路径"
+#: providers/nasaProvider.ts:49
+msgid "NASA returned no image (got videos only)"
+msgstr "NASA 未返回图片(只有视频)"
 
 #: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven 未返回任何图片"
+
+#~ msgid "Bing (via Peapix)"
+#~ msgstr "Bing(通过 Peapix)"
+
+#~ msgid "Peapix (Bing)"
+#~ msgstr "Peapix (Bing)"
+
+#~ msgid "Peapix returned no entries"
+#~ msgstr "Peapix 未返回任何条目"
 
 #~ msgid "Keep last N downloaded images"
 #~ msgstr "保留最近下载的 N 张图片"

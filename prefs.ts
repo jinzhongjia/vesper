@@ -9,11 +9,14 @@ import {
 
 import type { SourceType, SwitchMode } from './types.js';
 
-const SOURCE_KEYS: SourceType[] = ['local', 'wallhaven', 'peapix', 'picsum'];
+const SOURCE_KEYS: SourceType[] = ['local', 'wallhaven', 'bing', 'picsum', 'nasa'];
 
 const MODE_KEYS: SwitchMode[] = ['random', 'sequential'];
 
-const PEAPIX_COUNTRIES = ['us', 'cn', 'de', 'jp', 'gb', 'fr', 'br', 'in', 'au', 'ca', 'it', 'es'];
+const BING_MARKETS = [
+  'en-US', 'zh-CN', 'de-DE', 'ja-JP', 'en-GB', 'fr-FR',
+  'pt-BR', 'en-IN', 'en-AU', 'en-CA', 'it-IT', 'es-ES',
+];
 
 export default class VesperPreferences extends ExtensionPreferences {
   async fillPreferencesWindow(window: Adw.PreferencesWindow): Promise<void> {
@@ -22,7 +25,8 @@ export default class VesperPreferences extends ExtensionPreferences {
     window.add(this.buildGeneralPage(settings));
     window.add(this.buildLocalPage(settings, window));
     window.add(this.buildWallhavenPage(settings));
-    window.add(this.buildPeapixPage(settings));
+    window.add(this.buildBingPage(settings));
+    window.add(this.buildNasaPage(settings));
     window.add(this.buildPicsumPage(settings));
   }
 
@@ -49,7 +53,7 @@ export default class VesperPreferences extends ExtensionPreferences {
     const sourceGroup = new Adw.PreferencesGroup({ title: _('Source') });
     sourceGroup.add(this.buildEnumComboRow(
       settings, 'source-type', SOURCE_KEYS,
-      [_('Local folder'), _('Wallhaven'), _('Bing (via Peapix)'), _('Lorem Picsum')],
+      [_('Local folder'), _('Wallhaven'), _('Bing'), _('Lorem Picsum'), _('NASA APOD')],
       _('Wallpaper source'), null,
     ));
     page.add(sourceGroup);
@@ -155,9 +159,9 @@ export default class VesperPreferences extends ExtensionPreferences {
     return page;
   }
 
-  private buildPeapixPage(settings: Gio.Settings): Adw.PreferencesPage {
+  private buildBingPage(settings: Gio.Settings): Adw.PreferencesPage {
     const page = new Adw.PreferencesPage({
-      title: _('Peapix (Bing)'),
+      title: _('Bing'),
       icon_name: 'mark-location-symbolic',
     });
     const group = new Adw.PreferencesGroup({
@@ -165,7 +169,7 @@ export default class VesperPreferences extends ExtensionPreferences {
       description: _('Bing serves a different daily image in each region.'),
     });
     group.add(this.buildEnumComboRow(
-      settings, 'peapix-country', PEAPIX_COUNTRIES,
+      settings, 'bing-market', BING_MARKETS,
       [
         _('United States'), _('China'), _('Germany'), _('Japan'),
         _('United Kingdom'), _('France'), _('Brazil'), _('India'),
@@ -202,6 +206,24 @@ export default class VesperPreferences extends ExtensionPreferences {
     settings.bind('picsum-height', heightRow, 'value', Gio.SettingsBindFlags.DEFAULT);
     group.add(heightRow);
 
+    page.add(group);
+    return page;
+  }
+
+  private buildNasaPage(settings: Gio.Settings): Adw.PreferencesPage {
+    const page = new Adw.PreferencesPage({
+      title: _('NASA APOD'),
+      icon_name: 'weather-clear-night-symbolic',
+    });
+    const group = new Adw.PreferencesGroup({
+      title: _('Account'),
+      description: _('DEMO_KEY works without registration but is shared (30 requests/hour). Get a free key at https://api.nasa.gov/ for 1000/hour.'),
+    });
+    const keyRow = new Adw.PasswordEntryRow({
+      title: _('API key'),
+    });
+    settings.bind('nasa-api-key', keyRow, 'text', Gio.SettingsBindFlags.DEFAULT);
+    group.add(keyRow);
     page.add(group);
     return page;
   }

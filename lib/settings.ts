@@ -52,8 +52,12 @@ export class TypedSettings {
     return this.raw.get_string('wallhaven-api-key');
   }
 
-  get peapixCountry(): string {
-    return this.raw.get_string('peapix-country');
+  get bingMarket(): string {
+    return this.raw.get_string('bing-market');
+  }
+
+  get nasaApiKey(): string {
+    return this.raw.get_string('nasa-api-key');
   }
 
   get picsumWidth(): number {

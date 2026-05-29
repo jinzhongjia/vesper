@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vesper\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 01:16+0800\n"
+"POT-Creation-Date: 2026-05-18 09:50+0800\n"
 "PO-Revision-Date: 2026-05-17 15:30+0800\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -14,77 +14,81 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: prefs.ts:35 prefs.ts:134
+#: prefs.ts:39 prefs.ts:138
 msgid "General"
 msgstr "일반"
 
-#: prefs.ts:40
+#: prefs.ts:44
 msgid ""
 "When off, Vesper is loaded but does not change the wallpaper automatically."
 msgstr ""
 "꺼져 있을 때 Vesper는 로드되지만 배경 화면을 자동으로 변경하지 않습니다."
 
-#: prefs.ts:43 wallpaperManager.ts:169 wallpaperManager.ts:358
+#: prefs.ts:47 wallpaperManager.ts:169 wallpaperManager.ts:358
 msgid "Enable rotation"
 msgstr "교체 활성화"
 
-#: prefs.ts:49
+#: prefs.ts:53
 msgid "Source"
 msgstr "소스"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Local folder"
 msgstr "로컬 폴더"
 
-#: prefs.ts:52 prefs.ts:127
+#: prefs.ts:56 prefs.ts:131
 msgid "Wallhaven"
 msgstr "Wallhaven"
 
-#: prefs.ts:52
-msgid "Bing (via Peapix)"
-msgstr "Bing (Peapix 경유)"
+#: prefs.ts:56 prefs.ts:164
+msgid "Bing"
+msgstr "Bing"
 
-#: prefs.ts:52
+#: prefs.ts:56
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
-#: prefs.ts:53
+#: prefs.ts:56 prefs.ts:215
+msgid "NASA APOD"
+msgstr "NASA APOD"
+
+#: prefs.ts:57
 msgid "Wallpaper source"
 msgstr "배경 화면 소스"
 
-#: prefs.ts:57
+#: prefs.ts:61
 msgid "Rotation"
 msgstr "교체"
 
-#: prefs.ts:59
+#: prefs.ts:63
 msgid "Interval (minutes)"
 msgstr "간격 (분)"
 
-#: prefs.ts:60
+#: prefs.ts:64
 msgid "How often to change the wallpaper"
 msgstr "배경 화면을 변경하는 빈도"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Random"
 msgstr "무작위"
 
-#: prefs.ts:70
+#: prefs.ts:74
 msgid "Sequential"
 msgstr "순차"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Switch mode"
 msgstr "전환 모드"
 
-#: prefs.ts:71
+#: prefs.ts:75
 msgid "Only used for the local source"
 msgstr "로컬 소스에만 사용됨"
 
-#: prefs.ts:76
+#: prefs.ts:80
 msgid "Color scheme"
 msgstr "색 구성표"
 
-#: prefs.ts:77
+#: prefs.ts:81
 msgid ""
 "Only effective when source is \"Local folder\" and a dark folder is set; "
 "remote sources cannot guarantee a dark variant."
@@ -92,19 +96,19 @@ msgstr ""
 "소스가 \"로컬 폴더\"이고 어두운 폴더가 설정된 경우에만 적용됩니다. 원격 소스"
 "는 어두운 변형을 보장할 수 없습니다."
 
-#: prefs.ts:80
+#: prefs.ts:84
 msgid "Use different wallpapers for light and dark modes"
 msgstr "밝은 모드와 어두운 모드에 서로 다른 배경 화면 사용"
 
-#: prefs.ts:86
+#: prefs.ts:90
 msgid "Appearance"
 msgstr "모양"
 
-#: prefs.ts:88
+#: prefs.ts:92
 msgid "Show panel indicator"
 msgstr "패널 표시기 표시"
 
-#: prefs.ts:89
+#: prefs.ts:93
 msgid ""
 "When off, open preferences via the Extensions app or `gnome-extensions prefs "
 "vesper@nvimer.org`."
@@ -112,84 +116,84 @@ msgstr ""
 "꺼져 있을 때 확장 앱 또는 `gnome-extensions prefs vesper@nvimer.org`을 통해 "
 "환경 설정을 엽니다."
 
-#: prefs.ts:95
+#: prefs.ts:99
 msgid "Cache"
 msgstr "캐시"
 
-#: prefs.ts:97
+#: prefs.ts:101
 msgid "Maximum cache size (MB)"
 msgstr "최대 캐시 크기 (MB)"
 
-#: prefs.ts:98
+#: prefs.ts:102
 msgid "Older downloads are deleted to stay under this limit."
 msgstr "이 한도를 초과하지 않도록 오래된 다운로드가 삭제됩니다."
 
-#: prefs.ts:112
+#: prefs.ts:116
 msgid "Local"
 msgstr "로컬"
 
-#: prefs.ts:116
+#: prefs.ts:120
 msgid "Folders"
 msgstr "폴더"
 
-#: prefs.ts:117
+#: prefs.ts:121
 msgid "The light folder is also used when \"follow color scheme\" is off."
 msgstr "\"색 구성표 따르기\"가 꺼져 있을 때도 밝은 폴더가 사용됩니다."
 
-#: prefs.ts:119
+#: prefs.ts:123
 msgid "Light folder"
 msgstr "밝은 폴더"
 
-#: prefs.ts:120
+#: prefs.ts:124
 msgid "Dark folder"
 msgstr "어두운 폴더"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "Categories"
 msgstr "분류"
 
-#: prefs.ts:133
+#: prefs.ts:137
 msgid "At least one should be enabled."
 msgstr "최소 하나 이상 활성화해야 합니다."
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "Anime"
 msgstr "애니메이션"
 
-#: prefs.ts:134
+#: prefs.ts:138
 msgid "People"
 msgstr "인물"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Purity"
 msgstr "수위"
 
-#: prefs.ts:139
+#: prefs.ts:143
 msgid "Defaults to SFW only. Enable others at your own discretion."
 msgstr ""
 "기본적으로 SFW만 활성화됩니다. 다른 항목은 본인 판단에 따라 활성화하십시오."
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "SFW"
 msgstr "SFW"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "Sketchy"
 msgstr "다소 자극적"
 
-#: prefs.ts:140
+#: prefs.ts:144
 msgid "NSFW"
 msgstr "NSFW"
 
-#: prefs.ts:141
+#: prefs.ts:145
 msgid "Requires an API key (set below)."
 msgstr "API 키가 필요합니다 (아래에서 설정)."
 
-#: prefs.ts:145
+#: prefs.ts:149 prefs.ts:219
 msgid "Account"
 msgstr "계정"
 
-#: prefs.ts:146
+#: prefs.ts:150
 msgid ""
 "Only needed for NSFW results. Get a key at https://wallhaven.cc/settings/"
 "account."
@@ -197,108 +201,110 @@ msgstr ""
 "NSFW 검색 결과에만 필요합니다. https://wallhaven.cc/settings/account 에서 키"
 "를 받으세요."
 
-#: prefs.ts:149
+#: prefs.ts:153 prefs.ts:223
 msgid "API key"
 msgstr "API 키"
 
-#: prefs.ts:160
-msgid "Peapix (Bing)"
-msgstr "Peapix (Bing)"
-
-#: prefs.ts:164
+#: prefs.ts:168
 msgid "Region"
 msgstr "지역"
 
-#: prefs.ts:165
+#: prefs.ts:169
 msgid "Bing serves a different daily image in each region."
 msgstr "Bing은 지역마다 다른 일일 이미지를 제공합니다."
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "United States"
 msgstr "미국"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "China"
 msgstr "중국"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Germany"
 msgstr "독일"
 
-#: prefs.ts:170
+#: prefs.ts:174
 msgid "Japan"
 msgstr "일본"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "United Kingdom"
 msgstr "영국"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "France"
 msgstr "프랑스"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "Brazil"
 msgstr "브라질"
 
-#: prefs.ts:171
+#: prefs.ts:175
 msgid "India"
 msgstr "인도"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Australia"
 msgstr "호주"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Canada"
 msgstr "캐나다"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Italy"
 msgstr "이탈리아"
 
-#: prefs.ts:172
+#: prefs.ts:176
 msgid "Spain"
 msgstr "스페인"
 
-#: prefs.ts:174
+#: prefs.ts:178
 msgid "Country"
 msgstr "국가"
 
-#: prefs.ts:182
+#: prefs.ts:186
 msgid "Picsum"
 msgstr "Picsum"
 
-#: prefs.ts:185
+#: prefs.ts:189
 msgid "Resolution"
 msgstr "해상도"
 
-#: prefs.ts:188
+#: prefs.ts:192
 msgid "Width (px)"
 msgstr "너비 (px)"
 
-#: prefs.ts:197
+#: prefs.ts:201
 msgid "Height (px)"
 msgstr "높이 (px)"
 
-#: prefs.ts:281 prefs.ts:320
+#: prefs.ts:220
+msgid ""
+"DEMO_KEY works without registration but is shared (30 requests/hour). Get a "
+"free key at https://api.nasa.gov/ for 1000/hour."
+msgstr "DEMO_KEY는 등록 없이 사용 가능하지만 공유됩니다 (시간당 30회). https://api.nasa.gov/에서 무료 키를 받으면 시간당 1000회입니다."
+
+#: prefs.ts:303 prefs.ts:342
 msgid "(not set)"
 msgstr "(설정되지 않음)"
 
-#: prefs.ts:285
+#: prefs.ts:307
 msgid "Choose…"
 msgstr "선택…"
 
-#: prefs.ts:290
+#: prefs.ts:312
 #, javascript-format
 msgid "Select %s"
 msgstr "%s 선택"
 
-#: prefs.ts:291
+#: prefs.ts:313
 msgid "Select"
 msgstr "선택"
 
-#: prefs.ts:313
+#: prefs.ts:335
 msgid "Clear"
 msgstr "지우기"
 
@@ -367,6 +373,15 @@ msgstr "잘못된 URL: %s"
 msgid "HTTP %d from %s"
 msgstr "HTTP %d (%s)"
 
+#: providers/bingProvider.ts:42
+msgid "Bing returned no images"
+msgstr "Bing이 이미지를 반환하지 않았습니다"
+
+#: providers/bingProvider.ts:50 providers/nasaProvider.ts:57
+#: providers/picsumProvider.ts:30 providers/wallhavenProvider.ts:45
+msgid "Cache file has no path"
+msgstr "캐시 파일에 경로가 없습니다"
+
 #: providers/localProvider.ts:24
 msgid "Dark folder is not set"
 msgstr "어두운 폴더가 설정되지 않았습니다"
@@ -380,18 +395,22 @@ msgstr "로컬 폴더가 설정되지 않았습니다"
 msgid "No supported images found in %s"
 msgstr "%s에서 지원되는 이미지를 찾을 수 없습니다"
 
-#: providers/peapixProvider.ts:32
-msgid "Peapix returned no entries"
-msgstr "Peapix가 항목을 반환하지 않았습니다"
-
-#: providers/peapixProvider.ts:40 providers/picsumProvider.ts:30
-#: providers/wallhavenProvider.ts:45
-msgid "Cache file has no path"
-msgstr "캐시 파일에 경로가 없습니다"
+#: providers/nasaProvider.ts:49
+msgid "NASA returned no image (got videos only)"
+msgstr "NASA가 이미지를 반환하지 않았습니다 (동영상만)"
 
 #: providers/wallhavenProvider.ts:39
 msgid "Wallhaven returned no images"
 msgstr "Wallhaven이 이미지를 반환하지 않았습니다"
+
+#~ msgid "Bing (via Peapix)"
+#~ msgstr "Bing (Peapix 경유)"
+
+#~ msgid "Peapix (Bing)"
+#~ msgstr "Peapix (Bing)"
+
+#~ msgid "Peapix returned no entries"
+#~ msgstr "Peapix가 항목을 반환하지 않았습니다"
 
 #~ msgid "Keep last N downloaded images"
 #~ msgstr "최근 다운로드한 N개의 이미지 보관"

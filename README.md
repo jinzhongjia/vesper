@@ -11,8 +11,9 @@ results.
 - Four sources, all anonymous:
   - **Local folder** — your own image library
   - **Wallhaven** — public random search
-  - **Bing (via Peapix)** — daily Bing image, regional
+  - **Bing** — daily Bing image, regional (official HPImageArchive)
   - **Lorem Picsum** — random photo at any resolution
+  - **NASA APOD** — Astronomy Picture of the Day (DEMO_KEY works without registration)
 - Per-source preferences (categories, region, resolution, …)
 - Light/dark variant support for the local source (two folders, two `picture-uri` keys)
 - Panel button: change now, pause/resume, open current, preferences
@@ -68,8 +69,9 @@ gsettings --schemadir $SCHEMA_DIR set org.gnome.shell.extensions.vesper interval
 |------------|----------------|------------|-------|
 | Local      | –              | Yes        | Set `local-folder` (and optionally `local-folder-dark`). |
 | Wallhaven  | No (NSFW: yes) | No         | Anonymous returns SFW + Sketchy. Optional API key in prefs unlocks NSFW. |
-| Peapix     | No             | No         | Single daily image per region. |
+| Bing       | No             | No         | Single daily image per market (en-US, zh-CN, …). Uses Bing's own HPImageArchive endpoint. |
 | Picsum     | No             | No         | Random per tick at configured resolution. |
+| NASA APOD  | DEMO_KEY ok    | No         | Random historical Astronomy Picture of the Day. Optional key raises rate limit (30/h → 1000/h). Skips entries that are videos. |
 
 Light/dark mode separation is local-only. Remote sources write the same image to
 both `picture-uri` and `picture-uri-dark` because they can't guarantee a
@@ -86,8 +88,9 @@ providers/
   index.ts                      # factory
   localProvider.ts              # filesystem
   wallhavenProvider.ts          # /api/v1/search?sorting=random
-  peapixProvider.ts             # /bing/feed
+  bingProvider.ts               # HPImageArchive.aspx?format=js
   picsumProvider.ts             # /seed/<uuid>/<w>/<h>.jpg
+  nasaProvider.ts               # api.nasa.gov/planetary/apod?count=1
 lib/
   http.ts                       # Soup 3 client
   cache.ts                      # disk cache + prune
